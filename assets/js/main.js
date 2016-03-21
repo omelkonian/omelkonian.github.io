@@ -47,43 +47,43 @@ jQuery(document).ready(function( $ ) {
           value: 0.85,
         });
         $('.four').circleProgress({
-          value: 0.85,
-        });
-        $('.five').circleProgress({
-          value: 0.70,
-        });
-        $('.six').circleProgress({
-          value: 0.60,
-        });
-        $('.seven').circleProgress({
-          value: 0.75,
-        });
-        $('.eight').circleProgress({
           value: 0.90,
         });
-        $('.nine').circleProgress({
-          value: 0.50,
-        });
-        $('.ten').circleProgress({
-          value: 0.70,
-        });
-        $('.eleven').circleProgress({
-          value: 0.80,
-        });
-        $('.twelve').circleProgress({
+        $('.five').circleProgress({
           value: 0.75,
         });
+        $('.six').circleProgress({
+          value: 0.80,
+        });
+        $('.seven').circleProgress({
+          value: 0.70,
+        });
+        $('.eight').circleProgress({
+          value: 0.75,
+        });
+        $('.nine').circleProgress({
+          value: 0.90,
+        });
+        $('.ten').circleProgress({
+          value: 0.50,
+        });
+        $('.eleven').circleProgress({
+          value: 0.35,
+        });
+        $('.twelve').circleProgress({
+          value: 0.20,
+        });
         $('.thirteen').circleProgress({
-          value: 0.85,
+          value: 0.80,
         });
         $('.fourteen').circleProgress({
           value: 0.85,
         });
         $('.fifteen').circleProgress({
-          value: 0.90,
+          value: 0.75,
         });
         $('.sixteen').circleProgress({
-          value: 0.50,
+          value: 0.90,
         });
         $('.seventeen').circleProgress({
           value: 0.95,
