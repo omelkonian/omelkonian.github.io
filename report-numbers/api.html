@@ -40,11 +40,115 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="api-docs">
-<h1>API Docs<a class="headerlink" href="#api-docs" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="invenio-pidstore-reportnumber">
-<h2>invenio_pidstore_reportnumber<a class="headerlink" href="#invenio-pidstore-reportnumber" title="Permalink to this headline">¶</a></h2>
-</div>
+  <div class="section" id="module-invenio_pidstore_reportnumber.models">
+<span id="api-docs"></span><h1>API Docs<a class="headerlink" href="#module-invenio_pidstore_reportnumber.models" title="Permalink to this headline">¶</a></h1>
+<p>Models for storing counters for each pattern.</p>
+<dl class="exception">
+<dt id="invenio_pidstore_reportnumber.models.InvalidCall">
+<em class="property">exception </em><code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">InvalidCall</code><span class="sig-paren">(</span><em>reason</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#InvalidCall"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.InvalidCall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invalid call error.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="invenio_pidstore_reportnumber.models.InvalidTemplate">
+<em class="property">exception </em><code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">InvalidTemplate</code><span class="sig-paren">(</span><em>reason</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#InvalidTemplate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.InvalidTemplate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invalid template error.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="invenio_pidstore_reportnumber.models.NoSuchSequence">
+<em class="property">exception </em><code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">NoSuchSequence</code><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#NoSuchSequence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.NoSuchSequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>No such sequence error.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="invenio_pidstore_reportnumber.models.ReportNumber">
+<em class="property">class </em><code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">ReportNumber</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#ReportNumber"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.ReportNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores generated report numbers.</p>
+<dl class="attribute">
+<dt id="invenio_pidstore_reportnumber.models.ReportNumber.counter">
+<code class="descname">counter</code><a class="headerlink" href="#invenio_pidstore_reportnumber.models.ReportNumber.counter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="invenio_pidstore_reportnumber.models.ReportNumber.create">
+<em class="property">classmethod </em><code class="descname">create</code><span class="sig-paren">(</span><em>template</em>, <em>counter=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#ReportNumber.create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.ReportNumber.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new report number.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="invenio_pidstore_reportnumber.models.ReportNumber.next_or_create">
+<em class="property">classmethod </em><code class="descname">next_or_create</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#ReportNumber.next_or_create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.ReportNumber.next_or_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the next report number for the given template.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_pidstore_reportnumber.models.ReportNumber.template">
+<code class="descname">template</code><a class="headerlink" href="#invenio_pidstore_reportnumber.models.ReportNumber.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="invenio_pidstore_reportnumber.models.Sequence">
+<em class="property">class </em><code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">Sequence</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#Sequence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.Sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents sequence definitions.</p>
+<dl class="classmethod">
+<dt id="invenio_pidstore_reportnumber.models.Sequence.create">
+<em class="property">classmethod </em><code class="descname">create</code><span class="sig-paren">(</span><em>name</em>, <em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#Sequence.create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.Sequence.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new sequence.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_pidstore_reportnumber.models.Sequence.name">
+<code class="descname">name</code><a class="headerlink" href="#invenio_pidstore_reportnumber.models.Sequence.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The identifying name of the sequence.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="invenio_pidstore_reportnumber.models.Sequence.next">
+<em class="property">classmethod </em><code class="descname">next</code><span class="sig-paren">(</span><em>id</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#Sequence.next"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.Sequence.next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the next report number for the given sequence.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_pidstore_reportnumber.models.Sequence.parent">
+<code class="descname">parent</code><a class="headerlink" href="#invenio_pidstore_reportnumber.models.Sequence.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates if the template depends on another one.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_pidstore_reportnumber.models.Sequence.template">
+<code class="descname">template</code><a class="headerlink" href="#invenio_pidstore_reportnumber.models.Sequence.template" title="Permalink to this definition">¶</a></dt>
+<dd><p>The template of the sequence.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="invenio_pidstore_reportnumber.models.double_counter">
+<code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">double_counter</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#double_counter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.double_counter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Double brackets around the &#8216;counter&#8217; for 2-step formatting.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="invenio_pidstore_reportnumber.models.extract_placeholders">
+<code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">extract_placeholders</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#extract_placeholders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.extract_placeholders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract the template&#8217;s placeholder names.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="invenio_pidstore_reportnumber.models.get_next">
+<code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">get_next</code><span class="sig-paren">(</span><em>name_or_template</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#get_next"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.get_next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the next available report number for the given template.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="invenio_pidstore_reportnumber.models.new_sequence">
+<code class="descclassname">invenio_pidstore_reportnumber.models.</code><code class="descname">new_sequence</code><span class="sig-paren">(</span><em>name</em>, <em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_pidstore_reportnumber/models.html#new_sequence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_pidstore_reportnumber.models.new_sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new sequence.</p>
+</dd></dl>
+
 </div>
 
 
@@ -72,10 +176,7 @@
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API Docs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#invenio-pidstore-reportnumber">invenio_pidstore_reportnumber</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Docs</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>

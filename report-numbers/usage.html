@@ -151,16 +151,13 @@ number, otherwise an appropriate exception would be raised.</p>
     <span class="n">get_distribution</span><span class="p">(</span><span class="s1">&#39;invenio-pidstore&#39;</span><span class="p">)</span>
 
     <span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 2&#39;</span><span class="p">)</span>
-    <span class="c1"># E: Parent PID does not exist</span>
+    <span class="c1"># &gt;&gt;&gt; E: Parent PID does not exist</span>
 
 <span class="k">except</span> <span class="n">DistributionNotFound</span><span class="p">:</span>
     <span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 2&#39;</span><span class="p">)</span>
-    <span class="c1"># &#39;2016: Playlist 2 &gt; Audio File 01&#39;</span>
+    <span class="c1"># &gt;&gt;&gt; &#39;2016: Playlist 2 &gt; Audio File 01&#39;</span>
 </pre></div>
 </div>
-<p>Moreover, when a new report-number is requested, the system reserves the
-generated report number on the PID store, in case someone simultaneously asks
-the PID store for the same one.</p>
 </div>
 </div>
 <div class="section" id="conventions">
