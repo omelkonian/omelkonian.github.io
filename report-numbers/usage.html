@@ -6,10 +6,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Usage &mdash; Invenio-PIDStore-ReportNumber 0.1.0.dev20160000 documentation</title>
+    <title>Usage &mdash; Invenio-SequenceGenerator 0.1.0.dev20160000 documentation</title>
     
-    <link rel="stylesheet" href="static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -20,14 +20,15 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="static/jquery.js"></script>
-    <script type="text/javascript" src="static/underscore.js"></script>
-    <script type="text/javascript" src="static/doctools.js"></script>
-    <link rel="top" title="Invenio-PIDStore-ReportNumber 0.1.0.dev20160000 documentation" href="index.html" />
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Invenio-SequenceGenerator 0.1.0.dev20160000 documentation" href="index.html" />
     <link rel="next" title="API Docs" href="api.html" />
     <link rel="prev" title="Installation" href="installation.html" />
    
-  <link rel="stylesheet" href="static/custom.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -40,8 +41,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="module-invenio_pidstore_reportnumber">
-<span id="usage"></span><h1>Usage<a class="headerlink" href="#module-invenio_pidstore_reportnumber" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-invenio_sequencegenerator">
+<span id="usage"></span><h1>Usage<a class="headerlink" href="#module-invenio_sequencegenerator" title="Permalink to this headline">¶</a></h1>
 <p>Generic minter for report numbers with auto-increment per custom prefix.</p>
 <p>Invenio-SequenceGenerator is a secondary component of Invenio, responsible for
 automatically generating report numbers in a safe manner (i.e. making sure
@@ -70,35 +71,41 @@ in this example we use an in-memory SQLite database):</p>
 </div>
 <div class="section" id="id1">
 <h2>Usage<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>First define your sequence (i.e. the specific form of your report numbers):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">invenio_pidstore_reportnumber</span> <span class="k">import</span> <span class="n">new_sequence</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">new_sequence</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="s1">&#39;File </span><span class="si">{counter}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="section" id="sequence-definition">
+<h3>Sequence definition<a class="headerlink" href="#sequence-definition" title="Permalink to this headline">¶</a></h3>
+<p>The first thing to do is define your sequence (i.e. the specific form of your
+report numbers):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">invenio_sequencegenerator.models</span> <span class="k">import</span> <span class="n">Sequence</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">seq</span> <span class="o">=</span> <span class="n">Sequence</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="s1">&#39;File </span><span class="si">{counter}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="simple-counters">
+<h3>Simple counters<a class="headerlink" href="#simple-counters" title="Permalink to this headline">¶</a></h3>
 <p>Then you can request new report numbers based on the sequence defined above.
 (NOTE: counters start from 1 and increment by one)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">invenio_pidstore_reportnumber.models</span> <span class="k">import</span> <span class="n">get_next</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">seq</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
 <span class="go">&#39;File 1&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;ID&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">seq</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
 <span class="go">&#39;File 2&#39;</span>
 </pre></div>
+</div>
 </div>
 <div class="section" id="user-defined-keywords">
 <h3>User-defined keywords<a class="headerlink" href="#user-defined-keywords" title="Permalink to this headline">¶</a></h3>
 <p>Consider the case where you need to generate report numbers for files of
 different categories. Thus, your sequence definition should look like this:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">new_sequence</span><span class="p">(</span><span class="s1">&#39;KW&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{category}</span><span class="s1">: File </span><span class="si">{counter:03d}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cat</span> <span class="o">=</span> <span class="n">Sequence</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;KW&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{category}</span><span class="s1">: File </span><span class="si">{counter:03d}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Note the formatting option of the counter.</p>
 <p>Every time you request a new report number, you must also pass the category as
 a keyword argument.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;KW&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="s1">&#39;PHOTOS&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cat</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="s1">&#39;PHOTOS&#39;</span><span class="p">)</span>
 <span class="go">&#39;PHOTOS: File 001&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;KW&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="s1">&#39;PHOTOS&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cat</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="s1">&#39;PHOTOS&#39;</span><span class="p">)</span>
 <span class="go">&#39;PHOTOS: File 002&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;KW&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="s1">&#39;VIDEOS&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cat</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">category</span><span class="o">=</span><span class="s1">&#39;VIDEOS&#39;</span><span class="p">)</span>
 <span class="go">&#39;VIDEOS: File 001&#39;</span>
 </pre></div>
 </div>
@@ -108,36 +115,58 @@ a keyword argument.</p>
 <p>It is possible to have nested sequences (i.e. sequences depending on another).
 This is achieved by placing a placeholder with the name of the parent sequence
 and making sure a valid report number of the parent is passed on each
-<code class="docutils literal"><span class="pre">get_next</span></code> call.</p>
+<code class="docutils literal"><span class="pre">seq.next</span></code> call.</p>
 <p>Consider the example of playlists of audio files for each year. We need two
 sequence definitionsThe definition, one for playlists and one for files.
 (NOTE: year is a user-defined keyword)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">new_sequence</span><span class="p">(</span><span class="s1">&#39;PL&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{year}</span><span class="s1">: Playlist </span><span class="si">{counter}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">new_sequence</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{PL}</span><span class="s1"> &gt; Audio File </span><span class="si">{counter:02d}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pl</span> <span class="o">=</span> <span class="n">Sequence</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;PL&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{year}</span><span class="s1">: Playlist </span><span class="si">{counter}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fl</span> <span class="o">=</span> <span class="n">Sequence</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{PL}</span><span class="s1"> &gt; Audio File </span><span class="si">{counter:02d}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Let&#8217;s get some playlists for different years.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;PL&#39;</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="mi">2015</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2015</span><span class="p">)</span>
 <span class="go">&#39;2015: Playlist 1&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;PL&#39;</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="mi">2015</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2015</span><span class="p">)</span>
 <span class="go">&#39;2015: Playlist 2&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;PL&#39;</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="mi">2016</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="mi">2016</span><span class="p">)</span>
 <span class="go">&#39;2016: Playlist 1&#39;</span>
 </pre></div>
 </div>
 <p>Now let&#8217;s get some files inside the playlists, generated above.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2015: Playlist 1&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2015: Playlist 1&#39;</span><span class="p">)</span>
 <span class="go">&#39;2015: Playlist 1 &gt; Audio File 01&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2015: Playlist 1&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2015: Playlist 1&#39;</span><span class="p">)</span>
 <span class="go">&#39;2015: Playlist 1 &gt; Audio File 02&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2015: Playlist 2&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2015: Playlist 2&#39;</span><span class="p">)</span>
 <span class="go">&#39;2015: Playlist 2 &gt; Audio File 01&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 1&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 1&#39;</span><span class="p">)</span>
 <span class="go">&#39;2016: Playlist 1 &gt; Audio File 01&#39;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 1&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fl</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 1&#39;</span><span class="p">)</span>
 <span class="go">&#39;2016: Playlist 1 &gt; Audio File 02&#39;</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="iterating-capabilities">
+<h3>Iterating capabilities<a class="headerlink" href="#iterating-capabilities" title="Permalink to this headline">¶</a></h3>
+<p>An alternative is to use the <cite>SequenceIterator</cite> class instead of <cite>Sequence</cite>, in
+order to generate sequences in an iterative fashion. Replicating the
+aforementioned playlist example, we first initialize our iterator, passing the
+name of the sequence we want to iterate and any keyword arguments the
+subsequent calls would require:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">invenio_sequencegenerator.api</span> <span class="k">import</span> <span class="n">SequenceIterator</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">it</span> <span class="o">=</span> <span class="n">SequenceIterator</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 1&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We then iterate and generate 5 file names on one pass:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">islice</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">islice</span><span class="p">(</span><span class="n">it</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span> 
+<span class="go">[&#39;2016: Playlist 1 &gt; Audio File 03&#39;, &#39;2016: Playlist 1 &gt; Audio File 04&#39;,</span>
+<span class="go">&#39;2016: Playlist 1 &gt; Audio File 05&#39;, &#39;2016: Playlist 1 &gt; Audio File 06&#39;,</span>
+<span class="go">&#39;2016: Playlist 1 &gt; Audio File 07&#39;]</span>
+</pre></div>
+</div>
+<p>As you can see, this alternative approach is suitable for cases, where multiple
+consequent calls to next occur.</p>
 </div>
 <div class="section" id="pid-store-integration">
 <h3>PID store integration<a class="headerlink" href="#pid-store-integration" title="Permalink to this headline">¶</a></h3>
@@ -150,11 +179,11 @@ number, otherwise an appropriate exception would be raised.</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
     <span class="n">get_distribution</span><span class="p">(</span><span class="s1">&#39;invenio-pidstore&#39;</span><span class="p">)</span>
 
-    <span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 2&#39;</span><span class="p">)</span>
+    <span class="n">seq</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 2&#39;</span><span class="p">)</span>
     <span class="c1"># &gt;&gt;&gt; E: Parent PID does not exist</span>
 
 <span class="k">except</span> <span class="n">DistributionNotFound</span><span class="p">:</span>
-    <span class="n">get_next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 2&#39;</span><span class="p">)</span>
+    <span class="n">seq</span><span class="o">.</span><span class="n">next</span><span class="p">(</span><span class="s1">&#39;FL&#39;</span><span class="p">,</span> <span class="n">PL</span><span class="o">=</span><span class="s1">&#39;2016: Playlist 2&#39;</span><span class="p">)</span>
     <span class="c1"># &gt;&gt;&gt; &#39;2016: Playlist 2 &gt; Audio File 01&#39;</span>
 </pre></div>
 </div>
@@ -167,9 +196,9 @@ number, otherwise an appropriate exception would be raised.</p>
 <li>They must contain exactly one placeholder for the counter, named &#8216;counter&#8217;,
 which possibly contains conversion and/or format options.</li>
 <li>They can contain an optional placeholder for a parent sequence, named as the
-parent sequence, defined when the <code class="docutils literal"><span class="pre">new_sequence</span></code> API function was called.</li>
+parent sequence, defined when the <cite>Sequence.create</cite> API function was called.</li>
 <li>They can contain an arbitrary number of user-defined placeholders, which must
-be always passed as keyword arguments to the <code class="docutils literal"><span class="pre">next</span></code> API function.</li>
+be always passed as keyword arguments to the <cite>next</cite> API function.</li>
 </ul>
 </div>
 </div>
@@ -180,7 +209,7 @@ be always passed as keyword arguments to the <code class="docutils literal"><spa
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Invenio-PIDStore-ReportNumber</a></h1>
+<h1 class="logo"><a href="index.html">Invenio-SequenceGenerator</a></h1>
 
 
 
@@ -217,9 +246,9 @@ be always passed as keyword arguments to the <code class="docutils literal"><spa
 <hr />
 <ul>
     
-    <li class="toctree-l1"><a href="http://pypi.python.org/pypi/invenio-pidstore-reportnumber/">invenio-pidstore-reportnumber@PyPI</a></li>
+    <li class="toctree-l1"><a href="http://github.com/inveniosoftware/invenio-sequencegenerator">invenio-sequencegenerator@GitHub</a></li>
     
-    <li class="toctree-l1"><a href="http://github.com/inveniosoftware/invenio-pidstore-reportnumber">invenio-pidstore-reportnumber@GitHub</a></li>
+    <li class="toctree-l1"><a href="http://pypi.python.org/pypi/invenio-sequencegenerator/">invenio-sequencegenerator@PyPI</a></li>
     
 </ul>
 <div class="relations">
@@ -249,12 +278,12 @@ be always passed as keyword arguments to the <code class="docutils literal"><spa
       &copy;2016, CERN.
       
       |
-      <a href="sources/usage.txt"
+      <a href="_sources/usage.txt"
           rel="nofollow">Page source</a>
     </div>
 
     
-    <a href="https://github.com/inveniosoftware/invenio-pidstore-reportnumber" class="github">
+    <a href="https://github.com/inveniosoftware/invenio-sequencegenerator" class="github">
         <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
     </a>
     
