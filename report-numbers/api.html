@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>API Docs &mdash; Invenio-SequenceGenerator 0.1.0.dev20160000 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0.dev20160000',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Invenio-SequenceGenerator 0.1.0.dev20160000 documentation" href="index.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="Usage" href="usage.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-invenio_sequencegenerator.api">
+<span id="api-docs"></span><h1>API Docs<a class="headerlink" href="#module-invenio_sequencegenerator.api" title="Permalink to this headline">¶</a></h1>
+<p>User-level API.</p>
+<dl class="class">
+<dt id="invenio_sequencegenerator.api.SequenceIterator">
+<em class="property">class </em><code class="descclassname">invenio_sequencegenerator.api.</code><code class="descname">SequenceIterator</code><span class="sig-paren">(</span><em>sequence_name</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/api.html#SequenceIterator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.api.SequenceIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterator for sequences.</p>
+<dl class="method">
+<dt id="invenio_sequencegenerator.api.SequenceIterator.next">
+<code class="descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/api.html#SequenceIterator.next"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.api.SequenceIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get next.</p>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-invenio_sequencegenerator.models"></span><p>Models for storing counters for each pattern.</p>
+<dl class="class">
+<dt id="invenio_sequencegenerator.models.Sequence">
+<em class="property">class </em><code class="descclassname">invenio_sequencegenerator.models.</code><code class="descname">Sequence</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#Sequence"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents sequence definitions.</p>
+<dl class="classmethod">
+<dt id="invenio_sequencegenerator.models.Sequence.create">
+<em class="property">classmethod </em><code class="descname">create</code><span class="sig-paren">(</span><em>name</em>, <em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#Sequence.create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new sequence.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="invenio_sequencegenerator.models.Sequence.get">
+<em class="property">classmethod </em><code class="descname">get</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#Sequence.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the sequence with the given name.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_sequencegenerator.models.Sequence.name">
+<code class="descname">name</code><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The identifying name of the sequence.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="invenio_sequencegenerator.models.Sequence.next">
+<code class="descname">next</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#Sequence.next"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence.next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the next report number for the given sequence.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_sequencegenerator.models.Sequence.parent">
+<code class="descname">parent</code><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicate that the template depends on another one.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="invenio_sequencegenerator.models.Sequence.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#Sequence.reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the sequence&#8217;s counter for these particular kwargs.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_sequencegenerator.models.Sequence.template">
+<code class="descname">template</code><a class="headerlink" href="#invenio_sequencegenerator.models.Sequence.template" title="Permalink to this definition">¶</a></dt>
+<dd><p>The template of the sequence.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="invenio_sequencegenerator.models.TemplatedCounter">
+<em class="property">class </em><code class="descclassname">invenio_sequencegenerator.models.</code><code class="descname">TemplatedCounter</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#TemplatedCounter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.TemplatedCounter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores generated report numbers.</p>
+<dl class="attribute">
+<dt id="invenio_sequencegenerator.models.TemplatedCounter.counter">
+<code class="descname">counter</code><a class="headerlink" href="#invenio_sequencegenerator.models.TemplatedCounter.counter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="invenio_sequencegenerator.models.TemplatedCounter.create">
+<em class="property">classmethod </em><code class="descname">create</code><span class="sig-paren">(</span><em>template</em>, <em>counter=1</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#TemplatedCounter.create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.TemplatedCounter.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new report number.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="invenio_sequencegenerator.models.TemplatedCounter.next_or_create">
+<em class="property">classmethod </em><code class="descname">next_or_create</code><span class="sig-paren">(</span><em>template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#TemplatedCounter.next_or_create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.TemplatedCounter.next_or_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the next report number for the given template.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="invenio_sequencegenerator.models.TemplatedCounter.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><em>counter=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/invenio_sequencegenerator/models.html#TemplatedCounter.reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#invenio_sequencegenerator.models.TemplatedCounter.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset template&#8217;s counter.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="invenio_sequencegenerator.models.TemplatedCounter.template">
+<code class="descname">template</code><a class="headerlink" href="#invenio_sequencegenerator.models.TemplatedCounter.template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Invenio-SequenceGenerator</a></h1>
+
+
+
+<p class="blurb">Generic minter for report numbers with auto-increment per custom prefix.</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Docs</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="http://github.com/inveniosoftware/invenio-sequencegenerator">invenio-sequencegenerator@GitHub</a></li>
+    
+    <li class="toctree-l1"><a href="http://pypi.python.org/pypi/invenio-sequencegenerator/">invenio-sequencegenerator@PyPI</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="usage.html" title="previous chapter">Usage</a></li>
+      <li>Next: <a href="contributing.html" title="next chapter">Contributing</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CERN.
+      
+      |
+      <a href="_sources/api.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/inveniosoftware/invenio-sequencegenerator" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

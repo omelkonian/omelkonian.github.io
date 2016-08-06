@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>invenio_sequencegenerator.models &mdash; Invenio-SequenceGenerator 0.1.0.dev20160000 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0.dev20160000',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Invenio-SequenceGenerator 0.1.0.dev20160000 documentation" href="../../index.html" />
+    <link rel="up" title="Module code" href="../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for invenio_sequencegenerator.models</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1">#</span>
+<span class="c1"># This file is part of Invenio.</span>
+<span class="c1"># Copyright (C) 2016 CERN.</span>
+<span class="c1">#</span>
+<span class="c1"># Invenio is free software; you can redistribute it and/or</span>
+<span class="c1"># modify it under the terms of the GNU General Public License as</span>
+<span class="c1"># published by the Free Software Foundation; either version 2 of the</span>
+<span class="c1"># License, or (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># Invenio is distributed in the hope that it will be useful, but</span>
+<span class="c1"># WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span>
+<span class="c1"># General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with Invenio; if not, write to the Free Software Foundation, Inc.,</span>
+<span class="c1"># 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.</span>
+
+<span class="sd">&quot;&quot;&quot;Models for storing counters for each pattern.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">from</span> <span class="nn">invenio_db</span> <span class="k">import</span> <span class="n">db</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm.exc</span> <span class="k">import</span> <span class="n">MultipleResultsFound</span>
+
+<span class="kn">from</span> <span class="nn">.errors</span> <span class="k">import</span> <span class="n">InvalidCall</span><span class="p">,</span> <span class="n">InvalidTemplate</span><span class="p">,</span> <span class="n">NoSuchSequence</span>
+<span class="kn">from</span> <span class="nn">.utils</span> <span class="k">import</span> <span class="n">double_counter</span><span class="p">,</span> <span class="n">extract_placeholders</span>
+
+<span class="n">counter_regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">r&#39;({counter(!.)?(:.*)?})&#39;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="Sequence"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.Sequence">[docs]</a><span class="k">class</span> <span class="nc">Sequence</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Represents sequence definitions.&quot;&quot;&quot;</span>
+
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;sequencegenerator_sequence&#39;</span>
+
+    <span class="n">name</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;The identifying name of the sequence.&quot;&quot;&quot;</span>
+
+    <span class="n">template</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot;The template of the sequence.&quot;&quot;&quot;</span>
+
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+    <span class="sd">&quot;&quot;&quot;Indicate that the template depends on another one.&quot;&quot;&quot;</span>
+
+    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="Sequence.create"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.Sequence.create">[docs]</a>    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">template</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a new sequence.&quot;&quot;&quot;</span>
+        <span class="n">placeholders</span> <span class="o">=</span> <span class="n">extract_placeholders</span><span class="p">(</span><span class="n">template</span><span class="p">)</span>
+
+        <span class="c1"># Check that {counter} exists and double its brackets</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">any</span><span class="p">(</span><span class="n">counter_regex</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;{{</span><span class="si">{0}</span><span class="s1">}}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+                   <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">placeholders</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">InvalidTemplate</span><span class="p">(</span><span class="s1">&#39;No counter placeholder&#39;</span><span class="p">)</span>
+        <span class="n">template</span> <span class="o">=</span> <span class="n">double_counter</span><span class="p">(</span><span class="n">template</span><span class="p">,</span> <span class="n">counter_regex</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">begin_nested</span><span class="p">():</span>
+            <span class="c1"># Check if parent sequence exists</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">parent</span> <span class="o">=</span> <span class="n">Sequence</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+                    <span class="n">Sequence</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">in_</span><span class="p">(</span><span class="n">placeholders</span><span class="p">)</span>
+                <span class="p">)</span><span class="o">.</span><span class="n">one_or_none</span><span class="p">()</span>
+            <span class="k">except</span> <span class="n">MultipleResultsFound</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">InvalidTemplate</span><span class="p">(</span><span class="s1">&#39;More than 1 parents in template&#39;</span><span class="p">)</span>
+
+            <span class="n">seq</span> <span class="o">=</span> <span class="n">cls</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span>
+                <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">,</span>
+                <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="o">.</span><span class="n">name</span> <span class="k">if</span> <span class="n">parent</span> <span class="k">else</span> <span class="kc">None</span>
+            <span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">seq</span></div>
+
+    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="Sequence.get"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.Sequence.get">[docs]</a>    <span class="k">def</span> <span class="nf">get</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the sequence with the given name.&quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">begin_nested</span><span class="p">():</span>
+            <span class="n">seq</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">seq</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">NoSuchSequence</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">seq</span></div>
+
+<div class="viewcode-block" id="Sequence.next"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.Sequence.next">[docs]</a>    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the next report number for the given sequence.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">template</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">InvalidCall</span><span class="p">(</span><span class="s1">&#39;Invalid arguments for string formatting&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">TemplatedCounter</span><span class="o">.</span><span class="n">next_or_create</span><span class="p">(</span><span class="n">template</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Sequence.reset"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.Sequence.reset">[docs]</a>    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reset the sequence&#39;s counter for these particular kwargs.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">template</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">InvalidCall</span><span class="p">(</span><span class="s1">&#39;Invalid arguments for string formatting&#39;</span><span class="p">)</span>
+
+        <span class="n">TemplatedCounter</span><span class="o">.</span><span class="n">query</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">template</span><span class="p">)</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span></div></div>
+
+
+<div class="viewcode-block" id="TemplatedCounter"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.TemplatedCounter">[docs]</a><span class="k">class</span> <span class="nc">TemplatedCounter</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Stores generated report numbers.&quot;&quot;&quot;</span>
+
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s1">&#39;sequencegenerator_templatedcounter&#39;</span>
+
+    <span class="n">template</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                         <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">counter</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Integer</span><span class="p">,</span> <span class="n">nullable</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># Concurrency control</span>
+    <span class="n">__mapper_args__</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;version_id_col&#39;</span><span class="p">:</span> <span class="n">counter</span><span class="p">,</span>
+        <span class="c1"># &#39;version_id_generator&#39;: lambda version: 1,</span>
+    <span class="p">}</span>
+
+    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="TemplatedCounter.create"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.TemplatedCounter.create">[docs]</a>    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">template</span><span class="p">,</span> <span class="n">counter</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a new report number.&quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">begin_nested</span><span class="p">():</span>
+            <span class="n">rec</span> <span class="o">=</span> <span class="n">cls</span><span class="p">(</span>
+                <span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">,</span>
+                <span class="n">counter</span><span class="o">=</span><span class="n">counter</span>
+            <span class="p">)</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">rec</span><span class="p">)</span>
+
+            <span class="k">return</span> <span class="n">rec</span></div>
+
+    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="TemplatedCounter.next_or_create"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.TemplatedCounter.next_or_create">[docs]</a>    <span class="k">def</span> <span class="nf">next_or_create</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">template</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get the next report number for the given template.&quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">begin_nested</span><span class="p">():</span>
+            <span class="n">rec</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">filter_by</span><span class="p">(</span><span class="n">template</span><span class="o">=</span><span class="n">template</span><span class="p">)</span><span class="o">.</span><span class="n">first</span><span class="p">()</span>
+
+            <span class="k">if</span> <span class="n">rec</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">rec</span> <span class="o">=</span> <span class="n">TemplatedCounter</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">template</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">rec</span><span class="o">.</span><span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="k">return</span> <span class="n">rec</span><span class="o">.</span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">counter</span><span class="o">=</span><span class="n">rec</span><span class="o">.</span><span class="n">counter</span><span class="p">)</span><span class="o">.</span>\
+                <span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="s1">&#39;ignore&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TemplatedCounter.reset"><a class="viewcode-back" href="../../api.html#invenio_sequencegenerator.models.TemplatedCounter.reset">[docs]</a>    <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">counter</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reset template&#39;s counter.&quot;&quot;&quot;</span>
+        <span class="k">with</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">begin_nested</span><span class="p">():</span>
+
+            <span class="c1"># Ensure no children exist</span>
+            <span class="n">formatted</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">counter</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">counter</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">TemplatedCounter</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+                    <span class="n">TemplatedCounter</span><span class="o">.</span><span class="n">template</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">formatted</span><span class="p">)</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">InvalidCall</span><span class="p">(</span><span class="s1">&#39;Cannot reset sequence: Children exist&#39;</span><span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Invenio-SequenceGenerator</a></h1>
+
+
+
+<p class="blurb">Generic minter for report numbers with auto-increment per custom prefix.</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage.html">Usage</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API Docs</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../authors.html">Authors</a></li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="http://github.com/inveniosoftware/invenio-sequencegenerator">invenio-sequencegenerator@GitHub</a></li>
+    
+    <li class="toctree-l1"><a href="http://pypi.python.org/pypi/invenio-sequencegenerator/">invenio-sequencegenerator@PyPI</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, CERN.
+      
+    </div>
+
+    
+    <a href="https://github.com/inveniosoftware/invenio-sequencegenerator" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
