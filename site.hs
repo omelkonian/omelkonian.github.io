@@ -8,7 +8,7 @@ main :: IO ()
 main = hakyll $ do
 
   -- Transfer images
-  match "images/*" $ do
+  match "images/**" $ do
     route idRoute
     compile copyFileCompiler
 
@@ -23,8 +23,7 @@ main = hakyll $ do
     route $ setExtension "html"
     compile $ pandocCompiler
       >>= loadAndApplyTemplate "templates/section.html" defaultContext
-      >>= loadAndApplyTemplate "templates/default.html" defaultContext
-      -- >>= relativizeUrls
+      >>= relativizeUrls
 
   -- Generate index
   match "index.html" $ do
@@ -51,3 +50,6 @@ main = hakyll $ do
   match "templates/*" $ compile templateBodyCompiler
 
 --------------------------------------------------------------------------------
+
+
+-- order :: [Item String] -> Compiler [Item String]
