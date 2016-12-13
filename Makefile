@@ -1,5 +1,3 @@
-.PHONY: all run build clean
-
 all:
 	make build
 	make run
