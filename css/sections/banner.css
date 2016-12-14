@@ -1,0 +1,106 @@
+#banner {
+  width: 100%;
+  background: url(../../images/backgrounds/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #ffffff;
+}
+#banner:before {
+  background: rgba(1, 0, 2, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  content: "";
+  display: block;
+}
+#banner .top-banner {
+  margin-top: 50px;
+}
+#banner .top-banner #menu {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ffffff;
+  padding: 24px 30px;
+  cursor: pointer;
+}
+#banner .top-banner #menu span {
+  background-color: #ffffff;
+  display: block;
+  font-size: 0px;
+  height: 3px;
+  margin-top: -1px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 40px;
+}
+#banner .top-banner #menu span:before,
+#banner .top-banner #menu span:after {
+  background: #ffffff;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+#banner .top-banner #menu span:before {
+  -webkit-transform: translateY(-300%);
+  -moz-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+#banner .top-banner #menu span:after {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  transform: translateY(300%);
+}
+#banner .top-banner #menu:hover span,
+#banner .top-banner #menu:hover span:after,
+#banner .top-banner #menu:hover span:before {
+  background: #1f8e0a;
+}
+#banner .logo {
+  margin: 0 auto;
+  padding: 10px;
+  width: 50px;
+}
+#banner .banner {
+  margin: 50px;
+}
+#banner .banner h1 {
+  color: #1f8e0a;
+  font-size: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#banner .banner h2 {
+  color: #ffffff;
+  font-size: 45px;
+  margin: 32px 0px 50px;
+}
+#banner .banner .scroll {
+  margin: 50px 0;
+}
+#banner .banner .scroll a i {
+  font-size: 48px;
+  color: #1f8e0a;
+  padding: 12px;
+  width: 68px;
+  height: 68px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#banner .banner .scroll a i:hover {
+  background: #1f8e0a;
+  color: #ffffff;
+}

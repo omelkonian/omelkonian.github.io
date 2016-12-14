@@ -7,21 +7,10 @@ import Debug.Trace
 main :: IO ()
 main = hakyll $ do
 
-  -- Transfer images
-  match "images/**" $ do
-    route idRoute
-    compile copyFileCompiler
-
-
-  -- Compress CSS files
-  match "css/*" $ do
-    route idRoute
-    compile compressCssCompiler
-
   -- Generate sections
   match "sections/*" $ do
-    route $ setExtension "html"
-    compile $ pandocCompiler
+    route idRoute
+    compile $ getResourceBody
       >>= loadAndApplyTemplate "templates/section.html" defaultContext
       >>= relativizeUrls
 
@@ -42,14 +31,31 @@ main = hakyll $ do
         >>= relativizeUrls
 
   -- CV
-  match (fromList ["cv.pdf", "cv.html"]) $ do
+  match "cv/*" $ do
     route idRoute
     compile copyFileCompiler
 
   -- Load templates
   match "templates/*" $ compile templateBodyCompiler
 
+  -- Images
+  match "images/**" $ do
+    route idRoute
+    compile copyFileCompiler
+
+  -- CSS
+  match "css/**" $ do
+    route idRoute
+    compile compressCssCompiler
+
+  -- JS
+  match "js/**" $ do
+    route idRoute
+    compile copyFileCompiler
+
+  -- Assets
+  match "assets/**" $ do
+    route idRoute
+    compile copyFileCompiler
+
 --------------------------------------------------------------------------------
-
-
--- order :: [Item String] -> Compiler [Item String]
