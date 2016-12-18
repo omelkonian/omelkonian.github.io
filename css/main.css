@@ -4,6 +4,7 @@
 @import "sections/skills.css";
 @import "sections/contact.css";
 @import "sections/interests.css";
+@import "sections/career.css";
 
 body {
   font-family: 'Lato', sans-serif;

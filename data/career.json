@@ -1,0 +1,100 @@
+[
+    {"milestone": 2010},
+    {
+        "$title": "Bachelor Studies",
+        "$time": "Oct 2010 - Oct 2015",
+        "$place": "Athens, Greece",
+        "$venue": [
+            "University of Athens",
+            "Department of Informatics & Telecommunications"
+        ],
+        "GPA": "8.6/10",
+        "Specializations": [
+            "Knowledge & Data Management",
+            "Software"
+        ],
+        "Supervisors": [
+            "Panos Rondogiannis",
+            "Angelos Charalambidis"
+        ],
+        "Thesis": [
+            "RHEA: A Reactive, Heterogeneous, Extensible",
+            "and Abstract Framework for Dataflow Programming"
+        ]
+    },
+    {"milestone": 2014},
+    {
+        "$inverted": true,
+        "$title": "Erasmus Exchange Studies",
+        "$time": "Feb 2014 - Jul 2014",
+        "$place": "Lugano, Switzerland",
+        "$venue": [
+            "Universita della Svizzera Italiana",
+            "Faculty of Informatics"
+        ],
+        "Coordinators": [
+            "Ioannis Emiris",
+            "Marc Langheinrich"
+        ]
+    },
+    {"milestone": 2015},
+    {
+        "$title": "Research Internship",
+        "$time": "Oct 2015 - Apr 2016",
+        "$place": "Athens, Greece",
+        "$venue": [
+            "National Center for Scientific Research 'Demokritos'",
+            "Software & Knowledge Engineering Laboratory (SKEL)"
+        ],
+        "Project": [
+            "Design and Implementation of a",
+            "Dataflow Framework for Robotics"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "Talk",
+        "$time": "Dec 2015",
+        "$place": "Athens, Greece",
+        "$venue": "NCSR 'Demokritos'",
+        "Title": "A Streamful of Robots"
+    },
+    {
+        "$inverted": true,
+        "$title": "Lightning Talk",
+        "$time": "Dec 2015",
+        "$place": "Athens, Greece",
+        "$venue": "13th Programming Language Seminar, IEEE",
+        "Title": "A Dataflow Approach to Robot Programming"
+    },
+    {"milestone": 2016},
+    {
+        "$title": "Conference Attendance Grant",
+        "$time": "Jan 2016",
+        "$place": "Florida, USA",
+        "$venue": [
+            "Principles of Programming Languages (POPL)",
+            "Programming Language Mentoring Workshop (PLMW)"
+        ]
+    },
+    {
+        "$title": "Visit Travel Grant",
+        "$time": "Mar 2016",
+        "$place": "Sophia-Antipolis, France",
+        "$venue": [
+            "Campus SophiaTech",
+            "Mediterranean Days"
+        ]
+    },
+    {
+        "$title": "Technical Internship",
+        "$time": "May 2016 - May 2017",
+        "$place": "Geneva, Switzerland",
+        "$venue": [
+            "CERN",
+            "Invenio Project",
+            "CERN Document Server (CDS)"
+        ],
+        "Role": "Backend Developer"
+    }
+]

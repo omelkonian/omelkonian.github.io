@@ -1,11 +1,11 @@
 {
   "name": "flare",
   "children": [
-    {"name": "Logic Inference", "size":3000},
-    {"name": "Constraint Satisfaction", "size":3000},
-    {"name": "Theorem Proving", "size":3000},
-    {"name": "Genetic Algorithms", "size":3000},
-    {"name": "Artificial Creativity", "size":3000},
-    {"name": "Multiagent Systems", "size":3000}
+    {"name": "Logic Inference", "size":2},
+    {"name": "Constraint Satisfaction", "size":5},
+    {"name": "Theorem Proving", "size":2},
+    {"name": "Genetic Algorithms", "size":3},
+    {"name": "Artificial Creativity", "size":4},
+    {"name": "Multiagent Systems", "size":3}
   ]
 }
