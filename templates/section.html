@@ -1,11 +1,12 @@
 <section id="$title$">
   <div class="container">
-    <div class="row">
+    $if(header)$
       <h1 style="color:black"
           class="section-title wow fadeInLeft animated"
           data-wow-delay=".6s">
-          My<br> <span>$title$</span>
+          My<br> <span>$header$</span>
       </h1>
-
-  $body$
+    $endif$
+    $body$
+  </div>
 </section>

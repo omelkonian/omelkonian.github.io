@@ -3,65 +3,28 @@
   background-size: cover;
 }
 #contact .section-title {
-  color: #ffffff;
+  color: white;
 }
-#contact .input-group {
-  padding-bottom: 20px;
-}
-#contact .input-group .input-group-addon {
-  border-radius: 0px;
-  padding: 14px 26px;
-  background-color: #1f8e0a;
-  border: none;
-  position: relative;
-}
-#contact .input-group .input-group-addon i {
-  color: #ffffff;
-  font-size: 26px;
-  width: 24px;
-  height: 24px;
-}
-#contact .input-group .form-control {
-  color: #898989;
-  font-size: 22px;
-  font-weight: 300;
-  padding: 15px 20px;
-  height: 60px;
-  border: 0;
-  border-radius: 0px;
-}
-#contact .input-group .form-control:focus {
-  box-shadow: none;
-}
-#contact .input-group .large {
-  height: 120px;
-}
-#contact .btn-green {
-  color: #ffffff;
-  font-weight: 400;
-  background: #6c9c01;
-  font-size: 22px;
-  width: 100%;
-  border-radius: 0px;
-  text-transform: uppercase;
-  height: 60px;
-}
-#contact .btn-green i {
-  float: left;
-  width: 74px;
-  background: #1f8e0a;
-  margin: -12px;
-  line-height: 56px;
-  height: 60px;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+#contact {
+  padding-bottom: 70px;
 }
 #contact .address {
   margin: 0;
   padding: 0;
-  color: #ffffff;
+  color: white;
+}
+/* Social icons */
+#contact .address .contact-info {
+  padding-bottom: 30px;
+}
+#contact .address .contact-info li {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 28px;
+}
+#contact .address .contact-info li i {
+  padding-right: 15px;
+  font-size: 15px;
 }
 #contact .address h2 {
   font-size: 25px;
@@ -70,31 +33,19 @@
   margin-top: 0px;
   padding-bottom: 30px;
 }
-#contact .address .contact-info {
-  padding-bottom: 30px;
-}
-#contact .address .contact-info li {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 28px;
-}
-#contact .address .contact-info li i {
-  padding-right: 15px;
-  font-size: 15px;
-}
 #contact .address .social-icon li {
   float: left;
 }
 #contact .address .social-icon li a {
   display: inline-block;
-  color: #ffffff;
+  color: white;
   margin: 0px 5px;
 }
 #contact .address .social-icon li a i {
   font-size: 18px;
   width: 48px;
   height: 48px;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   text-align: center;
   line-height: 48px;
   vertical-align: middle;

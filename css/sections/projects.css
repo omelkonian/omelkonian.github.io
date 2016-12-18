@@ -1,10 +1,10 @@
 #projects {
   background: url(../../images/backgrounds/projects.jpg);
   background-size: cover;
-  color: #ffffff;
+  color: white;
 }
 #projects .section-title {
-  color: #000000;
+  color: #ffffff;
 }
 #projects blockquote {
   border-left: none;
@@ -22,7 +22,7 @@
   position: relative;
 }
 #projects .commant .quote {
-  background: #ffffff;
+  background: white;
   width: 64px;
   position: absolute;
   top: 12%;
@@ -33,7 +33,7 @@
 }
 #projects .commant .quote i {
   font-size: 30px;
-  color: #1f8e0a;
+  color: green;
   line-height: 65px;
 }
 #projects .commant .info {
@@ -41,7 +41,7 @@
 }
 #projects .commant .info p {
   font-size: 16px;
-  color: #ffffff;
+  color: white;
   font-weight: 400;
   font-style: italic;
   text-align: justify;
@@ -60,7 +60,7 @@
 #projects .commant .info h6 {
   font-size: 16px;
   font-weight: 700;
-  color: #1f8e0a;
+  color: green;
    word-spacing: 10px;
 }
 #projects .carousel-indicators {
@@ -69,10 +69,10 @@
 #projects .carousel-indicators li {
   border-radius: 0;
   border: none;
-  background-color: #ffffff;
+  background-color: white;
 }
 #projects .carousel-indicators .active {
-  background-color: #1f8e0a;
+  background-color: green;
   border: none;
 }
 
@@ -90,7 +90,7 @@
 }
 #projects .commant .info a {
   position: relative;
-  color: #ffffff;
+  color: white;
   margin: 0px 5px;
   left:400px;
 }

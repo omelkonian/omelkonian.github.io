@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  color: #ffffff;
+  color: white;
 }
 #banner:before {
   background: rgba(1, 0, 2, 0.7);
@@ -20,55 +20,16 @@
   margin-top: 50px;
 }
 #banner .top-banner #menu {
-  display: block;
-  width: 48px;
-  height: 48px;
-  border: 1px solid #ffffff;
-  padding: 24px 30px;
   cursor: pointer;
 }
-#banner .top-banner #menu span {
-  background-color: #ffffff;
-  display: block;
-  font-size: 0px;
-  height: 3px;
-  margin-top: -1px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 40px;
-}
-#banner .top-banner #menu span:before,
-#banner .top-banner #menu span:after {
-  background: #ffffff;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-#banner .top-banner #menu span:before {
-  -webkit-transform: translateY(-300%);
-  -moz-transform: translateY(-300%);
-  transform: translateY(-300%);
-}
-#banner .top-banner #menu span:after {
-  -webkit-transform: translateY(300%);
-  -moz-transform: translateY(300%);
-  transform: translateY(300%);
-}
-#banner .top-banner #menu:hover span,
-#banner .top-banner #menu:hover span:after,
-#banner .top-banner #menu:hover span:before {
-  background: #1f8e0a;
+#banner .fa:hover {
+  color: #1f8e0a;  
 }
 #banner .logo {
   margin: 0 auto;
   padding: 10px;
   width: 50px;
+  color: white;
 }
 #banner .banner {
   margin: 50px;
@@ -80,7 +41,7 @@
   text-transform: uppercase;
 }
 #banner .banner h2 {
-  color: #ffffff;
+  color: white;
   font-size: 45px;
   margin: 32px 0px 50px;
 }
@@ -95,12 +56,48 @@
   height: 68px;
   text-align: center;
   border-radius: 50%;
-  background: #fff;
+  background: white;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 #banner .banner .scroll a i:hover {
   background: #1f8e0a;
-  color: #ffffff;
+  color: white;
+}
+
+/* Navbar */
+#navigation {
+  background: #1f8e0a;
+  border: 1px solid #1f8e0a;
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  width: 300px;
+  z-index: 99999;
+  overflow: hidden;
+}
+#navigation .logo {
+  margin: 0 auto;
+  padding: 30px;
+  width: 100px;
+}
+#navigation .nav li {
+  border: 1px solid transparent;
+  margin: 10px 40px;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+#navigation .nav li a {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#navigation .nav li:hover,
+#navigation .nav li.active {
+  border-color: white;
 }

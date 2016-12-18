@@ -1,7 +1,9 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import Data.Monoid (mappend)
 import Hakyll
+
+import Data.Monoid (mappend)
+
 import Debug.Trace
 --------------------------------------------------------------------------------
 main :: IO ()
@@ -44,18 +46,32 @@ main = hakyll $ do
     compile copyFileCompiler
 
   -- CSS
-  match "css/**" $ do
+  match "css/**.css" $ do
     route idRoute
     compile compressCssCompiler
 
   -- JS
-  match "js/**" $ do
+  match "js/**.js" $ do
     route idRoute
     compile copyFileCompiler
+
+  -- Coffeescript
+  match "js/**.coffee" $ do
+    route $ setExtension "js"
+    compile coffeeCompiler
 
   -- Assets
   match "assets/**" $ do
     route idRoute
     compile copyFileCompiler
 
+  -- Data
+  match "data/*" $ do
+    route idRoute
+    compile copyFileCompiler
+
 --------------------------------------------------------------------------------
+ where
+  coffeeCompiler :: Compiler (Item String)
+  coffeeCompiler = getResourceString >>=
+    withItemBody (unixFilter "coffee" ["-s", "-c"])
