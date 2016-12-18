@@ -1,11 +1,11 @@
 {
   "name": "flare",
   "children": [
-    {"name": "Formal Semantics", "size":3000},
-    {"name": "Type Systems", "size":3000},
-    {"name": "Compiler Design", "size":3000},
-    {"name": "Logic/Functional", "size":3000},
-    {"name": "DSLs", "size":3000},
-    {"name": "Meta-programming", "size":3000}
+    {"name": "Formal Semantics", "size":2},
+    {"name": "Type Systems", "size":1},
+    {"name": "Compiler Design", "size":2},
+    {"name": "Logic/Functional", "size":2},
+    {"name": "Domain-Specific Languages", "size":4},
+    {"name": "Meta-programming", "size":2}
   ]
 }

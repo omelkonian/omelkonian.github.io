@@ -1,33 +1,48 @@
 #interests {
   background: url(../../images/backgrounds/interests.jpg);
   background-size: cover;
-  color: white;
+  color: black;
   text-align: center;
   word-wrap: break-word;
 }
+#interests:before {
+  background: rgba(1, 0, 2, 0.7);
+}
 
 #interests .section-title {
+  color: white;
+}
+
+#interests .black {
   color: black;
 }
 
-#interests h2 {
+#interests .white {
   color: white;
+}
+
+#interests h2 {
   font-size: 30px;
   margin: 22px 0px 30px;
 }
 
 #interests circle {
-  fill: yellow;
-  fill-opacity: .20;
+  fill: #f9c40a;
+  fill-opacity: .40;
 }
 
 #interests .leaf circle {
   fill: #1f8e0a;
-  fill-opacity: .80;
+  fill-opacity: .90;
 }
 
 #interests .leaf text {
-  font: 17px sans-serif;
-  font-weight: 400;
+  background: transparent;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  font-weight: 500;
   text-anchor: middle;
 }

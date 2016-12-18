@@ -1,9 +1,9 @@
 {
   "name": "flare",
   "children": [
-    {"name": "Dataflow Paradigm", "size":3000},
-    {"name": "Models for Concurrency", "size":3000},
-    {"name": "Implicit Parallelism", "size":3000},
-    {"name": "Scalable Systems", "size":3000}
+    {"name": "Dataflow Paradigm", "size":3},
+    {"name": "Models for Concurrency", "size":6},
+    {"name": "Implicit Parallelism", "size":5},
+    {"name": "Scalable Systems", "size":2}
   ]
 }

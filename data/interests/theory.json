@@ -1,9 +1,9 @@
 {
   "name": "flare",
   "children": [
-    {"name": "Formal Languages", "size":3000},
-    {"name": "Computability", "size":3000},
-    {"name": "Models of Computation", "size":3000},
-    {"name": "Formal Verification", "size":3000}
+    {"name": "Formal Languages", "size":2},
+    {"name": "Computability", "size":1},
+    {"name": "Models of Computation", "size":5},
+    {"name": "Formal Verification", "size":4}
   ]
 }
