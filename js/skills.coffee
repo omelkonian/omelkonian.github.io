@@ -3,20 +3,21 @@ removeXLabel = (chart) ->
        .append('text')
        .attr('class', 'x-axis-label')
        .attr('text-anchor', 'middle')
-       .attr('x', chart.width())
-       .attr('y', chart.height())
        .text('')
 
-graph = (skill) ->
-  d3.csv """data/#{skill}.csv""", (data) ->
+generateChart = (skill) ->
+  d3.csv "data/#{skill}.csv", (data) ->
     ndx = crossfilter(data)
     name = ndx.dimension((d) -> d.Name)
-    grades = name.group().reduceSum((d) -> d.Grade)
+    grades = name.group()
+                 .reduceSum((d) -> d.Grade)
+
     chart = dc
-      .rowChart("""##{skill}""")
+      .rowChart("##{skill}")
       # Size
       .width(500)
       .height(40 * ndx.size())
+      # Order
       # Axis
       .x(d3.scale.ordinal())
       .elasticX(true)
@@ -40,4 +41,4 @@ graph = (skill) ->
     chart.render()
     removeXLabel(chart)
 
-graph(skill) for skill in ['languages', 'frameworks', 'typesetting', 'webdev']
+generateChart(skill) for skill in ['languages', 'frameworks', 'typesetting', 'webdev']

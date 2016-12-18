@@ -3,6 +3,7 @@
 @import "sections/projects.css";
 @import "sections/skills.css";
 @import "sections/contact.css";
+@import "sections/interests.css";
 
 body {
   font-family: 'Lato', sans-serif;

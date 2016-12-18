@@ -4,22 +4,24 @@
   color: white;
   text-align: center;
 }
+
 #skills .section-title {
   color: white;
 }
+
 #skills h2 {
   color: white;
   font-size: 35px;
   margin: 22px 0px 30px;
 }
 
-#skills div svg g text {
+#skills text {
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: white;
+  font-size: 17px;
+  font-weight: 400;
+  fill: black;
 }
 
-#skills div svg g .axis {
+#skills .axis {
   display: none;
 }

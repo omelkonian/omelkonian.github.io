@@ -1,0 +1,11 @@
+{
+  "name": "flare",
+  "children": [
+    {"name": "Formal Semantics", "size":3000},
+    {"name": "Type Systems", "size":3000},
+    {"name": "Compiler Design", "size":3000},
+    {"name": "Logic/Functional", "size":3000},
+    {"name": "DSLs", "size":3000},
+    {"name": "Meta-programming", "size":3000}
+  ]
+}

@@ -66,7 +66,7 @@ main = hakyll $ do
     compile copyFileCompiler
 
   -- Data
-  match "data/*" $ do
+  match "data/**" $ do
     route idRoute
     compile copyFileCompiler
 
