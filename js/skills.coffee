@@ -6,7 +6,7 @@ removeXLabel = (chart) ->
        .text('')
 
 generateChart = (skill) ->
-  d3.csv "data/#{skill}.csv", (data) ->
+  d3.csv "data/skills/#{skill}.csv", (data) ->
     ndx = crossfilter(data)
     name = ndx.dimension((d) -> d.Name)
     grades = name.group()
