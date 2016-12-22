@@ -50,12 +50,17 @@ main = hakyll $ do
     route idRoute
     compile compressCssCompiler
 
+  -- CSS (Clay)
+  match "css/**.hs" $ do
+    route $ setExtension "css"
+    compile clayCompiler
+
   -- JS
   match "js/**.js" $ do
     route idRoute
     compile copyFileCompiler
 
-  -- Coffeescript
+  -- JS (Coffeescript)
   match "js/**.coffee" $ do
     route $ setExtension "js"
     compile coffeeCompiler
@@ -75,3 +80,7 @@ main = hakyll $ do
   coffeeCompiler :: Compiler (Item String)
   coffeeCompiler = getResourceString >>=
     withItemBody (unixFilter "coffee" ["-s", "-c"])
+
+  clayCompiler :: Compiler (Item String)
+  clayCompiler = getResourceString >>=
+    withItemBody (unixFilter "stack" ["runghc"])
