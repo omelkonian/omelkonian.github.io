@@ -1,22 +1,3 @@
-#career {
-  background: url(../../images/backgrounds/career.jpg);
-  background-size: cover;
-  color: black;
-  text-align: center;
-}
-#career:before {
-  background: rgba(1, 0, 2, 0.7);
-}
-
-#career .section-title {
-  color: black;
-}
-
-#career .table {
-  display: table;
-  margin: 0 auto;
-}
-
 /** timeline box structure **/
 .timeline {
   list-style: none;
