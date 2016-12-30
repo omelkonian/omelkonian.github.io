@@ -1,0 +1,11 @@
+{
+  "name": "A.I. Collection",
+  "domain": "Artificial Intelligence",
+  "description": "A personal collection of solutions to famous A.I. problems",
+  "keywords": [
+    "Python",
+    "AIMA-Python",
+    "Tcl/Tk"
+  ],
+  "github": "https://github.com/omelkonian/ai-collection"
+}

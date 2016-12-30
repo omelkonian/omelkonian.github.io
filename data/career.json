@@ -1,5 +1,4 @@
 [
-    {"milestone": 2010},
     {
         "$title": "Bachelor Studies",
         "$time": "Oct 2010 - Oct 2015",
@@ -22,7 +21,7 @@
             "and Abstract Framework for Dataflow Programming"
         ]
     },
-    {"milestone": 2014},
+    {"milestone": 2010},
     {
         "$inverted": true,
         "$title": "Erasmus Exchange Studies",
@@ -37,7 +36,7 @@
             "Marc Langheinrich"
         ]
     },
-    {"milestone": 2015},
+    {"milestone": 2014},
     {
         "$title": "Research Internship",
         "$time": "Oct 2015 - Apr 2016",
@@ -67,7 +66,7 @@
         "$venue": "13th Programming Language Seminar, IEEE",
         "Title": "A Dataflow Approach to Robot Programming"
     },
-    {"milestone": 2016},
+    {"milestone": 2015},
     {
         "$title": "Conference Attendance Grant",
         "$time": "Jan 2016",
@@ -96,5 +95,6 @@
             "CERN Document Server (CDS)"
         ],
         "Role": "Backend Developer"
-    }
+    },
+    { "milestone": 2016}
 ]

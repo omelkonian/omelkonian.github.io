@@ -5,8 +5,8 @@ removeXLabel = (chart) ->
        .attr('text-anchor', 'middle')
        .text('')
 
-generateChart = (skill) ->
-  d3.csv "data/skills/#{skill}.csv", (data) ->
+generateChart = (section, skill) ->
+  d3.csv "data/#{section}/#{skill}.csv", (data) ->
     ndx = crossfilter(data)
     name = ndx.dimension((d) -> d.Name)
     grades = name.group()
@@ -16,8 +16,7 @@ generateChart = (skill) ->
       .rowChart("##{skill}")
       # Size
       .width(500)
-      .height(40 * ndx.size())
-      # Order
+      .height((data.length+1) * 50)
       # Axis
       .x(d3.scale.ordinal())
       .elasticX(true)
@@ -38,7 +37,9 @@ generateChart = (skill) ->
       .group(grades)
 
     chart.xAxis().tickValues([])
+    # $("##{skill} rect").attr 'height', 40
     chart.render()
     removeXLabel(chart)
 
-generateChart(skill) for skill in ['languages', 'frameworks', 'typesetting', 'webdev']
+generateChart("skills", skill) for skill in ['languages', 'frameworks', 'typesetting', 'webdev']
+generateChart("grades", grade) for grade in ['year-1', 'year-2', 'year-3', 'year-4', 'year-5', 'year-6']

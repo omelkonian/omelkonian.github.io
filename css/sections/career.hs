@@ -18,7 +18,7 @@ career = "#career" ?
      color black
      textAlign (alignSide sideCenter)
      before & Colors.dim
-     ".section-title" ? color black
+     ".section-title" ? color white --black
      ".table" ?
        do display table
           margin nil auto nil auto

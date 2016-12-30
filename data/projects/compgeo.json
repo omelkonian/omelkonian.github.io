@@ -1,0 +1,10 @@
+{
+  "name": "Lines/Parabolas Intersection",
+  "domain": "Computational Geometry",
+  "description": "A graphical implementation of the 'sweep' algorithm for line and parabolas intersection, utilizing self-balancing tree structures",
+  "keywords": [
+    "Java",
+    "JFrame"
+  ],
+  "github": "https://github.com/omelkonian/line-intersection"
+}

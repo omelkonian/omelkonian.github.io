@@ -1,0 +1,11 @@
+{
+  "name": "&lambda;-Calculus Interpreter",
+  "domain": "Programming Languages",
+  "description": "An interpreter for the λ-Calculus invented by Alonzo Church in the 1930’s",
+  "keywords": [
+    "C++",
+    "Recursive-Descent Parsing"
+  ],
+  "github": "https://github.com/omelkonian/lambda-calculus-interpreter",
+  "documentation": "https://github.com/omelkonian/lambda-calculus-interpreter/blob/master/Documentation/Documentation.pdf"
+}

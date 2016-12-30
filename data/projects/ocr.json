@@ -1,0 +1,12 @@
+{
+  "name": "Morphological Text Extraction",
+  "domain": "Optical Character Recognition",
+  "description": "A GUI app for removing pattern backgrounds from text documents using mathematical morphology",
+  "keywords": [
+    "C++",
+    "ImagXpress7",
+    "C++-Builder"
+  ],
+  "github": "https://github.com/omelkonian/pattern-background-remover",
+  "documentation": "https://github.com/omelkonian/pattern-background-remover/blob/master/Paper.pdf"
+}

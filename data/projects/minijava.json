@@ -1,0 +1,13 @@
+{
+  "name": "Mini-Java",
+  "domain": "Compiler",
+  "description": "A complete compiler for a pure subset of Java",
+  "keywords": [
+    "Java",
+    "JavaCUP",
+    "JavaJTB",
+    "Iris-Datalog",
+    "Visitor-Pattern"
+  ],
+  "github": "https://github.com/omelkonian/mini-java"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Secret Word Server",
+  "domain": "Systems Programming",
+  "description": "A multi-threaded server that tries to extract a secret word from an oracle",
+  "keywords": [
+    "C++",
+    "PThreads",
+    "Sockets",
+    "Signals",
+    "Bloom-Filters"
+  ],
+  "github": "https://github.com/omelkonian/secret-word-server",
+  "documentation": "https://github.com/omelkonian/secret-word-server/blob/master/README.pdf"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Music Tools",
+  "domain": "Music Education Software",
+  "description": "A compilation of several programs/websites that aid music learning",
+  "keywords": [
+    "C/C++",
+    "HTML/CSS",
+    "Javascript",
+    "WebAudio-API"
+  ],
+  "github": "https://github.com/music-tools"
+}

@@ -1,5 +1,4 @@
 generateBubble = (interest) ->
-generateBubble = (interest) ->
   svg = d3.select("svg##{interest}")
   diameter = +svg.attr("width")
   g = svg.append("g")

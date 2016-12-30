@@ -1,0 +1,10 @@
+{
+  "name": "Airplane Image Classification",
+  "domain": "Machine Learning",
+  "description": "Implementation of two classifiers for recognizing airplane black-and-white images",
+  "keywords": [
+    "Matlab"
+  ],
+  "github": "https://github.com/omelkonian/airplane-classification",
+  "documentation": "https://github.com/omelkonian/airplane-classification/blob/master/Documentation.pdf"
+}

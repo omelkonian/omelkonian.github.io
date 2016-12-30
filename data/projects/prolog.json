@@ -1,0 +1,10 @@
+{
+  "name": "Prolog Archive",
+  "domain": "Logic Programming",
+  "description": "An extensive personal archive of Prolog programs ranging from simple exercises to complicated CSPs",
+  "keywords": [
+    "SWI-Prolog",
+    "EclipseCLP"
+  ],
+  "github": "https://github.com/omelkonian/prolog-collection"
+}

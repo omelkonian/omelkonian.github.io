@@ -1,0 +1,13 @@
+{
+  "name": "Distributed 2D Image Convolution",
+  "domain": "Distributed Systems",
+  "description": "Implementation of 3 different parallel programs for convoluting an image",
+  "keywords": [
+    "C",
+    "MPI",
+    "OpenMP",
+    "CUDA"
+  ],
+  "github": "https://github.com/omelkonian/distributed-image-convolution",
+  "documentation": "https://github.com/omelkonian/distributed-image-convolution/blob/master/Documentation.pdf"
+}

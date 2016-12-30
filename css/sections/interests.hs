@@ -17,6 +17,7 @@ main = putCss $ "#interests" ? do
   h2 ?
     do fontSize (px 30)
        margin (px 22) nil (px 30) auto
+       color white
   "circle" ?
     do "fill" -: "#f9c40a"
        "fill-opacity" -: ".40"

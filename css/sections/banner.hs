@@ -36,6 +36,7 @@ banner = "#banner" ?
           padding (px 10) auto auto auto
           width (px 50)
           color white
+          zIndex 99999
      ".banner" ?
        do margin (px 50) auto auto auto
           h1 ?

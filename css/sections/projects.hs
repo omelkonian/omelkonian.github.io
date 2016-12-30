@@ -6,6 +6,9 @@ import Colors
 import Utils (border)
 
 main :: IO ()
+main = putCss $ "#blabla" ? color white
+{-
+main :: IO ()
 main = putCss $ "#projects" ? do
   background (url "../../images/backgrounds/projects.jpg")
   backgroundSize cover
@@ -90,3 +93,4 @@ main = putCss $ "#projects" ? do
                  ".fa-book" ? hover &
                    do background Colors.documentation
                       border (px 1) solid Colors.documentation
+-}

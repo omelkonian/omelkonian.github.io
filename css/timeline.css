@@ -1,7 +1,7 @@
 /** timeline box structure **/
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 10px 0px 0px 0px;
   position: relative;
 }
 
@@ -134,14 +134,11 @@
 /** timeline content **/
 
 .tl-heading h4 {
-  margin: 0;
-  margin-bottom: 30px;
   color: #226600;
 }
 
 .tl-body li {
   font-size: 16px;
-  /*float: left;*/
 }
 
 .tl-body li .emph {

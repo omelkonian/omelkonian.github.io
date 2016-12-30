@@ -11,7 +11,7 @@ mkString = (element, obj) ->
 
 timeline = d3.select('#career ul.timeline')
 d3.json "data/career.json", (data) ->
-  for obj in data
+  for obj in data.reverse()
     if 'milestone' of obj
       # Milestone
       timeline.append 'li'
@@ -27,7 +27,6 @@ d3.json "data/career.json", (data) ->
 
       panel = li.append 'div'
       panel.attr class: 'timeline-panel'
-      console.log(panel)
 
       # Title
       panel.append 'div'
@@ -67,12 +66,3 @@ d3.json "data/career.json", (data) ->
           info.append 'br'
           mkString info, obj[key]
           info.append 'br'
-        else
-          console.log 'skip'
-
-
-
-
-
-
-

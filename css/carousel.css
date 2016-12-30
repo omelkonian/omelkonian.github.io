@@ -1,0 +1,110 @@
+#projects {
+  background: url("../../images/backgrounds/projects.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+#projects .container .section-title {
+  color: white;
+}
+
+#projects .wrapper {
+  width: 100%;
+}
+
+#projects #carousel .item {
+  background: black;
+  color: white;
+  width: 600px;
+  height: 310px;
+  border-color: black;
+  border-width: medium;
+  border-style: inset;
+}
+
+#projects #carousel img {
+  background: white;
+  width: 300px;
+  height: 300px;
+}
+
+#projects #carousel .info a {
+  word-spacing: 20px;
+}
+
+#projects #carousel .info i {
+  font-size: 30px;
+  line-height: 50px;
+}
+#projects #carousel .info i:hover {
+  color: green;
+}
+
+#projects .fa-bitbucket,
+#projects .fa-github {
+  float: left;
+}
+#projects .fa-book {
+  float: right;
+}
+
+#projects .info p {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+#projects .info h4 {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+#projects .info h5 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#projects .info h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f8e0a;
+  word-spacing: 10px;
+}
+#projects .info h7 {
+  font-family: 'Rock Salt';
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 50px;
+  color: red;
+}
+
+/* Carousel style */
+[data-carousel-3d] > [data-children-wrapper] {
+  perspective: 500px;
+}
+
+[data-carousel-3d] [data-next-button],
+[data-carousel-3d] [data-prev-button] {
+  display: none;
+}
+
+[carousel-next] {
+  content: url(../../images/logos/next2.png);
+  cursor: pointer;
+  float: right;
+  padding-right: 300px;
+}
+
+[carousel-prev] {
+  content: url(../../images/logos/prev2.png);
+  cursor: pointer;
+  float: left;
+  padding-left: 300px;
+}
