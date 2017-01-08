@@ -1,6 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
-import Clay (putCss)
+import Clay
 import Utils (chart)
 
 main :: IO ()
-main = putCss $ chart "skills"
+main = putCss $
+  do "#grades" ? background (url "../../images/backgrounds/mountain.jpg")
+     chart "grades"

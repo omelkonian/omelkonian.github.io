@@ -6,7 +6,8 @@ import Colors
 
 main :: IO ()
 main = putCss $ "#interests" ? do
-  background (url "../../images/backgrounds/interests.jpg")
+  -- background (url "../../images/backgrounds/smoke-white-on-black3.jpg")
+  background (url "../../images/backgrounds/trees.jpg")
   backgroundSize cover
   color black
   textAlign (alignSide sideCenter)

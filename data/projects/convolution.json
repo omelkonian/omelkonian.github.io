@@ -8,6 +8,7 @@
     "OpenMP",
     "CUDA"
   ],
+  "extension": "png",
   "github": "https://github.com/omelkonian/distributed-image-convolution",
   "documentation": "https://github.com/omelkonian/distributed-image-convolution/blob/master/Documentation.pdf"
 }

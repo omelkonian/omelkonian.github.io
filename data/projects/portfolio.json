@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio",
+  "domain": "Web Development",
+  "description": "The website you are currently viewing",
+  "keywords": [
+    "Haskell",
+    "Hakyll",
+    "Clay",
+    "Coffeescript"
+  ],
+  "extension": "png",
+  "github": "https://github.com/omelkonian/omelkonian.github.io"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "RHEA",
+  "domain": "Dataflow Programming",
+  "description": "A Reactive, Heterogeneous, Extensible and Abstract Framework for Dataflow Programming",
+  "keywords": [
+    "Java",
+    "Scala",
+    "Rx",
+    "Hazelcast",
+    "ROS"
+  ],
+  "extension": "png",
+  "github": "https://github.com/rhea-flow",
+  "documentation": "thesis",
+  "wip": true
+}

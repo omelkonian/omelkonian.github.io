@@ -18,7 +18,7 @@ imports :: Css
 imports = do
   importUrl "http://fonts.googleapis.com/css?family=Lato:400,900,300,900italic"
   importUrl "timeline.css"
-  let sections = ["banner", "projects", "interests", "skills", "career", "contact"]
+  let sections = ["banner", "interests", "skills", "career", "grades", "contact"]
   forM_ sections (\s -> importUrl (concat ["sections/", s, ".css"]))
 
 general :: Css
@@ -38,7 +38,7 @@ general = do
        padding nil nil nil nil
        li ? ("list-style" -: "none")
   ".row" ?
-    padding (px 40) nil (px 92) none
+    padding (px 15) nil (px 15) nil
   img ?
     do maxWidth (pct 100)
        height auto
@@ -57,11 +57,10 @@ buttons = do
   ".lg" ? width (px 260)
   (".btn-border" <> ".btn-common") ?
     do color white
+       width (pct 90)
        fontSize (px 22)
-       border (px 1) solid white
-       padding (px 16) (px 36) (px 16) (px 36)
        fontWeight (weight 400)
-       margin auto (px 36) auto (px 36)
+       border (px 1) solid white
        borderRadius (px 4) (px 4) (px 4) (px 4)
        position relative
        zIndex 10
@@ -72,7 +71,8 @@ buttons = do
             left (px 0)
             background white
        hover & color green
-       ":hover:after" & height (pct 100)
+  (".btn-border:hover:after" <> ".btn-common:hover:after") ?
+       height (pct 100)
 
   ".btn-common" ?
     do background green

@@ -10,6 +10,7 @@
     "CreateJs",
     "SCRUM"
   ],
+  "extension": "png",
   "bitbucket": "https://bitbucket.org/impero-usi/impero",
   "documentation": "https://bitbucket.org/impero-usi/impero/raw/516dea440da26be331c261643b6cf3fbdd8175aa/Documentation/A6%20-%20UML/Impero_Ass06.pdf"
 }

@@ -1,0 +1,13 @@
+{
+  "name": "Functional GA",
+  "domain": "Genetic Programming",
+  "description": "A high-level framework for implementing genetic algorithms",
+  "keywords": [
+    "Haskell",
+    "QuickCheck",
+    "MOEA"
+  ],
+  "extension": "jpg",
+  "github": "https://github.com/functional-ga",
+  "wip": true
+}

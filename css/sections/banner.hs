@@ -13,6 +13,7 @@ main = putCss $
 banner :: Css
 banner = "#banner" ?
   do width (pct 100)
+     ".banner" ? marginTop (px 100)
      backgroundImage (url "../../images/backgrounds/banner.jpg")
      backgroundSize cover
      backgroundRepeat noRepeat
@@ -33,7 +34,7 @@ banner = "#banner" ?
      ".fa" ? hover & color Colors.basicGreen
      ".logo" ?
        do margin nil auto auto auto
-          padding (px 10) auto auto auto
+          padding (px 10) (px 10) (px 10) (px 10)
           width (px 50)
           color white
           zIndex 99999

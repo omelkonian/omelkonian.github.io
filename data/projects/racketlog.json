@@ -1,0 +1,13 @@
+{
+  "name": "Racketlog",
+  "domain": "Embedded Domain-Specific Languages",
+  "description": "Prolog implementation as an EDSL",
+  "keywords": [
+    "Racket",
+    "Dr.Racket",
+    "Macros"
+  ],
+  "extension": "png",
+  "github": "https://github.com/omelkonian/racketlog",
+  "wip": true
+}

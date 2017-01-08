@@ -5,6 +5,7 @@
   "keywords": [
     "Matlab"
   ],
+  "extension": "png",
   "github": "https://github.com/omelkonian/airplane-classification",
   "documentation": "https://github.com/omelkonian/airplane-classification/blob/master/Documentation.pdf"
 }

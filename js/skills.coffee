@@ -5,7 +5,7 @@ removeXLabel = (chart) ->
        .attr('text-anchor', 'middle')
        .text('')
 
-generateChart = (section, skill) ->
+generateChart = (section, skill, renderTitle) ->
   d3.csv "data/#{section}/#{skill}.csv", (data) ->
     ndx = crossfilter(data)
     name = ndx.dimension((d) -> d.Name)
@@ -16,10 +16,12 @@ generateChart = (section, skill) ->
       .rowChart("##{skill}")
       # Size
       .width(500)
-      .height((data.length+1) * 50)
+      .height((data.length+1) * 40)
       # Axis
       .x(d3.scale.ordinal())
       .elasticX(true)
+      # Titles
+      .title(renderTitle || (p) -> p.value)
       # Appearance
       .transitionDuration(2000)
       .colorAccessor((d) -> d.value * .1)
@@ -37,9 +39,31 @@ generateChart = (section, skill) ->
       .group(grades)
 
     chart.xAxis().tickValues([])
-    # $("##{skill} rect").attr 'height', 40
     chart.render()
     removeXLabel(chart)
 
-generateChart("skills", skill) for skill in ['languages', 'frameworks', 'typesetting', 'webdev']
-generateChart("grades", grade) for grade in ['year-1', 'year-2', 'year-3', 'year-4', 'year-5', 'year-6']
+renderSkillTitle = (p) ->
+  switch (p.value)
+    when 1 then 'Beginner'
+    when 2 then 'Beginner'
+    when 3 then 'Beginner'
+    when 4 then 'Beginner'
+    when 5 then 'Intermediate'
+    when 6 then 'Intermediate'
+    when 7 then 'Intermediate'
+    when 8 then 'Advanced'
+    when 9 then 'Advanced'
+    when 10 then 'Advanced'
+    else ''
+
+generateChart("skills", skill, renderSkillTitle) for skill in ['languages'
+                                                              , 'frameworks'
+                                                              , 'typesetting'
+                                                              , 'webdev'
+                                                              , 'build-deployment']
+generateChart("grades", grade) for grade in ['year-1'
+                                           , 'year-2'
+                                           , 'year-3'
+                                           , 'year-4'
+                                           , 'year-5'
+                                           , 'year-6']

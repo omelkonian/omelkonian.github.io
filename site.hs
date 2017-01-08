@@ -37,6 +37,11 @@ main = hakyll $ do
     route idRoute
     compile copyFileCompiler
 
+  -- Thesis
+  match "thesis/*" $ do
+    route idRoute
+    compile copyFileCompiler
+
   -- Load templates
   match "templates/*" $ compile templateBodyCompiler
 

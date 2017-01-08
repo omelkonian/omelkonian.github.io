@@ -2,8 +2,3 @@ _cache/
 _site/
 .stack-work/
 node-modules/
-js/skills.js
-js/interests.js
-js/career.js
-css/main.css
-css/sections/*.css

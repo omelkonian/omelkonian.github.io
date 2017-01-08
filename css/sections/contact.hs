@@ -7,7 +7,7 @@ import Utils (border, icon)
 
 main :: IO ()
 main = putCss $ "#contact" ?
-  do background (url "../../images/backgrounds/contact.jpg")
+  do background (url "../../images/backgrounds/smoke-white-on-black3.jpg")
      backgroundSize cover
      paddingBottom (px 70)
      before & Colors.dim

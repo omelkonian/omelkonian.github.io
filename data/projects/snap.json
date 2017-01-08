@@ -1,11 +1,12 @@
 {
-  "name": "Social Network Analysis Project (S.N.A.P)",
+  "name": "Social Network Analysis Project (S.N.A.P.)",
   "domain": "Large Software Development",
   "description": "Representation and querying of social networks<br>Previous topic for ACM-SIGMOD programming contest",
   "keywords": [
     "C++",
     "GNUPlot"
   ],
+  "extension": "png",
   "github": "https://github.com/omelkonian/snap",
   "documentation": "https://github.com/omelkonian/snap/blob/master/Documentation.pdf"
 }

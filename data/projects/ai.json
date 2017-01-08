@@ -7,5 +7,6 @@
     "AIMA-Python",
     "Tcl/Tk"
   ],
+  "extension": "png",
   "github": "https://github.com/omelkonian/ai-collection"
 }

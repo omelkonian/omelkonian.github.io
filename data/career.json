@@ -5,7 +5,7 @@
         "$place": "Athens, Greece",
         "$venue": [
             "University of Athens",
-            "Department of Informatics & Telecommunications"
+            "Department of Informatics & Telecommunications @http://www.di.uoa.gr/@"
         ],
         "GPA": "8.6/10",
         "Specializations": [
@@ -13,12 +13,12 @@
             "Software"
         ],
         "Supervisors": [
-            "Panos Rondogiannis",
-            "Angelos Charalambidis"
+            "Panos Rondogiannis @http://cgi.di.uoa.gr/~prondo/@",
+            "Angelos Charalambidis @https://www.linkedin.com/in/acharal@"
         ],
         "Thesis": [
             "RHEA: A Reactive, Heterogeneous, Extensible",
-            "and Abstract Framework for Dataflow Programming"
+            "and Abstract Framework for Dataflow Programming @thesis@"
         ]
     },
     {"milestone": 2010},
@@ -29,11 +29,11 @@
         "$place": "Lugano, Switzerland",
         "$venue": [
             "Universita della Svizzera Italiana",
-            "Faculty of Informatics"
+            "Faculty of Informatics @http://www.inf.usi.ch/@"
         ],
         "Coordinators": [
-            "Ioannis Emiris",
-            "Marc Langheinrich"
+            "Ioannis Emiris @http://cgi.di.uoa.gr/~emiris/index-eng.html@",
+            "Marc Langheinrich @http://uc.inf.usi.ch/team/langheinrich/@"
         ]
     },
     {"milestone": 2014},
@@ -43,7 +43,7 @@
         "$place": "Athens, Greece",
         "$venue": [
             "National Center for Scientific Research 'Demokritos'",
-            "Software & Knowledge Engineering Laboratory (SKEL)"
+            "Software & Knowledge Engineering Laboratory (SKEL) @https://www.iit.demokritos.gr/skel@"
         ],
         "Project": [
             "Design and Implementation of a",
@@ -72,8 +72,8 @@
         "$time": "Jan 2016",
         "$place": "Florida, USA",
         "$venue": [
-            "Principles of Programming Languages (POPL)",
-            "Programming Language Mentoring Workshop (PLMW)"
+            "Principles of Programming Languages (POPL) @http://conf.researchr.org/home/POPL-2016@",
+            "Programming Language Mentoring Workshop (PLMW) @http://conf.researchr.org/home/PLMW-2016@"
         ]
     },
     {
@@ -81,8 +81,8 @@
         "$time": "Mar 2016",
         "$place": "Sophia-Antipolis, France",
         "$venue": [
-            "Campus SophiaTech",
-            "Mediterranean Days"
+            "Campus SophiaTech @http://campus.sophiatech.fr/en/@",
+            "Mediterranean Days @http://leat.unice.fr/MEDDAYS2016@"
         ]
     },
     {
@@ -90,9 +90,9 @@
         "$time": "May 2016 - May 2017",
         "$place": "Geneva, Switzerland",
         "$venue": [
-            "CERN",
-            "Invenio Project",
-            "CERN Document Server (CDS)"
+            "CERN @http://home.cern/@",
+            "Invenio Project @http://invenio-software.org/@",
+            "CERN Document Server (CDS) @http://cds.cern.ch/@"
         ],
         "Role": "Backend Developer"
     },

@@ -1,5 +1,5 @@
 #projects {
-  background: url("../../images/backgrounds/projects.jpg");
+  background: url("../../images/backgrounds/smoke-white-on-black2.jpg");
   background-size: cover;
   color: white;
   text-align: center;
@@ -24,7 +24,7 @@
   border-style: inset;
 }
 
-#projects #carousel img {
+#projects #carousel .image img {
   background: white;
   width: 300px;
   height: 300px;
@@ -87,7 +87,7 @@
 
 /* Carousel style */
 [data-carousel-3d] > [data-children-wrapper] {
-  perspective: 500px;
+  perspective: 300px;
 }
 
 [data-carousel-3d] [data-next-button],
@@ -107,4 +107,12 @@
   cursor: pointer;
   float: left;
   padding-left: 300px;
+}
+
+/* Hide images on mobile devices */
+@media (max-width: 1000px) {
+  #projects #carousel .image {
+    width: 0;
+    height: 0;
+  }
 }

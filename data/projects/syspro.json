@@ -9,6 +9,7 @@
     "Signals",
     "Bloom-Filters"
   ],
+  "extension": "png",
   "github": "https://github.com/omelkonian/secret-word-server",
   "documentation": "https://github.com/omelkonian/secret-word-server/blob/master/README.pdf"
 }

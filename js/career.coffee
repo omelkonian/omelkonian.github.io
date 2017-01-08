@@ -1,32 +1,55 @@
 mkString = (element, obj) ->
   if obj.constructor.name == 'Array'
     for s in obj
-      element.append 'span'
-             .text s
+      append element, s
       element.append 'br'
   else
-    element.append 'span'
-           .text obj
+      append element, obj
 
+append = (element, string) ->
+  [newString, link] = extractLink string
+  element.append 'span'
+         .text newString
+  if link?
+    element.append 'sup'
+           .append 'a'
+           .attr 'href', link
+           .attr 'target', '_blank'
+              .append 'i'
+              .attr class: 'fa fa-external-link'
+              .style 'color', '#779900'
+
+extractLink = (string) ->
+  pattern = /(.*)@(.+)@/
+  matches = string.match(pattern)
+  if matches
+    matches[1..2]
+  else
+    [string, null]
 
 timeline = d3.select('#career ul.timeline')
 d3.json "data/career.json", (data) ->
-  for obj in data.reverse()
-    if 'milestone' of obj
+  careerData = data.reverse()
+  for obj in careerData
+    if obj.milestone?
       # Milestone
       timeline.append 'li'
               .attr class: 'tldate'
               .text obj.milestone
     else
       li = timeline.append 'li'
-      li.attr(class: 'timeline-inverted') if '$inverted' of obj
+      li.attr class: 'timeline-inverted' if '$inverted' of obj
 
       # Circular timestamp
       li.append 'div'
         .attr class: 'tl-circ'
 
       panel = li.append 'div'
-      panel.attr class: 'timeline-panel'
+      if '$inverted' of obj
+        panel.attr class: 'timeline-panel wow fadeInRight animated'
+      else
+        panel.attr class: 'timeline-panel wow fadeInLeft animated'
+      panel.attr 'data-wow-delay', '2s'
 
       # Title
       panel.append 'div'
@@ -39,6 +62,8 @@ d3.json "data/career.json", (data) ->
       list.attr class: 'tl-body'
       # Body
       for key, value of obj
+        if key in ['$title', '$inverted']
+          continue
         info = list.append 'li'
         if key == '$time'
           info.append 'i'

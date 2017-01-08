@@ -6,6 +6,7 @@
     "C++",
     "Recursive-Descent Parsing"
   ],
+  "extension": "png",
   "github": "https://github.com/omelkonian/lambda-calculus-interpreter",
   "documentation": "https://github.com/omelkonian/lambda-calculus-interpreter/blob/master/Documentation/Documentation.pdf"
 }

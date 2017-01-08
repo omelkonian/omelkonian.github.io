@@ -1,8 +1,6 @@
 @window.next = ->
-  console.log('NEXT')
   $('#carousel').Carousel3d('next')
 @window.prev = ->
-  console.log('PREV')
   $('#carousel').Carousel3d('prev')
 
 addProject = (project) ->
@@ -26,10 +24,10 @@ addProject = (project) ->
     $('[data-carousel-3d]').Carousel3d 'appendChild',
     """
     <div class='item'>
-      <div class='col-md-6 image'>
-        <img src='images/projects/#{project}.png'>
+      <div class='col-xs-6 image'>
+        <img src='images/projects/#{project}.#{json.extension}'>
       </div>
-      <div class='col-md-6 info'>
+      <div class='col-xs-6 info'>
         #{if github_link? then github_link else ""}
         #{if bitbucket_link? then bitbucket_link else ""}
         #{if doc_link? then doc_link else ""}
@@ -37,14 +35,30 @@ addProject = (project) ->
         <h5>#{json.domain}</h5>
         <p>#{json.description}</p>
         <h6>#{json.keywords.join(' ')}</h6>
-        #{if wip? then "<h7>IN PROGRESS</h7>" else ""}
+        #{if json.wip? then "<h7>IN PROGRESS</h7>" else ""}
       </div>
     </div>
     """
 
 addProject(project) for project in [
-  'impero', 'lambda', 'ai', 'music',
-  'convolution', 'compgeo', 'interstellar',
-  'minijava', 'ocr', 'snap', 'airplane',
-  'prolog', 'syspro'
+  'rhea'
+, 'mws'
+, 'racketlog'
+, 'lambda'
+, 'minijava'
+, 'portfolio'
+, 'snap'
+, 'ocr'
+, 'interstellar'
+, 'functional-ga'
+, 'convolution'
+, 'compgeo'
+, 'impero'
+, 'ai'
+, 'prolog'
+, 'airplane'
+, 'nintendo-crypto'
+, 'music'
+, 'syspro'
+, 'household'
 ]

@@ -6,5 +6,6 @@
     "SWI-Prolog",
     "EclipseCLP"
   ],
+  "extension": "png",
   "github": "https://github.com/omelkonian/prolog-collection"
 }
