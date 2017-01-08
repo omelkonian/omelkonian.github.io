@@ -42,6 +42,11 @@ main = hakyll $ do
     route idRoute
     compile copyFileCompiler
 
+  -- Google token
+  match "google*.html" $ do
+    route idRoute
+    compile copyFileCompiler
+
   -- Load templates
   match "templates/*" $ compile templateBodyCompiler
 
