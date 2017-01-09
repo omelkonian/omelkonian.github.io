@@ -19,9 +19,6 @@
   color: white;
   width: 600px;
   height: 310px;
-  border-color: black;
-  border-width: medium;
-  border-style: inset;
 }
 
 #projects #carousel .image img {
@@ -85,28 +82,18 @@
   color: red;
 }
 
-/* Carousel style */
-[data-carousel-3d] > [data-children-wrapper] {
-  perspective: 300px;
-}
-
 [data-carousel-3d] [data-next-button],
 [data-carousel-3d] [data-prev-button] {
-  display: none;
+  cursor: pointer;
+  top: 40%;
 }
 
-[carousel-next] {
-  content: url(../../images/logos/next2.png);
-  cursor: pointer;
-  float: right;
-  padding-right: 300px;
+[data-carousel-3d] [data-prev-button] {
+  left: 40%;
 }
 
-[carousel-prev] {
-  content: url(../../images/logos/prev2.png);
-  cursor: pointer;
-  float: left;
-  padding-left: 300px;
+[data-carousel-3d] [data-next-button] {
+  right: 40%;
 }
 
 /* Hide images on mobile devices */
