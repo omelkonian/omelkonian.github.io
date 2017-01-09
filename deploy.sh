@@ -1,6 +1,9 @@
 # Temporarily store uncommited changes
 git stash
 
+# Build site
+make clean && make build
+
 # Switch to master branch
 git checkout master
 

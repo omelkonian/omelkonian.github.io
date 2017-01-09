@@ -1,7 +1,7 @@
 {
   "name": "Racketlog",
-  "domain": "Embedded Domain-Specific Languages",
-  "description": "Prolog implementation as an EDSL",
+  "domain": "Embedded DSLs",
+  "description": "Prolog implementation as a domain-specific language embedded in Racket",
   "keywords": [
     "Racket",
     "Dr.Racket",

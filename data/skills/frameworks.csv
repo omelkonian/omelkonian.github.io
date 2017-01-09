@@ -8,8 +8,9 @@ OpenGL,8
 JavaCC,7
 JavaJTB,7
 jUnit,8
-scalaSpec,6
+specs2,4
 scala.meta,8
 AIMA Python,7
 ECLiPSe CLP,9
 ROS,8
+Hazelcast,5
