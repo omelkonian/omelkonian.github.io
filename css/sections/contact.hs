@@ -37,8 +37,7 @@ main = putCss $ "#contact" ?
                          lineHeight (px 48)
                          verticalAlign middle
                          transition "all" (sec 0.2) linear (sec 0)
-                    icon ".fa-twitter" Colors.twitter
-                    icon ".fa-facebook" Colors.facebook
+                    icon ".fa-linkedin" Colors.linkedin
                     icon ".fa-database" Colors.database
                     icon ".fa-soundcloud" Colors.soundcloud
                     icon ".fa-google-plus" Colors.google
