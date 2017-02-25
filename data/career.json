@@ -96,5 +96,18 @@
         ],
         "Role": "Backend Developer"
     },
-    { "milestone": 2016}
+    { "milestone": 2016},
+    {
+        "$inverted": true,
+        "$title": "Research Internship",
+        "$time": "June 2017 - August 2017",
+        "$place": "Kaiserslautern, Germany",
+        "$venue": [
+            "Max Planck Institute for Software Systems (MPI-SWS), @https://www.mpi-sws.org/@",
+            "Software Analysis & Verification Group @http://plv.mpi-sws.org/@"
+        ],
+        "Topic": "Proof mechanization of a novel C/C++11 memory model in Coq",
+        "Supervisor": "Viktor Vafeiadis"
+    },
+    { "milestone": 2017}
 ]
