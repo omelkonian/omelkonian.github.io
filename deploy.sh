@@ -18,7 +18,7 @@ rsync -a --filter='P _site/'      \
 
 # Commit
 git add -A
-git commit -m "Publish."
+git commit -m "$(git log --oneline -1 hakyll)"
 
 # Push
 git push origin master

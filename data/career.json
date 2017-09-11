@@ -1,6 +1,6 @@
 [
     {
-        "$title": "Bachelor Studies",
+        "$title": "B.Sc. in Computer Science",
         "$time": "Oct 2010 - Oct 2015",
         "$place": "Athens, Greece",
         "$venue": [
@@ -109,5 +109,12 @@
         "Topic": "Proof mechanization of a novel C/C++11 memory model in Coq",
         "Supervisor": "Viktor Vafeiadis"
     },
-    { "milestone": 2017}
+    { "milestone": 2017},
+    {
+        "$title": "M.Sc. in Computing Science",
+        "$time": "Sept 2017 - June 2019",
+        "$place": "Utrecht, Netherlands",
+        "$venue": "Utrecht University @http://www.uu.nl@",
+        "Specialization": "Programming Technology @https://students.uu.nl/en/science/computing-science/academics/study-programme/curriculum@"
+    }
 ]
