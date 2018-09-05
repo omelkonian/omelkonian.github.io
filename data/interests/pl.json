@@ -2,10 +2,9 @@
   "name": "flare",
   "children": [
     {"name": "Formal Semantics", "size":2},
-    {"name": "Type Systems", "size":1},
-    {"name": "Compiler Design", "size":2},
-    {"name": "Logic/Functional", "size":2},
+    {"name": "Compiler Design", "size":3},
+    {"name": "Functional Programming", "size":5},
     {"name": "Domain-Specific Languages", "size":4},
-    {"name": "Meta-programming", "size":2}
+    {"name": "Static Analysis", "size":3}
   ]
 }

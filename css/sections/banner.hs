@@ -35,7 +35,7 @@ banner = "#banner" ?
      ".logo" ?
        do margin nil auto auto auto
           padding (px 10) (px 10) (px 10) (px 10)
-          width (px 50)
+          width (px 150)
           color white
           zIndex 99999
      ".banner" ?
@@ -49,21 +49,12 @@ banner = "#banner" ?
             do color white
                fontSize (px 45)
                margin (px 32) nil (px 50) auto
-          ".scroll" ?
-            do margin (px 50) nil (px 50) nil
-               a ? i ?
-                 do fontSize (px 48)
-                    color Colors.basicGreen
-                    padding (px 12) (px 12) (px 12) (px 12)
-                    width (px 68)
-                    height (px 68)
-                    textAlign (alignSide sideCenter)
-                    borderRadius (pct 50) (pct 50) (pct 50) (pct 50)
-                    background white
-                    transition "all" (sec 0.3) ease (sec 0)
-                    hover &
-                      do background Colors.basicGreen
-                         color white
+     ".btn-collapse" ?
+       do ".fa" ? (hover & color white)
+          a ? i ?
+            do fontSize (px 45)
+               width (px 68)
+               height (px 68)
 
 
 navbar :: Css
@@ -73,7 +64,7 @@ navbar = "#navigation" ? do
   color white
   paddingTop (px 50)
   textAlign (alignSide sideCenter)
-  width (px 300)
+  width (px 400)
   zIndex 99999
   overflow hidden
   ".logo" ?

@@ -6,7 +6,6 @@ import Colors
 
 main :: IO ()
 main = putCss $ "#interests" ? do
-  -- background (url "../../images/backgrounds/smoke-white-on-black3.jpg")
   background (url "../../images/backgrounds/trees.jpg")
   backgroundSize cover
   color black
@@ -29,7 +28,7 @@ main = putCss $ "#interests" ? do
        "text" ?
          do background transparent
             color white
-            fontSize (px 13)
+            fontSize (px 11)
             letterSpacing (px 1)
             textTransform uppercase
             fontWeight (weight 500)

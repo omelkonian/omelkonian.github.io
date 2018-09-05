@@ -2,7 +2,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 import Hakyll
 
-import Data.Monoid (mappend)
+import Data.Monoid ((<>))
+import Control.Monad (forM_)
 
 import Debug.Trace
 --------------------------------------------------------------------------------
@@ -23,8 +24,8 @@ main = hakyll $ do
       sections <- loadAll "sections/*"
       let strings = concatMap itemBody sections :: String
       let indexCtx =
-            listField "sections" defaultContext (return sections) `mappend`
-            constField "title" "Home"                             `mappend`
+            listField "sections" defaultContext (return sections) <>
+            constField "title" "Home"                             <>
             defaultContext
 
       getResourceBody
@@ -32,28 +33,8 @@ main = hakyll $ do
         >>= loadAndApplyTemplate "templates/default.html" indexCtx
         >>= relativizeUrls
 
-  -- CV
-  match "cv/*" $ do
-    route idRoute
-    compile copyFileCompiler
-
-  -- Thesis
-  match "thesis/*" $ do
-    route idRoute
-    compile copyFileCompiler
-
-  -- Google token
-  match "google*.html" $ do
-    route idRoute
-    compile copyFileCompiler
-
   -- Load templates
   match "templates/*" $ compile templateBodyCompiler
-
-  -- Images
-  match "images/**" $ do
-    route idRoute
-    compile copyFileCompiler
 
   -- CSS
   match "css/**.css" $ do
@@ -65,28 +46,21 @@ main = hakyll $ do
     route $ setExtension "css"
     compile clayCompiler
 
-  -- JS
-  match "js/**.js" $ do
-    route idRoute
-    compile copyFileCompiler
-
   -- JS (Coffeescript)
   match "js/**.coffee" $ do
     route $ setExtension "js"
     compile coffeeCompiler
 
-  -- Assets
-  match "assets/**" $ do
-    route idRoute
-    compile copyFileCompiler
-
-  -- Data
-  match "data/**" $ do
-    route idRoute
-    compile copyFileCompiler
+  -- Just copy the rest
+  copyAll [ "cv/*", "thesis/*", "pub_d3/*", "pub_rhea/*"
+          , "google*.html", "images/**", "js/**.js", "assets/**", "data/**"
+          ]
 
 --------------------------------------------------------------------------------
  where
+  copyAll :: [Pattern] -> Rules ()
+  copyAll = flip forM_ $ flip match (route idRoute >> compile copyFileCompiler)
+
   coffeeCompiler :: Compiler (Item String)
   coffeeCompiler = getResourceString >>=
     withItemBody (unixFilter "coffee" ["-s", "-c"])

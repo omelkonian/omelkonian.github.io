@@ -6,7 +6,7 @@ generateBubble = (interest) ->
   format = d3.format(",d")
 
   pack = d3.pack()
-           .size([diameter - 4, diameter - 4])
+           .size([diameter, diameter])
 
   d3.json "data/interests/#{interest}.json", (root) ->
     root = d3.hierarchy(root)
@@ -30,4 +30,4 @@ generateBubble = (interest) ->
         .attr("dy", "0.3em")
         .text((d) -> d.data.name.substring(0, d.r / 3))
 
-generateBubble(interest) for interest in ['theory', 'pl', 'ai', 'parallel']
+generateBubble(interest) for interest in ['theory', 'pl', 'fv', 'other']

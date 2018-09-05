@@ -5,21 +5,29 @@
 
 addProject = (project) ->
   d3.json "data/projects/#{project}.json", (json) ->
+    # Left icons
     github_link = """
       <a href="#{json.github}" target='_blank'>
         <i class='fa fa-github'></i>
       </a>
     """ if json.github?
-    doc_link = """
-      <a href="#{json.documentation}" target='_blank'>
-        <i class='fa fa-book'></i>
-      </a>
-    """ if json.documentation?
     bitbucket_link = """
         <a href="#{json.bitbucket}" target='_blank'>
           <i class='fa fa-bitbucket'></i>
         </a>
     """ if json.bitbucket?
+
+    # Right icons
+    doc_link = """
+      <a href="#{json.documentation}" target='_blank'>
+        <i class='fa fa-book'></i>
+      </a>
+    """ if json.documentation?
+    soundcloud_link = """
+      <a href="#{json.soundcloud}" target='_blank'>
+        <i class='fa fa-soundcloud'></i>
+      </a>
+    """ if json.soundcloud?
 
     $('[data-carousel-3d]').Carousel3d 'appendChild',
     """
@@ -31,6 +39,7 @@ addProject = (project) ->
         #{if github_link? then github_link else ""}
         #{if bitbucket_link? then bitbucket_link else ""}
         #{if doc_link? then doc_link else ""}
+        #{if soundcloud_link? then soundcloud_link else ""}
         <h4>#{json.name}</h4>
         <h5>#{json.domain}</h5>
         <p>#{json.description}</p>
@@ -41,7 +50,9 @@ addProject = (project) ->
     """
 
 addProject(project) for project in [
-  'rhea'
+  'ghc'
+, 'algorhythm'
+, 'rhea'
 , 'mws'
 , 'racketlog'
 , 'lambda'
@@ -53,12 +64,12 @@ addProject(project) for project in [
 , 'functional-ga'
 , 'convolution'
 , 'compgeo'
+, 'household'
 , 'impero'
-, 'ai'
-, 'prolog'
-, 'airplane'
 , 'nintendo-crypto'
 , 'music'
 , 'syspro'
-, 'household'
+, 'airplane'
+, 'ai'
+, 'prolog'
 ]

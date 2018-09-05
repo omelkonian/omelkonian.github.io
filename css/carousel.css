@@ -43,7 +43,8 @@
 #projects .fa-github {
   float: left;
 }
-#projects .fa-book {
+#projects .fa-book,
+#projects .fa-soundcloud {
   float: right;
 }
 

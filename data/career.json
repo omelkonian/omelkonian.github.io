@@ -86,6 +86,7 @@
         ]
     },
     {
+        "$inverted": true,
         "$title": "Technical Internship",
         "$time": "May 2016 - May 2017",
         "$place": "Geneva, Switzerland",
@@ -113,8 +114,44 @@
     {
         "$title": "M.Sc. in Computing Science",
         "$time": "Sept 2017 - June 2019",
-        "$place": "Utrecht, Netherlands",
+        "$place": "Utrecht, The Netherlands",
         "$venue": "Utrecht University @http://www.uu.nl@",
         "Specialization": "Programming Technology @https://students.uu.nl/en/science/computing-science/academics/study-programme/curriculum@"
+    },
+    {
+        "$inverted": true,
+        "$title": "Research Assistance",
+        "$time": "Dec 2017 - June 2019",
+        "$place": "Utrecht, The Netherlands",
+        "$venue": "Utrecht University @http://www.uu.nl@",
+        "Topic": "Developing a tower-defence game for practicing formal specification of Java programs in a Hoare-style manner",
+        "Supervisor": "Wishnu Prasetya"
+    },
+    {"milestone": 2018},
+    {
+        "$title": "Attendance Grant",
+        "$time": "Jul 2018",
+        "$place": "Princeton, USA",
+        "$venue": "DeepSpec Summer School (DSSS) @https://deepspec.org/event/dsss18/index.html@"
+    },
+    {
+        "$title": "Registration Grant",
+        "$time": "Aug 2018",
+        "$place": "Sofia, Bulgaria",
+        "$venue": [
+            "European Summer School on",
+            "Logic, Language & Information (ESSLLI) @http://esslli2018.folli.info/@"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "Talk",
+        "$time": "Aug 2018",
+        "$place": "Sofia, Bulgaria",
+        "$venue": [
+            "European Summer School on",
+            "Logic, Language & Information (ESSLLI) @http://esslli2018.folli.info/@"
+        ],
+        "Title": "D3 as a 2-MCFL"
     }
 ]

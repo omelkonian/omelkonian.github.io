@@ -1,9 +1,10 @@
 {
   "name": "flare",
   "children": [
-    {"name": "Formal Languages", "size":2},
-    {"name": "Computability", "size":1},
-    {"name": "Models of Computation", "size":5},
-    {"name": "Formal Verification", "size":4}
+    {"name": "Formal Languages", "size":3},
+    {"name": "Type Systems", "size":5},
+    {"name": "Logic Foundations", "size":2},
+    {"name": "Category Theory", "size":4},
+    {"name": "Proof Theory", "size":3}
   ]
 }

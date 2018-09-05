@@ -1,0 +1,14 @@
+{
+  "name": "AlgoRhythm",
+  "domain": "Algorithmic Music",
+  "description": "A Haskell library for algorithmic music composition",
+  "keywords": [
+    "Haskell",
+    "Euterpea",
+    "Formal Grammars",
+    "Chaos Theory"
+  ],
+  "extension": "png",
+  "github": "https://github.com/omelkonian/AlgoRhythm",
+  "soundcloud": "https://soundcloud.com/algo-rhythm-haskell"
+}

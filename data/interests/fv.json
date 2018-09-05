@@ -1,0 +1,9 @@
+{
+  "name": "flare",
+  "children": [
+    {"name": "Theorem Proving", "size":6},
+    {"name": "Program Logics", "size":3},
+    {"name": "Memory Models", "size":4},
+    {"name": "Verified Compilers", "size":5}
+  ]
+}

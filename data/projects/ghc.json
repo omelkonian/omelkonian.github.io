@@ -1,0 +1,13 @@
+{
+  "name": "Impredicative GHC",
+  "domain": "Compiler Implementation",
+  "description": "Adding impredicative types to the Glasgow Haskell Compiler (GHC)",
+  "keywords": [
+    "Haskell",
+    "GHC",
+    "Type Checker"
+  ],
+  "extension": "png",
+  "github": "https://github.com/omelkonian/ghc-fork/tree/ore",
+  "wip": true
+}

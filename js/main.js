@@ -1,4 +1,3 @@
-
 $('body').scrollspy({ target: '.navmenu' });
 
 // When we click on the LI

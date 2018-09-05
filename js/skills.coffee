@@ -56,14 +56,15 @@ renderSkillTitle = (p) ->
     when 10 then 'Advanced'
     else ''
 
-generateChart("skills", skill, renderSkillTitle) for skill in ['languages'
+generateChart("skills", skill, renderSkillTitle) for skill in [ 'languages'
                                                               , 'frameworks'
                                                               , 'typesetting'
                                                               , 'webdev'
                                                               , 'build-deployment']
-generateChart("grades", grade) for grade in ['year-1'
-                                           , 'year-2'
-                                           , 'year-3'
-                                           , 'year-4'
-                                           , 'year-5'
-                                           , 'year-6']
+generateChart("grades", grade) for grade in [ 'year-1'
+                                            , 'year-2'
+                                            , 'year-3'
+                                            , 'year-4'
+                                            , 'year-5'
+                                            , 'year-6'
+                                            , 'msc-1' ]
