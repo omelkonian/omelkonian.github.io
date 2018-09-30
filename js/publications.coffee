@@ -5,7 +5,7 @@ addPublication = (paper) ->
       <dt> #{json.venueAbr} </dt>
       <dd>
         <span class="paperTitle"> #{json.title} </span>
-        <a href="#{json.link}" target='_blank'> <i class='fa fa-book'></i> </a>
+        <a href="data/publications/#{paper}.pdf" target='_blank'> <i class='fa fa-book'></i> </a>
         <br> <span class="paperAuthors"> #{json.authors} </span>
         <br> <span class="paperVenue"> #{json.venue} </span>
       </dd>

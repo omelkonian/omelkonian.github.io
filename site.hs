@@ -52,9 +52,8 @@ main = hakyll $ do
     compile coffeeCompiler
 
   -- Just copy the rest
-  copyAll [ "cv/*", "thesis/*", "pub_d3/*", "pub_rhea/*"
-          , "google*.html", "images/**", "js/**.js", "assets/**", "data/**"
-          ]
+  copyAll [ "cv/*", "thesis/*", "google*.html", "images/**"
+          , "js/**.js", "assets/**", "data/**" ]
 
 --------------------------------------------------------------------------------
  where

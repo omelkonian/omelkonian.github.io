@@ -2,6 +2,5 @@
   "title": "RHEA: A Reactive, Heterogeneous, Extensible and Abstract Framework for Dataflow Programming",
   "authors": "Orestis Melkonian, Angelos Charalambidis",
   "venue": "Proceedings of the 5th ACM SIGPLAN International Workshop on Reactive and Event-Based Languages and Systems. ACM, 2018",
-  "venueAbr": "SPLASH '18",
-  "link": "pub_rhea"
+  "venueAbr": "SPLASH '18"
 }
