@@ -124,3 +124,4 @@ buttons = do
     do fontSize (px 25)
        borderRadius (px 15) (px 15) (px 15) (px 15)
        padding (px 10) (px 10) (px 10) (px 10)
+       marginBottom (pt 10)

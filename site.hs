@@ -66,4 +66,4 @@ main = hakyll $ do
 
   clayCompiler :: Compiler (Item String)
   clayCompiler = getResourceString >>=
-    withItemBody (unixFilter "stack" ["runghc"])
+    withItemBody (unixFilter "stack" ["exec", "runghc"])

@@ -60,11 +60,14 @@ generateChart("skills", skill, renderSkillTitle) for skill in [ 'languages'
                                                               , 'frameworks'
                                                               , 'typesetting'
                                                               , 'webdev'
-                                                              , 'build-deployment']
+                                                              , 'build-deployment'
+                                                              ]
 generateChart("grades", grade) for grade in [ 'year-1'
                                             , 'year-2'
                                             , 'year-3'
                                             , 'year-4'
                                             , 'year-5'
                                             , 'year-6'
-                                            , 'msc-1' ]
+                                            , 'msc-1'
+                                            , 'msc-2'
+                                            ]

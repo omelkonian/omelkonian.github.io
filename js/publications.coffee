@@ -12,4 +12,4 @@ addPublication = (paper) ->
       """
     )
 
-addPublication(pub) for pub in ["rhea", "d3"]
+addPublication(pub) for pub in ["formalz", "rhea", "d3"]

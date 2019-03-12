@@ -1,11 +1,12 @@
 Name,Grade
 Haskell,9
+Agda,8
+Coq,7
 Scala,8
 Racket,6
 Elm,1
 Prolog,9
 Datalog,7
-Coq,3
 SQL,7
 C/C++,9
 Java,9

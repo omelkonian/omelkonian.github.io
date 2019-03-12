@@ -1,8 +1,6 @@
-all:
-	make build
-	make run
+default: run
 
-run:
+run: build
 	stack exec site watch
 
 build:

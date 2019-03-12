@@ -18,7 +18,7 @@
         ],
         "Thesis": [
             "RHEA: A Reactive, Heterogeneous, Extensible",
-            "and Abstract Framework for Dataflow Programming @thesis@"
+            "and Abstract Framework for Dataflow Programming @data/thesis.pdf@"
         ]
     },
     {"milestone": 2010},
@@ -95,7 +95,7 @@
             "Invenio Project @http://invenio-software.org/@",
             "CERN Document Server (CDS) @http://cds.cern.ch/@"
         ],
-        "Role": "Backend Developer"
+        "Role": "Backend Web Developer"
     },
     { "milestone": 2016},
     {
@@ -120,11 +120,18 @@
     },
     {
         "$inverted": true,
-        "$title": "Research Assistance",
-        "$time": "Dec 2017 - June 2019",
+        "$title": "Haskell Developer (part-time)",
+        "$time": "Dec 2017 - Dec 2018",
         "$place": "Utrecht, The Netherlands",
         "$venue": "Utrecht University @http://www.uu.nl@",
-        "Topic": "Developing a tower-defence game for practicing formal specification of Java programs in a Hoare-style manner",
+        "Project": [
+            "FormalZ: A tower-defence game",
+            "for learning Hoare-style specifications"
+        ],
+        "Task": [
+            "Developed the SMT-based checker",
+            "between teacher and student formulas"
+        ],
         "Supervisor": "Wishnu Prasetya"
     },
     {"milestone": 2018},
@@ -152,6 +159,36 @@
             "European Summer School on",
             "Logic, Language & Information (ESSLLI) @http://esslli2018.folli.info/@"
         ],
-        "Title": "D3 as a 2-MCFL"
+        "Title": "D3 as a 2-MCFL @data/presentations/d3.pdf@"
+    },
+    {
+        "$inverted": true,
+        "$title": "Talk",
+        "$time": "Nov 2018",
+        "$place": "Boston, USA",
+        "$venue": "REBSS @ SPLASH'18 @https://2018.splashcon.org/track/rebls-2018-papers@",
+        "Title": [
+            "RHEA: A Reactive, Heterogeneous, Extensible",
+            "and Abstract Framework for Dataflow Programming @data/presentations/rhea.pdf@"
+        ]
+    },
+    {"milestone": 2018},
+    {
+        "$title": "Haskell Developer (part-time)",
+        "$time": "Jan 2019 - Jul 2019",
+        "$place": "Enshede, The Netherlands",
+        "$venue": "QBayLogic @http://qbaylogic.com/@",
+        "Project": [
+            "Implementing a GUI to inspect",
+            "optimization steps in the Cλash compiler @https://github.com/omelkonian/clash-compiler@"
+        ],
+        "Supervisor": "Christiaan Baaij"
+    },
+    {
+        "$inverted": true,
+        "$title": "Attendance Grant",
+        "$time": "Apr 2019",
+        "$place": "Birmingham, UK",
+        "$venue": "School and Workshop on Univalent Mathematics @https://unimath.github.io/bham2019/@"
     }
 ]

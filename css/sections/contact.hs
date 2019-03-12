@@ -37,11 +37,12 @@ main = putCss $ "#contact" ?
                          lineHeight (px 48)
                          verticalAlign middle
                          transition "all" (sec 0.2) linear (sec 0)
-                    icon ".fa-linkedin" Colors.linkedin
-                    icon ".fa-database" Colors.database
+                    icon ".fa-linkedin"   Colors.linkedin
+                    icon ".fa-google"     Colors.google
                     icon ".fa-soundcloud" Colors.soundcloud
-                    icon ".fa-google-plus" Colors.google
-                    icon ".fa-lastfm" Colors.lastfm
+                    icon ".fa-twitter"    Colors.twitter
+                    icon ".fa-lastfm"     Colors.lastfm
+                    icon ".fa-gamepad"    Colors.codinGame
           ".contact-info" ?
             do paddingBottom (px 30)
                li ?
