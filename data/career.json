@@ -186,9 +186,16 @@
     },
     {
         "$inverted": true,
-        "$title": "Attendance Grant",
+        "$title": "Travel Grant",
         "$time": "Apr 2019",
         "$place": "Birmingham, UK",
         "$venue": "School and Workshop on Univalent Mathematics @https://unimath.github.io/bham2019/@"
+    },
+    {
+        "$inverted": true,
+        "$title": "Travel Grant",
+        "$time": "Jun 2019",
+        "$place": "Zurich, Switzerland",
+        "$venue": "ZuriHac: A 3-day Haskell Hackathon @https://zfoh.ch/zurihac2019/@"
     }
 ]
