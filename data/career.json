@@ -1,4 +1,5 @@
 [
+    {"milestone": 2010},
     {
         "$title": "B.Sc. in Computer Science",
         "$time": "Oct 2010 - Oct 2015",
@@ -21,7 +22,7 @@
             "and Abstract Framework for Dataflow Programming @data/thesis.pdf@"
         ]
     },
-    {"milestone": 2010},
+    {"milestone": 2014},
     {
         "$inverted": true,
         "$title": "Erasmus Exchange Studies",
@@ -36,7 +37,7 @@
             "Marc Langheinrich @http://uc.inf.usi.ch/team/langheinrich/@"
         ]
     },
-    {"milestone": 2014},
+    {"milestone": 2015},
     {
         "$title": "Research Internship",
         "$time": "Oct 2015 - Apr 2016",
@@ -66,9 +67,9 @@
         "$venue": "13th Programming Language Seminar, IEEE",
         "Title": "A Dataflow Approach to Robot Programming"
     },
-    {"milestone": 2015},
+    { "milestone": 2016},
     {
-        "$title": "Conference Attendance Grant",
+        "$title": "Travel Grant",
         "$time": "Jan 2016",
         "$place": "Florida, USA",
         "$venue": [
@@ -77,7 +78,7 @@
         ]
     },
     {
-        "$title": "Visit Travel Grant",
+        "$title": "Travel Grant",
         "$time": "Mar 2016",
         "$place": "Sophia-Antipolis, France",
         "$venue": [
@@ -97,7 +98,7 @@
         ],
         "Role": "Backend Web Developer"
     },
-    { "milestone": 2016},
+    { "milestone": 2017},
     {
         "$inverted": true,
         "$title": "Research Internship",
@@ -110,7 +111,13 @@
         "Topic": "Proof mechanization of a novel C/C++11 memory model in Coq",
         "Supervisor": "Viktor Vafeiadis"
     },
-    { "milestone": 2017},
+    {
+        "$inverted": true,
+        "$title": "Travel Grant",
+        "$time": "Jul 2017",
+        "$place": "Heidelberg, Germany",
+        "$venue": "CAV Conference @http://cavconference.org/2017/@"
+    },
     {
         "$title": "M.Sc. in Computing Science",
         "$time": "Sept 2017 - June 2019",
@@ -136,7 +143,7 @@
     },
     {"milestone": 2018},
     {
-        "$title": "Attendance Grant",
+        "$title": "Travel Grant",
         "$time": "Jul 2018",
         "$place": "Princeton, USA",
         "$venue": "DeepSpec Summer School (DSSS) @https://deepspec.org/event/dsss18/index.html@"
@@ -172,7 +179,7 @@
             "and Abstract Framework for Dataflow Programming @data/presentations/rhea.pdf@"
         ]
     },
-    {"milestone": 2018},
+    {"milestone": 2019},
     {
         "$title": "Haskell Developer (part-time)",
         "$time": "Jan 2019 - Jul 2019",
