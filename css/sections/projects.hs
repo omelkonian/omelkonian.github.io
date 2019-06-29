@@ -17,5 +17,7 @@ publications = "#publications" ?
      ("dt" <> "dd") ? marginBottom (px 20)
      "dt" ? fontWeight (weight 500)
      ".paperTitle" ? fontWeight bold
+     ".paperAuthors" ? fontWeight normal
+     ".paperVenue" ? fontWeight lighter
      ".fa" ? color black
      "a" ? float floatRight
