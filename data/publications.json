@@ -1,0 +1,51 @@
+[
+  {
+    "id": "formal-bitml",
+    "title": "Formalizing BitML Calculus in Agda",
+    "authors": "Orestis Melkonian",
+    "venue": "Student Research Competition, Poster Session, 2019",
+    "venueAbr": "SRC @ ICFP '19"
+  },
+  {
+    "id": "formal-utxo",
+    "title": "Formal Investigation of the Extended UTxO Model",
+    "authors": "Orestis Melkonian, Wouter Swierstra, Manuel M.T. Chakravarty",
+    "venue": "Proceedings of the 4rd ACM SIGPLAN International Workshop on Type-Driven Development. ACM, 2019",
+    "venueAbr": "TyDe @ ICFP '19"
+  },
+  {
+    "id": "music-grammars",
+    "title": "Music as Language: Putting Probabilistic Temporal Graph Grammars to Good Use",
+    "authors": "Orestis Melkonian",
+    "venue": "Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design. ACM, 2019",
+    "venueAbr": "FARM @ ICFP '19"
+  },
+  {
+    "id": "pattrans",
+    "title": "What Constitutes a Musical Pattern?",
+    "authors": "Orestis Melkonian, Iris Yuping Ren, Wouter Swierstra, Anja Volk",
+    "venue": "Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design. ACM, 2019",
+    "venueAbr": "FARM @ ICFP '19"
+  },
+  {
+    "id": "formalz",
+    "title": "Having Fun in Learning Formal Specifications",
+    "authors": "Wishnu Prasetya, Craig Leek, Melkonian Orestis et al.",
+    "venue": "Proceedings of the 41th International Conference on Software Engineering: Software Engineering Education and Training. ACM, 2019",
+    "venueAbr": "ICSE '18"
+  },
+  {
+    "id": "rhea",
+    "title": "RHEA: A Reactive, Heterogeneous, Extensible and Abstract Framework for Dataflow Programming",
+    "authors": "Orestis Melkonian, Angelos Charalambidis",
+    "venue": "Proceedings of the 5th ACM SIGPLAN International Workshop on Reactive and Event-Based Languages and Systems. ACM, 2018",
+    "venueAbr": "REBLS @ SPLASH '18"
+  },
+  {
+    "id": "d3",
+    "title": "D<sup>3</sup> as a 2-MCFL",
+    "authors": "Konstantinos Kogkalidis, Orestis Melkonian",
+    "venue": "Student Session Proceedings of the 30th European Summer School in Logic, Language and Information. Springer, 2018",
+    "venueAbr": "ESSLLI '18"
+  }
+]

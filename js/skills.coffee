@@ -18,7 +18,7 @@ generateChart = (section, skill, renderTitle) ->
       .width(500)
       .height((data.length+1) * 40)
       # Axis
-      .x(d3.scaleOrdinal())
+      .x(d3.scale.ordinal())
       .elasticX(true)
       # Titles
       .title(renderTitle || (p) -> p.value)

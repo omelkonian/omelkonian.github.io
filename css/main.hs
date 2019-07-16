@@ -16,7 +16,7 @@ main = putCss $
 
 imports :: Css
 imports = do
-  importUrl "http://fonts.googleapis.com/css?family=Lato:400,900,300,900italic"
+  importUrl "https://fonts.googleapis.com/css?family=Lato:400,900,300,900italic"
   importUrl "timeline.css"
   let sections = ["banner", "projects", "interests", "skills", "career", "grades", "contact"]
   forM_ sections (\s -> importUrl (concat ["sections/", s, ".css"]))
