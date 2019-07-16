@@ -35,7 +35,7 @@ banner = "#banner" ?
      ".logo" ?
        do margin nil auto auto auto
           padding (px 10) (px 10) (px 10) (px 10)
-          width (px 150)
+          width (px 200)
           color white
           zIndex 99999
      ".banner" ?
