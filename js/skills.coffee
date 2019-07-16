@@ -18,7 +18,7 @@ generateChart = (section, skill, renderTitle) ->
       .width(500)
       .height((data.length+1) * 40)
       # Axis
-      .x(d3.scale.ordinal())
+      .x(d3.scaleOrdinal())
       .elasticX(true)
       # Titles
       .title(renderTitle || (p) -> p.value)
@@ -56,18 +56,20 @@ renderSkillTitle = (p) ->
     when 10 then 'Advanced'
     else ''
 
-generateChart("skills", skill, renderSkillTitle) for skill in [ 'languages'
-                                                              , 'frameworks'
-                                                              , 'typesetting'
-                                                              , 'webdev'
-                                                              , 'build-deployment'
-                                                              ]
-generateChart("grades", grade) for grade in [ 'year-1'
-                                            , 'year-2'
-                                            , 'year-3'
-                                            , 'year-4'
-                                            , 'year-5'
-                                            , 'year-6'
-                                            , 'msc-1'
-                                            , 'msc-2'
-                                            ]
+generateChart("skills", skill, renderSkillTitle) for skill in [
+  'languages'
+  , 'frameworks'
+  , 'typesetting'
+  , 'webdev'
+  , 'build-deployment'
+  ]
+generateChart("grades", grade) for grade in [
+  'year-1'
+  , 'year-2'
+  , 'year-3'
+  , 'year-4'
+  , 'year-5'
+  , 'year-6'
+  , 'msc-1'
+  , 'msc-2'
+  ]
