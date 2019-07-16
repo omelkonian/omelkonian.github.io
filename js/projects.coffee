@@ -50,5 +50,4 @@ projectEntry = (json) ->
 
 # Add all projects
 d3.json "data/projects.json", (projects) ->
-  $('[data-carousel-3d]').Carousel3d 'appendChild',
-    projectEntry project for project in projects
+  $('[data-carousel-3d]').append(projectEntry project for project in projects)
