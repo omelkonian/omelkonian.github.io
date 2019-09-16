@@ -1,8 +1,3 @@
-@window.next = ->
-  $('#carousel').Carousel3d('next')
-@window.prev = ->
-  $('#carousel').Carousel3d('prev')
-
 # Get a carousel entry for a specific project
 projectEntry = (json) ->
   # Left icons
@@ -30,7 +25,7 @@ projectEntry = (json) ->
   """ if json.soundcloud?
 
   """
-  <div class='item'>
+  <li class='item' class='slide'>
     <div class='col-xs-6 image'>
       <img src='images/projects/#{json.image}'>
     </div>
@@ -45,9 +40,17 @@ projectEntry = (json) ->
       <h6>#{json.keywords.join(' ')}</h6>
       #{if json.wip? then "<h7>IN PROGRESS</h7>" else ""}
     </div>
-  </div>
+  </li>
   """
 
 # Add all projects
 d3.json "data/projects.json", (projects) ->
-  $('[data-carousel-3d]').append(projectEntry project for project in projects)
+  $('#carousel ul').append(projectEntry project for project in projects)
+  $('#carousel').flipster({
+    style: 'carousel',
+    start: 0,
+    spacing: -0.4,
+    buttons: true,
+    loop: true,
+    scrollwheel: false
+  })

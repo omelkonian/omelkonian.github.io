@@ -123,7 +123,8 @@
         "$time": "Sept 2017 - June 2019",
         "$place": "Utrecht, The Netherlands",
         "$venue": "Utrecht University @http://www.uu.nl@",
-        "Specialization": "Programming Technology @https://students.uu.nl/en/science/computing-science/academics/study-programme/curriculum@"
+        "Specialization": "Programming Technology @https://students.uu.nl/en/science/computing-science/academics/study-programme/curriculum@",
+        "Supervisors": "Wouter Swierstra (UU) @http://www.staff.science.uu.nl/~swier004/@, Manuel Chakravarty (IOHK) @http://justtesting.org@"
     },
     {
         "$inverted": true,
@@ -173,7 +174,7 @@
         "$title": "Talk",
         "$time": "Nov 2018",
         "$place": "Boston, USA",
-        "$venue": "REBSS @ SPLASH'18 @https://2018.splashcon.org/track/rebls-2018-papers@",
+        "$venue": "REBLS @ SPLASH'18 @https://2018.splashcon.org/track/rebls-2018-papers@",
         "Title": [
             "RHEA: A Reactive, Heterogeneous, Extensible",
             "and Abstract Framework for Dataflow Programming @data/presentations/rhea.pdf@"
@@ -204,5 +205,31 @@
         "$time": "Jun 2019",
         "$place": "Zurich, Switzerland",
         "$venue": "ZuriHac: A 3-day Haskell Hackathon @https://zfoh.ch/zurihac2019/@"
+    },
+    {
+        "$title": "Talk",
+        "$time": "Aug 2019",
+        "$place": "Berlin, Germany",
+        "$venue": "TyDe @ ICFP'19 @https://icfp19.sigplan.org/home/tyde-2019@",
+        "Title": "Formal Investigation of the Extended UTxO Model @data/presentations/formal-utxo.pdf@"
+    },
+    {
+        "$title": "Talk",
+        "$time": "Aug 2019",
+        "$place": "Berlin, Germany",
+        "$venue": "FARM @ ICFP'19 @https://icfp19.sigplan.org/home/farm-2019@",
+        "Title": [
+            "Music as Language: Putting Probabilistic",
+            "Temporal Graph Grammars to Good Use @data/presentations/music-grammars.pdf@"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "PhD in Computer Science",
+        "$time": "Sept 2019 - Sep 2022",
+        "$place": "Edinburgh, Scotland",
+        "$venue": "University of Edinburgh @https://www.ed.ac.uk/@",
+        "Topic": "Blockchain Semantics in Agda",
+        "Supervisor": "Philip Wadler @http://homepages.inf.ed.ac.uk/wadler/@"
     }
 ]

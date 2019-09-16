@@ -10,15 +10,11 @@
   color: white;
 }
 
-#projects .wrapper {
-  width: 100%;
-}
-
 #projects #carousel .item {
   background: black;
   color: white;
   width: 600px;
-  height: 310px;
+  height: 300px;
 }
 
 #projects #carousel .image img {
@@ -81,26 +77,4 @@
 	font-weight: 500;
 	line-height: 50px;
   color: red;
-}
-
-[data-carousel-3d] [data-next-button],
-[data-carousel-3d] [data-prev-button] {
-  cursor: pointer;
-  top: 40%;
-}
-
-[data-carousel-3d] [data-prev-button] {
-  left: 40%;
-}
-
-[data-carousel-3d] [data-next-button] {
-  right: 40%;
-}
-
-/* Hide images on mobile devices */
-@media (max-width: 1000px) {
-  #projects #carousel .image {
-    width: 0;
-    height: 0;
-  }
 }

@@ -23,7 +23,7 @@
     ],
     "image": "algorhythm.png",
     "github": "https://github.com/omelkonian/AlgoRhythm",
-    "soundcloud": "https://soundcloud.com/algo-rhythm-haskell"
+    "soundcloud": "https://soundcloud.com/haskell-music-grammars"
   },
   {
     "name": "RHEA",
@@ -38,7 +38,7 @@
     ],
     "image": "rhea.png",
     "github": "https://github.com/rhea-flow",
-    "documentation": "thesis"
+    "documentation": "data/bsc-thesis.pdf"
   },
   {
     "name": "My Web Services (M.W.S.)",
