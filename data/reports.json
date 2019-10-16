@@ -1,0 +1,14 @@
+[
+  {
+    "id": "sc-fix",
+    "title": "Extending Intermediate Memory Model with SC accesses.",
+    "authors": "Anton Podkopaev, Ori Lahav, Orestis Melkonian, Viktor Vafeiadis",
+    "year": 2019
+  },
+  {
+    "id": "impredicative-ghc",
+    "title": "Towards Impredicative Types for GHC",
+    "authors": "Orestis Melkonian",
+    "year": 2018
+  }
+]

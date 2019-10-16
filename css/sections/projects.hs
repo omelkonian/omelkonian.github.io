@@ -9,7 +9,7 @@ main :: IO ()
 main = putCss publications
 
 publications :: Css
-publications = "#publications" ?
+publications = ("#publications" <> "#reports") ?
   do background white
      color black
      textAlign (alignSide sideLeft)
