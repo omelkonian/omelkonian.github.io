@@ -12,16 +12,14 @@ addons:
     packages:
     - nodejs
 
-before_install:
-# Download and unpack the stack executable
-- mkdir -p ~/.local/bin
-- export PATH=$HOME/.local/bin:$PATH
-- travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
-# Install CoffeeScript
+install:
+# Stack
+- curl -sSL https://get.haskellstack.org/ | sh
+- stack --version
+# CoffeeScript
 - npm install -g coffee-script@1.9.3
 
 script:
-- curl -L https://raw.githubusercontent.com/MestreLion/git-tools/master/git-restore-mtime | python
 - make build
 
 deploy:

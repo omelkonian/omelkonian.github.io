@@ -8,7 +8,7 @@
   {
     "id": "impredicative-ghc",
     "title": "Towards Impredicative Types for GHC",
-    "authors": "Orestis Melkonian",
+    "authors": "Orestis Melkonian (supervised by Alejandro Serrano Mena)",
     "year": 2018
   }
 ]

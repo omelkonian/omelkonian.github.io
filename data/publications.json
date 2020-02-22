@@ -1,5 +1,12 @@
 [
   {
+    "id": "eutxo",
+    "title": "The Extended UTXO Model",
+    "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Michael Peyton Jones, Philip Wadler",
+    "venue": "Proceedings of the 4th Workshop on Trusted Smart Contracts, 2019",
+    "venueAbr": "WTSC @ FC '20"
+  },
+  {
     "id": "formal-bitml",
     "title": "Formalizing BitML Calculus in Agda",
     "authors": "Orestis Melkonian",
