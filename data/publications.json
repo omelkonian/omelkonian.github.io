@@ -1,5 +1,19 @@
 [
   {
+    "id": "eutxoma",
+    "title": "Native Custom Tokens in the Extended UTXO Model",
+    "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler",
+    "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation, 2020",
+    "venueAbr": "ISoLA '20"
+  },
+  {
+    "id": "utxoma",
+    "title": "UTXOma: UTXO with Multi-Asset Support",
+    "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler, Joachim Zahnentferner",
+    "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation, 2020",
+    "venueAbr": "ISoLA '20"
+  },
+  {
     "id": "eutxo",
     "title": "The Extended UTXO Model",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Michael Peyton Jones, Philip Wadler",
