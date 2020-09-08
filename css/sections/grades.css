@@ -1,0 +1,45 @@
+
+#grades
+{
+  background : url("../../images/backgrounds/mountain.jpg");
+}
+
+#grades
+{
+  background-size : cover;
+  color           : rgb(255,255,255);
+  text-align      : center;
+}
+
+#grades:before
+{
+  background : rgba(1,0,2,0.7031);
+}
+
+#grades .section-title
+{
+  color : rgb(255,255,255);
+}
+
+#grades h2
+{
+  color     : rgb(255,255,255);
+  font-size : 30px;
+  margin    : 20px 0 20px auto;
+}
+
+#grades text
+{
+  font-size      : 13px;
+  font-weight    : 400;
+  fill           : black;
+  letter-spacing : 2px;
+}
+
+#grades .axis
+{
+  display : none;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

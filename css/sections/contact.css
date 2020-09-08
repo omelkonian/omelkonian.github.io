@@ -1,0 +1,139 @@
+
+#contact
+{
+  background      : url("../../images/backgrounds/smoke-white-on-black3.jpg");
+  background-size : cover;
+  padding-bottom  : 70px;
+}
+
+#contact:before
+{
+  background : rgba(1,0,2,0.7031);
+}
+
+#contact .section-title
+{
+  color : rgb(255,255,255);
+}
+
+#contact .address
+{
+  color   : rgb(255,255,255);
+  margin  : 0 0 0 0;
+  padding : 0 0 0 0;
+}
+
+#contact .address h2
+{
+  font-size      : 25px;
+  font-weight    : 700;
+  text-transform : uppercase;
+  margin-top     : 0;
+  padding-bottom : 30px;
+}
+
+
+#contact .address .social-icon li
+{
+  float : left;
+}
+
+#contact .address .social-icon li a
+{
+  display : inline-block;
+  color   : rgb(255,255,255);
+  margin  : 0 5px 0 5px;
+}
+
+#contact .address .social-icon li a i
+{
+  font-size          : 18px;
+  width              : 48px;
+  height             : 48px;
+  border-width       : 1px;
+  border-style       : solid;
+  border-color       : rgb(255,255,255);
+  text-align         : center;
+  line-height        : 48px;
+  vertical-align     : middle;
+  -webkit-transition : all 0.2s linear 0.0s;
+  -moz-transition    : all 0.2s linear 0.0s;
+  -ms-transition     : all 0.2s linear 0.0s;
+  -o-transition      : all 0.2s linear 0.0s;
+  transition         : all 0.2s linear 0.0s;
+}
+
+
+#contact .address .social-icon li a .fa-linkedin:hover
+{
+  background   : rgb(40,123,188);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(40,123,188);
+}
+
+
+#contact .address .social-icon li a .fa-google:hover
+{
+  background   : rgb(221,75,57);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(221,75,57);
+}
+
+
+#contact .address .social-icon li a .fa-soundcloud:hover
+{
+  background   : rgb(187,85,34);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(187,85,34);
+}
+
+
+#contact .address .social-icon li a .fa-twitter:hover
+{
+  background   : rgb(0,172,237);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(0,172,237);
+}
+
+
+#contact .address .social-icon li a .fa-lastfm:hover
+{
+  background   : rgb(255,0,0);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(255,0,0);
+}
+
+
+#contact .address .social-icon li a .fa-gamepad:hover
+{
+  background   : rgb(255,255,0);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(255,255,0);
+}
+
+#contact .address .contact-info
+{
+  padding-bottom : 30px;
+}
+
+#contact .address .contact-info li
+{
+  font-size   : 20px;
+  font-weight : normal;
+  line-height : 28px;
+}
+
+#contact .address .contact-info li i
+{
+  padding-right : 15px;
+  font-size     : 15px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

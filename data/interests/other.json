@@ -1,0 +1,10 @@
+{
+  "name": "flare",
+  "children": [
+    {"name": "Dataflow Paradigm", "size":6},
+    {"name": "Models for Concurrency", "size":5},
+    {"name": "SMT Solvers", "size":2},
+    {"name": "Algorithmic Music", "size":5},
+    {"name": "Artificial Creativity", "size":3}
+  ]
+}

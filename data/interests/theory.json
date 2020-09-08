@@ -1,0 +1,10 @@
+{
+  "name": "flare",
+  "children": [
+    {"name": "Formal Languages", "size":3},
+    {"name": "Type Systems", "size":5},
+    {"name": "Logic Foundations", "size":2},
+    {"name": "Category Theory", "size":4},
+    {"name": "Proof Theory", "size":3}
+  ]
+}

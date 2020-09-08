@@ -1,0 +1,235 @@
+[
+    {"milestone": 2010},
+    {
+        "$title": "B.Sc. in Computer Science",
+        "$time": "Oct 2010 - Oct 2015",
+        "$place": "Athens, Greece",
+        "$venue": [
+            "University of Athens",
+            "Department of Informatics & Telecommunications @http://www.di.uoa.gr/@"
+        ],
+        "GPA": "8.6/10",
+        "Specializations": [
+            "Knowledge & Data Management",
+            "Software"
+        ],
+        "Supervisors": [
+            "Panos Rondogiannis @http://cgi.di.uoa.gr/~prondo/@",
+            "Angelos Charalambidis @https://www.linkedin.com/in/acharal@"
+        ],
+        "Thesis": [
+            "RHEA: A Reactive, Heterogeneous, Extensible",
+            "and Abstract Framework for Dataflow Programming @data/bsc-thesis.pdf@"
+        ]
+    },
+    {"milestone": 2014},
+    {
+        "$inverted": true,
+        "$title": "Erasmus Exchange Studies",
+        "$time": "Feb 2014 - Jul 2014",
+        "$place": "Lugano, Switzerland",
+        "$venue": [
+            "Universita della Svizzera Italiana",
+            "Faculty of Informatics @http://www.inf.usi.ch/@"
+        ],
+        "Coordinators": [
+            "Ioannis Emiris @http://cgi.di.uoa.gr/~emiris/index-eng.html@",
+            "Marc Langheinrich @http://uc.inf.usi.ch/team/langheinrich/@"
+        ]
+    },
+    {"milestone": 2015},
+    {
+        "$title": "Research Internship",
+        "$time": "Oct 2015 - Apr 2016",
+        "$place": "Athens, Greece",
+        "$venue": [
+            "National Center for Scientific Research 'Demokritos'",
+            "Software & Knowledge Engineering Laboratory (SKEL) @https://www.iit.demokritos.gr/skel@"
+        ],
+        "Project": [
+            "Design and Implementation of a",
+            "Dataflow Framework for Robotics"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "Talk",
+        "$time": "Dec 2015",
+        "$place": "Athens, Greece",
+        "$venue": "NCSR 'Demokritos'",
+        "Title": "A Streamful of Robots"
+    },
+    {
+        "$inverted": true,
+        "$title": "Lightning Talk",
+        "$time": "Dec 2015",
+        "$place": "Athens, Greece",
+        "$venue": "13th Programming Language Seminar, IEEE",
+        "Title": "A Dataflow Approach to Robot Programming"
+    },
+    { "milestone": 2016},
+    {
+        "$title": "Travel Grant",
+        "$time": "Jan 2016",
+        "$place": "Florida, USA",
+        "$venue": [
+            "Principles of Programming Languages (POPL) @http://conf.researchr.org/home/POPL-2016@",
+            "Programming Language Mentoring Workshop (PLMW) @http://conf.researchr.org/home/PLMW-2016@"
+        ]
+    },
+    {
+        "$title": "Travel Grant",
+        "$time": "Mar 2016",
+        "$place": "Sophia-Antipolis, France",
+        "$venue": [
+            "Campus SophiaTech @http://campus.sophiatech.fr/en/@",
+            "Mediterranean Days @http://leat.unice.fr/MEDDAYS2016@"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "Technical Internship",
+        "$time": "May 2016 - May 2017",
+        "$place": "Geneva, Switzerland",
+        "$venue": [
+            "CERN @http://home.cern/@",
+            "Invenio Project @http://invenio-software.org/@",
+            "CERN Document Server (CDS) @http://cds.cern.ch/@"
+        ],
+        "Role": "Backend Web Developer"
+    },
+    { "milestone": 2017},
+    {
+        "$inverted": true,
+        "$title": "Research Internship",
+        "$time": "June 2017 - August 2017",
+        "$place": "Kaiserslautern, Germany",
+        "$venue": [
+            "Max Planck Institute for Software Systems (MPI-SWS), @https://www.mpi-sws.org/@",
+            "Software Analysis & Verification Group @http://plv.mpi-sws.org/@"
+        ],
+        "Topic": "Proof mechanization of a novel C/C++11 memory model in Coq",
+        "Supervisor": "Viktor Vafeiadis"
+    },
+    {
+        "$inverted": true,
+        "$title": "Travel Grant",
+        "$time": "Jul 2017",
+        "$place": "Heidelberg, Germany",
+        "$venue": "CAV Conference @http://cavconference.org/2017/@"
+    },
+    {
+        "$title": "M.Sc. in Computing Science",
+        "$time": "Sept 2017 - June 2019",
+        "$place": "Utrecht, The Netherlands",
+        "$venue": "Utrecht University @http://www.uu.nl@",
+        "Specialization": "Programming Technology @https://students.uu.nl/en/science/computing-science/academics/study-programme/curriculum@",
+        "Supervisors": "Wouter Swierstra (UU) @http://www.staff.science.uu.nl/~swier004/@, Manuel Chakravarty (IOHK) @http://justtesting.org@"
+    },
+    {
+        "$inverted": true,
+        "$title": "Haskell Developer (part-time)",
+        "$time": "Dec 2017 - Dec 2018",
+        "$place": "Utrecht, The Netherlands",
+        "$venue": "Utrecht University @http://www.uu.nl@",
+        "Project": [
+            "FormalZ: A tower-defence game",
+            "for learning Hoare-style specifications"
+        ],
+        "Task": [
+            "Developed the SMT-based checker",
+            "between teacher and student formulas"
+        ],
+        "Supervisor": "Wishnu Prasetya"
+    },
+    {"milestone": 2018},
+    {
+        "$title": "Travel Grant",
+        "$time": "Jul 2018",
+        "$place": "Princeton, USA",
+        "$venue": "DeepSpec Summer School (DSSS) @https://deepspec.org/event/dsss18/index.html@"
+    },
+    {
+        "$title": "Registration Grant",
+        "$time": "Aug 2018",
+        "$place": "Sofia, Bulgaria",
+        "$venue": [
+            "European Summer School on",
+            "Logic, Language & Information (ESSLLI) @http://esslli2018.folli.info/@"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "Talk",
+        "$time": "Aug 2018",
+        "$place": "Sofia, Bulgaria",
+        "$venue": [
+            "European Summer School on",
+            "Logic, Language & Information (ESSLLI) @http://esslli2018.folli.info/@"
+        ],
+        "Title": "D3 as a 2-MCFL @data/presentations/d3.pdf@"
+    },
+    {
+        "$inverted": true,
+        "$title": "Talk",
+        "$time": "Nov 2018",
+        "$place": "Boston, USA",
+        "$venue": "REBLS @ SPLASH'18 @https://2018.splashcon.org/track/rebls-2018-papers@",
+        "Title": [
+            "RHEA: A Reactive, Heterogeneous, Extensible",
+            "and Abstract Framework for Dataflow Programming @data/presentations/rhea.pdf@"
+        ]
+    },
+    {"milestone": 2019},
+    {
+        "$title": "Haskell Developer (part-time)",
+        "$time": "Jan 2019 - Jul 2019",
+        "$place": "Enshede, The Netherlands",
+        "$venue": "QBayLogic @http://qbaylogic.com/@",
+        "Project": [
+            "Implementing a GUI to inspect",
+            "optimization steps in the Cλash compiler @https://github.com/omelkonian/clash-compiler@"
+        ],
+        "Supervisor": "Christiaan Baaij"
+    },
+    {
+        "$inverted": true,
+        "$title": "Travel Grant",
+        "$time": "Apr 2019",
+        "$place": "Birmingham, UK",
+        "$venue": "School and Workshop on Univalent Mathematics @https://unimath.github.io/bham2019/@"
+    },
+    {
+        "$inverted": true,
+        "$title": "Travel Grant",
+        "$time": "Jun 2019",
+        "$place": "Zurich, Switzerland",
+        "$venue": "ZuriHac: A 3-day Haskell Hackathon @https://zfoh.ch/zurihac2019/@"
+    },
+    {
+        "$title": "Talk",
+        "$time": "Aug 2019",
+        "$place": "Berlin, Germany",
+        "$venue": "TyDe @ ICFP'19 @https://icfp19.sigplan.org/home/tyde-2019@",
+        "Title": "Formal Investigation of the Extended UTxO Model @data/presentations/formal-utxo.pdf@"
+    },
+    {
+        "$title": "Talk",
+        "$time": "Aug 2019",
+        "$place": "Berlin, Germany",
+        "$venue": "FARM @ ICFP'19 @https://icfp19.sigplan.org/home/farm-2019@",
+        "Title": [
+            "Music as Language: Putting Probabilistic",
+            "Temporal Graph Grammars to Good Use @data/presentations/music-grammars.pdf@"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "PhD in Computer Science",
+        "$time": "Sept 2019 - Sep 2022",
+        "$place": "Edinburgh, Scotland",
+        "$venue": "University of Edinburgh @https://www.ed.ac.uk/@",
+        "Topic": "Blockchain Semantics in Agda",
+        "Supervisor": "Philip Wadler @http://homepages.inf.ed.ac.uk/wadler/@"
+    }
+]

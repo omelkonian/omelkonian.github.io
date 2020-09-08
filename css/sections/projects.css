@@ -1,0 +1,56 @@
+
+#publications,
+#reports
+{
+  background : rgb(255,255,255);
+  color      : rgb(0,0,0);
+  text-align : left;
+  padding    : 20px 20px 20px 20px;
+}
+
+#publications dt,
+#publications dd,
+#reports dt,
+#reports dd
+{
+  margin-bottom : 20px;
+}
+
+#publications dt,
+#reports dt
+{
+  font-weight : 500;
+}
+
+#publications .paperTitle,
+#reports .paperTitle
+{
+  font-weight : bold;
+}
+
+#publications .paperAuthors,
+#reports .paperAuthors
+{
+  font-weight : normal;
+}
+
+#publications .paperVenue,
+#reports .paperVenue
+{
+  font-weight : lighter;
+}
+
+#publications .fa,
+#reports .fa
+{
+  color : rgb(0,0,0);
+}
+
+#publications a,
+#reports a
+{
+  float : right;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

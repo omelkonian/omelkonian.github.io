@@ -1,0 +1,227 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,300,900italic);
+@import url(responsive.css);
+@import url(timeline.css);
+@import url(sections/banner.css);
+@import url(sections/projects.css);
+@import url(sections/interests.css);
+@import url(sections/skills.css);
+@import url(sections/career.css);
+@import url(sections/grades.css);
+@import url(sections/contact.css);
+body
+{
+  background         : rgb(255,255,255);
+  font-family        : "Lato", sans-serif;
+  font-size          : 16px;
+  font-weight        : 300;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing    : border-box;
+  -ms-box-sizing     : border-box;
+  -o-box-sizing      : border-box;
+  box-sizing         : border-box;
+}
+
+a
+{
+  text-decoration    : none;
+  -webkit-transition : all 0.2s linear 0.0s;
+  -moz-transition    : all 0.2s linear 0.0s;
+  -ms-transition     : all 0.2s linear 0.0s;
+  -o-transition      : all 0.2s linear 0.0s;
+  transition         : all 0.2s linear 0.0s;
+}
+
+a:focus
+{
+  outline-width : none;
+}
+
+ul
+{
+  margin  : 0 0 0 0;
+  padding : 0 0 0 0;
+}
+
+ul li
+{
+  list-style : none;
+}
+
+.row
+{
+  padding : 15px 0 15px 0;
+}
+
+img
+{
+  max-width : 100%;
+  height    : auto;
+}
+
+.section-title
+{
+  text-align     : left;
+  font-size      : 42px;
+  font-weight    : 400;
+  color          : rgb(69,69,69);
+  margin         : 0 10px 50px 0;
+  padding        : 0 0 0 0;
+  text-transform : uppercase;
+}
+
+.section-title span
+{
+  font-weight : 900;
+}
+
+.fa
+{
+  color : rgb(255,255,255);
+}
+
+.lg
+{
+  width : 260px;
+}
+
+.btn-border,
+.btn-common
+{
+  color         : rgb(255,255,255);
+  width         : 90%;
+  font-size     : 22px;
+  font-weight   : 400;
+  border-width  : 1px;
+  border-style  : solid;
+  border-color  : rgb(255,255,255);
+  border-radius : 4px 4px 4px 4px;
+  position      : relative;
+  z-index       : 10;
+}
+
+.btn-border:after,
+.btn-common:after
+{
+  width      : 100%;
+  height     : 0px;
+  bottom     : 0px;
+  left       : 0px;
+  background : rgb(255,255,255);
+}
+
+.btn-border:hover,
+.btn-common:hover
+{
+  color : rgb(0,128,0);
+}
+
+.btn-info
+{
+  color         : rgb(255,255,255);
+  font-size     : 22px;
+  font-weight   : 400;
+  border-width  : 1px;
+  border-style  : solid;
+  border-color  : rgb(255,255,255);
+  border-radius : 4px 4px 4px 4px;
+  position      : relative;
+  z-index       : 10;
+}
+
+.btn-info:after
+{
+  width      : 100%;
+  height     : 0px;
+  bottom     : 0px;
+  left       : 0px;
+  background : rgb(255,255,255);
+}
+
+.btn-info:hover
+{
+  color : rgb(0,128,0);
+}
+
+.btn-border:hover:after,
+.btn-common:hover:after
+{
+  height : 100%;
+}
+
+.btn-common,
+.btn-info
+{
+  background   : rgb(0,128,0);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(0,128,0);
+}
+
+.btn-common:hover,
+.btn-info:hover
+{
+  background   : rgb(0,128,0);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(0,128,0);
+}
+
+.btn:after
+{
+  content            : "";
+  position           : absolute;
+  z-index            : -1;
+  -webkit-transition : all 0.3s ease 0.0s;
+  -moz-transition    : all 0.3s ease 0.0s;
+  -ms-transition     : all 0.3s ease 0.0s;
+  -o-transition      : all 0.3s ease 0.0s;
+  transition         : all 0.3s ease 0.0s;
+}
+
+.highlighted
+{
+  background         : rgb(255,255,255);
+  color              : rgb(31,142,10);
+  text-align         : center;
+  text-decoration    : none;
+  -webkit-transition : all 0.3s ease 0.0s;
+  -moz-transition    : all 0.3s ease 0.0s;
+  -ms-transition     : all 0.3s ease 0.0s;
+  -o-transition      : all 0.3s ease 0.0s;
+  transition         : all 0.3s ease 0.0s;
+}
+
+.highlighted:hover
+{
+  background : rgb(31,142,10);
+  color      : rgb(255,255,255);
+}
+
+.btn-collapse
+{
+  margin : 50px 0 50px 0;
+}
+
+
+.btn-collapse a i
+{
+  font-size     : 25px;
+  padding       : 12px 12px 12px 12px;
+  width         : 40px;
+  height        : 40px;
+  border-radius : 50% 50% 50% 50%;
+}
+
+
+
+.btn-collapse2 a i
+{
+  font-size     : 25px;
+  border-radius : 15px 15px 15px 15px;
+  padding       : 10px 10px 10px 10px;
+  margin-bottom : 10pt;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

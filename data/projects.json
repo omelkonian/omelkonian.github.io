@@ -1,0 +1,284 @@
+[
+  {
+    "name": "Impredicative GHC",
+    "domain": "Compiler Implementation",
+    "description": "Adding impredicative types to the Glasgow Haskell Compiler (GHC)",
+    "keywords": [
+      "Haskell",
+      "GHC",
+      "Type Checker"
+    ],
+    "image": "ghc.png",
+    "github": "https://github.com/omelkonian/ghc-fork/tree/ore"
+  },
+  {
+    "name": "AlgoRhythm",
+    "domain": "Algorithmic Music",
+    "description": "A Haskell library for algorithmic music composition",
+    "keywords": [
+      "Haskell",
+      "Euterpea",
+      "Formal Grammars",
+      "Chaos Theory"
+    ],
+    "image": "algorhythm.png",
+    "github": "https://github.com/omelkonian/AlgoRhythm",
+    "soundcloud": "https://soundcloud.com/haskell-music-grammars"
+  },
+  {
+    "name": "RHEA",
+    "domain": "Dataflow Programming",
+    "description": "A Reactive, Heterogeneous, Extensible and Abstract Framework for Dataflow Programming",
+    "keywords": [
+      "Java",
+      "Scala",
+      "Rx",
+      "Hazelcast",
+      "ROS"
+    ],
+    "image": "rhea.png",
+    "github": "https://github.com/rhea-flow",
+    "documentation": "data/bsc-thesis.pdf"
+  },
+  {
+    "name": "My Web Services (M.W.S.)",
+    "domain": "Web Development",
+    "description": "Meta-framework for automatically generating full-stack CRUD web apps",
+    "keywords": [
+      "Scala",
+      "scala.meta",
+      "Play",
+      "Slick",
+      "Coffeescript",
+      "AngularJS"
+    ],
+    "image": "mws.png",
+    "github": "https://github.com/my-web-services/"
+  },
+  {
+    "name": "Racketlog",
+    "domain": "Embedded DSLs",
+    "description": "Prolog implementation as a domain-specific language embedded in Racket",
+    "keywords": [
+      "Racket",
+      "Dr.Racket",
+      "Macros"
+    ],
+    "image": "racketlog.png",
+    "github": "https://github.com/omelkonian/racketlog"
+  },
+  {
+    "name": "&lambda;-Calculus Interpreter",
+    "domain": "Programming Languages",
+    "description": "An interpreter for the λ-Calculus invented by Alonzo Church in the 1930’s",
+    "keywords": [
+      "C++",
+      "Recursive-Descent Parsing"
+    ],
+    "image": "lambda.png",
+    "github": "https://github.com/omelkonian/lambda-calculus-interpreter",
+    "documentation": "https://github.com/omelkonian/lambda-calculus-interpreter/blob/master/Documentation/Documentation.pdf"
+  },
+  {
+    "name": "Mini-Java",
+    "domain": "Compiler",
+    "description": "A complete compiler for a pure subset of Java",
+    "keywords": [
+      "Java",
+      "JavaCUP",
+      "JavaJTB",
+      "Iris-Datalog",
+      "Visitor-Pattern"
+    ],
+    "image": "minijava.png",
+    "github": "https://github.com/omelkonian/mini-java"
+  },
+  {
+    "name": "Portfolio",
+    "domain": "Web Development",
+    "description": "The website you are currently viewing",
+    "keywords": [
+      "Haskell",
+      "Hakyll",
+      "Clay",
+      "Coffeescript"
+    ],
+    "image": "portfolio.png",
+    "github": "https://github.com/omelkonian/omelkonian.github.io/tree/hakyll"
+  },
+  {
+    "name": "Social Network Analysis Project (S.N.A.P.)",
+    "domain": "Large Software Development",
+    "description": "Representation and querying of social networks<br>Previous topic for ACM-SIGMOD programming contest",
+    "keywords": [
+      "C++",
+      "GNUPlot"
+    ],
+    "image": "snap.png",
+    "github": "https://github.com/omelkonian/snap",
+    "documentation": "https://github.com/omelkonian/snap/blob/master/Documentation.pdf"
+  },
+  {
+    "name": "Morphological Text Extraction",
+    "domain": "Optical Character Recognition",
+    "description": "A GUI app for removing pattern backgrounds from text documents using mathematical morphology",
+    "keywords": [
+      "C++",
+      "ImagXpress7",
+      "C++-Builder"
+    ],
+    "image": "ocr.png",
+    "github": "https://github.com/omelkonian/pattern-background-remover",
+    "documentation": "https://github.com/omelkonian/pattern-background-remover/blob/master/Paper.pdf"
+  },
+  {
+    "name": "Interstellar: The Game",
+    "domain": "Computer Graphics",
+    "description": "A 3-D video game, where the user controls a spaceship and avoids asteroids",
+    "keywords": [
+      "C++",
+      "OpenGL",
+      "Photoshop"
+    ],
+    "image": "interstellar.png",
+    "github": "https://github.com/omelkonian/interstellar",
+    "documentation": "https://github.com/omelkonian/interstellar/blob/master/README.pdf"
+  },
+  {
+    "name": "Functional GA",
+    "domain": "Genetic Programming",
+    "description": "A high-level framework for implementing genetic algorithms",
+    "keywords": [
+      "Haskell",
+      "QuickCheck",
+      "MOEA"
+    ],
+    "image": "functional-ga.jpg",
+    "github": "https://github.com/functional-ga"
+  },
+  {
+    "name": "Distributed 2D Image Convolution",
+    "domain": "Distributed Systems",
+    "description": "Implementation of 3 different parallel programs for convoluting an image",
+    "keywords": [
+      "C",
+      "MPI",
+      "OpenMP",
+      "CUDA"
+    ],
+    "image": "convolution.png",
+    "github": "https://github.com/omelkonian/distributed-image-convolution",
+    "documentation": "https://github.com/omelkonian/distributed-image-convolution/blob/master/Documentation.pdf"
+  },
+  {
+    "name": "Lines/Parabolas Intersection",
+    "domain": "Computational Geometry",
+    "description": "A graphical implementation of the 'sweep' algorithm for line and parabolas intersection, utilizing self-balancing tree structures",
+    "keywords": [
+      "Java",
+      "JFrame"
+    ],
+    "image": "compgeo.png",
+    "github": "https://github.com/omelkonian/line-intersection"
+  },
+  {
+    "name": "Yesod Household",
+    "domain": "Web development",
+    "description": "Simple web service for managing one's household expenses",
+    "keywords": [
+      "Haskell",
+      "Yesod"
+    ],
+    "image": "household.png",
+    "github": "https://github.com/omelkonian/yesod-household"
+  },
+  {
+    "name": "Impero!",
+    "domain": "Web Development",
+    "description": "Massive multiplayer online asychronous turn-based strategy game",
+    "keywords": [
+      "Java",
+      "Javascript",
+      "MongoDB",
+      "REST",
+      "CreateJs",
+      "SCRUM"
+    ],
+    "image": "impero.png",
+    "bitbucket": "https://bitbucket.org/impero-usi/impero",
+    "documentation": "https://bitbucket.org/impero-usi/impero/raw/516dea440da26be331c261643b6cf3fbdd8175aa/Documentation/A6%20-%20UML/Impero_Ass06.pdf"
+  },
+  {
+    "name": "Nintendo Crypto Challenge",
+    "domain": "Cryptography",
+    "description": "Factorization of Polynomials over F2",
+    "keywords": [
+      "C++",
+      "Finite-Field-Arithmetic"
+    ],
+    "image": "nintendo-crypto.jpg",
+    "github": "https://github.com/omelkonian/nintendo-crypto"
+  },
+  {
+    "name": "Music Tools",
+    "domain": "Music Education Software",
+    "description": "A compilation of several programs/websites that aid music learning",
+    "keywords": [
+      "C/C++",
+      "HTML/CSS",
+      "Javascript",
+      "WebAudio-API"
+    ],
+    "image": "music.png",
+    "github": "https://github.com/music-tools"
+  },
+  {
+    "name": "Secret Word Server",
+    "domain": "Systems Programming",
+    "description": "A multi-threaded server that tries to extract a secret word from an oracle",
+    "keywords": [
+      "C++",
+      "PThreads",
+      "Sockets",
+      "Signals",
+      "Bloom-Filters"
+    ],
+    "image": "syspro.png",
+    "github": "https://github.com/omelkonian/secret-word-server",
+    "documentation": "https://github.com/omelkonian/secret-word-server/blob/master/README.pdf"
+  },
+  {
+    "name": "Airplane Image Classification",
+    "domain": "Machine Learning",
+    "description": "Implementation of two classifiers for recognizing airplane black-and-white images",
+    "keywords": [
+      "Matlab"
+    ],
+    "image": "airplane.png",
+    "github": "https://github.com/omelkonian/airplane-classification",
+    "documentation": "https://github.com/omelkonian/airplane-classification/blob/master/Documentation.pdf"
+  },
+  {
+    "name": "A.I. Collection",
+    "domain": "Artificial Intelligence",
+    "description": "A personal collection of solutions to famous A.I. problems",
+    "keywords": [
+      "Python",
+      "AIMA-Python",
+      "Tcl/Tk"
+    ],
+    "image": "ai.png",
+    "github": "https://github.com/omelkonian/ai-collection"
+  },
+  {
+    "name": "Prolog Archive",
+    "domain": "Logic Programming",
+    "description": "An extensive personal archive of Prolog programs ranging from simple exercises to complicated CSPs",
+    "keywords": [
+      "SWI-Prolog",
+      "EclipseCLP"
+    ],
+    "image": "prolog.png",
+    "github": "https://github.com/omelkonian/prolog-collection"
+  }
+]

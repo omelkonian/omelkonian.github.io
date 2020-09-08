@@ -1,0 +1,62 @@
+
+#interests
+{
+  background      : url("../../images/backgrounds/trees.jpg");
+  background-size : cover;
+  color           : rgb(0,0,0);
+  text-align      : center;
+}
+
+#interests:before
+{
+  background : rgba(1,0,2,0.7031);
+}
+
+#interests .section-title
+{
+  color : rgb(255,255,255);
+}
+
+#interests .black
+{
+  color : rgb(0,0,0);
+}
+
+#interests .white
+{
+  color : rgb(255,255,255);
+}
+
+#interests h2
+{
+  font-size : 30px;
+  margin    : 22px 0 30px auto;
+  color     : rgb(255,255,255);
+}
+
+#interests circle
+{
+  fill         : #f9c40a;
+  fill-opacity : .40;
+}
+
+
+#interests .leaf circle
+{
+  fill         : #1f8e0a;
+  fill-opacity : .90;
+}
+
+#interests .leaf text
+{
+  background     : rgba(0,0,0,0.0000);
+  color          : rgb(255,255,255);
+  font-size      : 11px;
+  letter-spacing : 1px;
+  text-transform : uppercase;
+  font-weight    : 500;
+  text-anchor    : middle;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */
