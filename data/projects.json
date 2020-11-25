@@ -145,7 +145,7 @@
     "documentation": "https://github.com/omelkonian/interstellar/blob/master/README.pdf"
   },
   {
-    "name": "Functional GA",
+    "name": "HEvolution",
     "domain": "Genetic Programming",
     "description": "A high-level framework for implementing genetic algorithms",
     "keywords": [
@@ -154,7 +154,7 @@
       "MOEA"
     ],
     "image": "functional-ga.jpg",
-    "github": "https://github.com/functional-ga"
+    "github": "https://github.com/omelkonian/hevolution"
   },
   {
     "name": "Distributed 2D Image Convolution",
