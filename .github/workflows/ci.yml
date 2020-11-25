@@ -1,0 +1,43 @@
+name: CI
+on:
+  # schedule: [{cron: '0 0 * * *'}]
+  push: {branches: hakyll}
+  pull_request:
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.1
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Install CoffeeScript
+        run: npm install -g coffee-script@1.9.3
+
+      - name: Setup Haskell
+        uses: actions/setup-haskell@v1
+        id: setup-haskell
+        with:
+          enable-stack: true
+          stack-setup-ghc: true
+
+      - name: Cache ~/.stack and ./.stack-work
+        uses: actions/cache@v2
+        with:
+          key: stack-cache
+          path: |
+            ~/.stack
+            **/.stack-work
+
+      - name: Build website
+        run: make build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: master
+          FOLDER: _site
