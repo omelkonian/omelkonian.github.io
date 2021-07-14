@@ -43,6 +43,7 @@ main = putCss $ "#contact" ?
                     icon ".fa-twitter"    Colors.twitter
                     icon ".fa-lastfm"     Colors.lastfm
                     icon ".fa-gamepad"    Colors.codinGame
+                    icon ".fa-keybase"    Colors.keybase
           ".contact-info" ?
             do paddingBottom (px 30)
                li ?

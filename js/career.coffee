@@ -16,7 +16,7 @@ append = (element, string) ->
            .attr 'href', link
            .attr 'target', '_blank'
               .append 'i'
-              .attr class: 'fa fa-external-link'
+              .attr class: 'fa fas-external-link'
               .style 'color', '#779900'
 
 extractLink = (string) ->

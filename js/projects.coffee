@@ -3,12 +3,12 @@ projectEntry = (json) ->
   # Left icons
   github_link = """
     <a href="#{json.github}" target='_blank'>
-      <i class='fa fa-github'></i>
+      <i class='fab fa-github'></i>
     </a>
   """ if json.github?
   bitbucket_link = """
       <a href="#{json.bitbucket}" target='_blank'>
-        <i class='fa fa-bitbucket'></i>
+        <i class='fab fa-bitbucket'></i>
       </a>
   """ if json.bitbucket?
 
@@ -20,7 +20,7 @@ projectEntry = (json) ->
   """ if json.documentation?
   soundcloud_link = """
     <a href="#{json.soundcloud}" target='_blank'>
-      <i class='fa fa-soundcloud'></i>
+      <i class='fab fa-soundcloud'></i>
     </a>
   """ if json.soundcloud?
 
@@ -52,5 +52,8 @@ d3.json "data/projects.json", (projects) ->
     spacing: -0.4,
     buttons: true,
     loop: true,
-    scrollwheel: false
+    scrollwheel: false,
+    touch: true,
+    # autoplay: 1500,
+    # pauseOnHover: true
   })

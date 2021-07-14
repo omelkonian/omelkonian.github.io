@@ -31,7 +31,7 @@ banner = "#banner" ?
      ".top-banner" ?
        do marginTop (px 50)
           "#menu" ? cursor pointer
-     ".fa" ? hover & color Colors.basicGreen
+     (".fa" <> ".fab" <> ".far" <> ".fas") ? hover & color Colors.basicGreen
      ".logo" ?
        do margin nil auto auto auto
           padding (px 10) (px 10) (px 10) (px 10)
@@ -50,7 +50,7 @@ banner = "#banner" ?
                fontSize (px 45)
                margin (px 32) nil (px 50) auto
      ".btn-collapse" ?
-       do ".fa" ? (hover & color white)
+       do (".fa" <> ".fab" <> ".far" <> ".fas") ? (hover & color white)
           a ? i ?
             do fontSize (px 45)
                width (px 68)

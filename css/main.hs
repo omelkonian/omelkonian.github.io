@@ -52,7 +52,7 @@ general = do
        padding nil nil nil nil
        textTransform uppercase
        span ? fontWeight (weight 900)
-  ".fa" ? color white
+  (".fa" <> ".fab" <> ".far" <> ".fas") ? color white
 
 buttons :: Css
 buttons = do

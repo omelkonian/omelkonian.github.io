@@ -10,6 +10,10 @@
   color: white;
 }
 
+#projects #carousel {
+  height: 400px;
+}
+
 #projects #carousel .item {
   background: black;
   color: white;
@@ -35,12 +39,12 @@
   color: green;
 }
 
-#projects .fa-bitbucket,
-#projects .fa-github {
+#projects .fab-bitbucket,
+#projects .fab-github {
   float: left;
 }
 #projects .fa-book,
-#projects .fa-soundcloud {
+#projects .fab-soundcloud {
   float: right;
 }
 

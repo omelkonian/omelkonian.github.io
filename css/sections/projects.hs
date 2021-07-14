@@ -19,5 +19,5 @@ publications = ("#publications" <> "#reports") ?
      ".paperTitle" ? fontWeight bold
      ".paperAuthors" ? fontWeight normal
      ".paperVenue" ? fontWeight lighter
-     ".fa" ? color black
+     (".fa" <> ".fab" <> ".far" <> ".fas") ? color black
      "a" ? float floatRight
