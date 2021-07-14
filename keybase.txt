@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/omelkonian
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://omelkonian.github.io
+  * I am omelkonian (https://keybase.io/omelkonian) on keybase.
+  * I have a public key with fingerprint F943 D15F CD25 12D0 0F70  90E0 5D31 C2DB 5A5B B4DB
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120911f3e0488df0c0c1fe6061f071b55bbcd1af7fac291a97c77952b3398827ac10a",
+      "fingerprint": "f943d15fcd2512d00f7090e05d31c2db5a5bb4db",
+      "host": "keybase.io",
+      "key_id": "5d31c2db5a5bb4db",
+      "kid": "0101626bb322db41b867c19e45e51fe629186ae099bb0ada8a4ea8baa2289ff905eb0a",
+      "uid": "53f61f7bf2a96d4574ea47156a575c19",
+      "username": "omelkonian"
+    },
+    "service": {
+      "hostname": "omelkonian.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1626258012,
+  "expire_in": 157680000,
+  "prev": "b25848bde82fc3bba8fd05479fe6285739e3be83009efdec4cce0bac3083db3c",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNwAnicbZJ9UBRlHMfvRBPoBBtMJkmLTcWIl2d3b293DxzNaQyNmjGGcBQ7n2f3
+2WMH2DvvhTpebgZPMUVKMdQgpkkmtS6Kkl5AKu4SIyKM8QYoFCJFohiZVAYic9rF
+/Kuef555nuf7+zzf7+95zi0K00Xqd5DBwW3bmwf13wVOuHU7r7fmlhDIJnoIcwmR
+j+cmXCBip8uSL4uEmQAkBXiSlGgMjBwnSkAAAilhEzCREmBJxDAICSIJJVaCAsWT
+kGcFluUZCtE0z3EUCwUSQCKJkGTFih12h6y4VKzEG2mRZCRBpBiSEgGQWMADDBiR
+JgVKRAxUuUYRqYV5NqdWoZpD0IlTZJu6py4sc/b+R3/PNyBNlAkhmlKPjSTiTKxA
+8tjIYEbzr1rlTBADnkcIQBFy0IghhyCkKI6XJB4wGM35dt+9h5bUwCySKMibRCPD
+qmojSzImyLCMytWETuxQYCFW1bZCXJBvU2SoEGVJhLpfJAtYa62W5T+aFKvsynOj
+u8nsDpvLJtgKVEWey2V3mjWCy2PXSl7CyPIvzIJkRVQ7qlYUYYdTtimEmVSVgkvW
+6Fp0iuHUx0si8Mt22YEtsqZgWBMH1KHdg4tUJFJVRg6JmKMkgUYIcpIIGCPLay3i
+GJbmMY0wRwPAY0nEglEQMEBQoAFHi4gWCC3eLsWmsmnVJ7SqTKdsVaDL7cBEWTCQ
+O1+nj9Tdt2Ce9tV0kRGL733Arx5arKs+XzaFagKvpe3vzJj4xPfx1j2fj0W1HIkf
+84Y/ERFnR7URr4dsbN7eVu/DZUuCS33dLyS6lSqh0VPXf+Di/d++8u43xfNfzOv4
+q4lbaj57tW74VJIeLRmvGuwi1sWs2jvzVHrV6OMzWQfiJt4r3ZRyYbp4g6cwc3Xh
+lpbatvTR0wvXZ4YN3bi9JmrD8QWVvy+frby2Mdk/Gx38qf7PZ59vTys/drl89lJc
+NHWn9o22hehKT8zXK3+c8b66+dcSq/ckimnubb8EQ9+Hmk8klye8PZD+x6OjN33d
+R7f+HRy+ZTYknrJ8Fp7W1nmI722vra85nDlFp2ZVbTxPlWwPDE8b/ANCVGA3Ofvz
+OHkwQ6hzvt95Z310bG9p1g5vy644+ZmWvs6wvk+zWxzzBnzLx5JP+kLWYE+gVLI1
+fVj9gXvLVHxqtn6iYWWKPWKfge33kuaPyHN76kOx/oRl3L7sZe3+bqnxl45J/baK
+ntW5kyMP/FD9W1zX0KSy86y/Y+CLhmNdtz2Hr6YaDDOmEs9+/XPrR5ouxo6KHTcU
+eDO3eFNE8lBWkXV3ypNralaUZwy0XvgSVgDh+jvHy5riXczRobcqw1D39Fijw7SO
+PX0ttyKq8k3frZGcx8bWPgjW9tet0p3J9tvNB3PMzOXep2XDioS+zVeOZA2hReU5
+dY8khs6E2fvQofGGcN0/JJrNdQ==
+=8Gqg
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/omelkonian
+
+==================================================================
