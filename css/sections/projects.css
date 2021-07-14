@@ -41,7 +41,13 @@
 }
 
 #publications .fa,
-#reports .fa
+#publications .fab,
+#publications .far,
+#publications .fas,
+#reports .fa,
+#reports .fab,
+#reports .far,
+#reports .fas
 {
   color : rgb(0,0,0);
 }

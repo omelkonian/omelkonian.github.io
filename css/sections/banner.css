@@ -37,7 +37,10 @@
 }
 
 
-#banner .fa:hover
+#banner .fa:hover,
+#banner .fab:hover,
+#banner .far:hover,
+#banner .fas:hover
 {
   color : rgb(31,142,10);
 }
@@ -73,7 +76,10 @@
 
 
 
-#banner .btn-collapse .fa:hover
+#banner .btn-collapse .fa:hover,
+#banner .btn-collapse .fab:hover,
+#banner .btn-collapse .far:hover,
+#banner .btn-collapse .fas:hover
 {
   color : rgb(255,255,255);
 }

@@ -23,7 +23,7 @@
     element.append('span').text(newString);
     if (link != null) {
       return element.append('sup').append('a').attr('href', link).attr('target', '_blank').append('i').attr({
-        "class": 'fa fa-external-link'
+        "class": 'fa fas-external-link'
       }).style('color', '#779900');
     }
   };

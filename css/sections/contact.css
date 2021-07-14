@@ -117,6 +117,15 @@
   border-color : rgb(255,255,0);
 }
 
+
+#contact .address .social-icon li a .fa-keybase:hover
+{
+  background   : rgb(54,99,234);
+  border-width : 1px;
+  border-style : solid;
+  border-color : rgb(54,99,234);
+}
+
 #contact .address .contact-info
 {
   padding-bottom : 30px;

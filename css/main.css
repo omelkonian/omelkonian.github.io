@@ -75,7 +75,10 @@ img
   font-weight : 900;
 }
 
-.fa
+.fa,
+.fab,
+.far,
+.fas
 {
   color : rgb(255,255,255);
 }
