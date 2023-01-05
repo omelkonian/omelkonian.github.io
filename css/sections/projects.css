@@ -1,6 +1,5 @@
 
-#publications,
-#reports
+#publications
 {
   background : rgb(255,255,255);
   color      : rgb(0,0,0);
@@ -9,33 +8,27 @@
 }
 
 #publications dt,
-#publications dd,
-#reports dt,
-#reports dd
+#publications dd
 {
   margin-bottom : 20px;
 }
 
-#publications dt,
-#reports dt
+#publications dt
 {
   font-weight : 500;
 }
 
-#publications .paperTitle,
-#reports .paperTitle
+#publications .paperTitle
 {
   font-weight : bold;
 }
 
-#publications .paperAuthors,
-#reports .paperAuthors
+#publications .paperAuthors
 {
   font-weight : normal;
 }
 
-#publications .paperVenue,
-#reports .paperVenue
+#publications .paperVenue
 {
   font-weight : lighter;
 }
@@ -43,17 +36,12 @@
 #publications .fa,
 #publications .fab,
 #publications .far,
-#publications .fas,
-#reports .fa,
-#reports .fab,
-#reports .far,
-#reports .fas
+#publications .fas
 {
   color : rgb(0,0,0);
 }
 
-#publications a,
-#reports a
+#publications a
 {
   float : right;
 }
