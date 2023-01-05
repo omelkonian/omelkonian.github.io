@@ -1,5 +1,19 @@
 [
   {
+    "id": "agda2hs",
+    "title": "Reasonable Agda is correct Haskell: writing verified Haskell using agda2hs",
+    "authors": "Jesper Cockx, Orestis Melkonian, Lucas Escot, James Chapman, Ulf Norell",
+    "venue": "15th International Haskell Symposium, 2022",
+    "venueAbr": "Haskell '22"
+  },
+  {
+    "id": "scfix",
+    "title": "Reconciling Event Structures with Modern Multiprocessors",
+    "authors": "Evgenii Moiseenko, Anton Podkopaev, Ori Lahav, Orestis Melkonian, Viktor Vafeiadis",
+    "venue": "34th European Conference on Object-Oriented Programming, 2020",
+    "venueAbr": "ECOOP '20"
+  },
+  {
     "id": "eutxoma",
     "title": "Native Custom Tokens in the Extended UTXO Model",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler",
