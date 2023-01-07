@@ -1,4 +1,5 @@
 [
+
   {
     "name": "Nominal Agda",
     "domain": "Formal Verification",
@@ -33,7 +34,8 @@
       "Haskell"
     ],
     "image": "agda2hs.png",
-    "github": "https://github.com/agda/agda2hs"
+    "github": "https://github.com/agda/agda2hs",
+    "documentation": "data/publications/agda2hs.pdf"
   },
   {
     "name": "Certified BitML Compiler",
@@ -73,7 +75,7 @@
   {
     "name": "Formal UTxO",
     "domain": "Formal Verification",
-    "description": "Mechanized meta-theory for UTxO-based blockchain ledgers.
+    "description": "Mechanized meta-theory for UTxO-based blockchain ledgers",
     "keywords": [
       "Agda",
       "UTxO"
@@ -114,7 +116,21 @@
       "Type Checker"
     ],
     "image": "ghc.png",
-    "github": "https://github.com/omelkonian/ghc-fork/tree/ore"
+    "github": "https://github.com/omelkonian/ghc-fork/tree/ore",
+    "documentation": "data/publications/impredicative-ghc.pdf"
+  },
+  {
+    "name": "hs-pattrans",
+    "domain": "Algorithmic Music",
+    "description": "A music pattern language, based on the MIREX Discovery of Repeated Themes & Sections task",
+    "keywords": [
+      "Haskell",
+      "Pattern Analysis",
+      "Category Theory"
+    ],
+    "image": "pattrans.png",
+    "github": "https://github.com/omelkonian/hs-pattrans",
+    "documentation": "data/publications/pattrans.pdf"
   },
   {
     "name": "AlgoRhythm",
@@ -128,7 +144,8 @@
     ],
     "image": "algorhythm.png",
     "github": "https://github.com/omelkonian/AlgoRhythm",
-    "soundcloud": "https://soundcloud.com/haskell-music-grammars"
+    "soundcloud": "https://soundcloud.com/haskell-music-grammars",
+    "documentation": "data/publications/music-grammars.pdf"
   },
   {
     "name": "RHEA",

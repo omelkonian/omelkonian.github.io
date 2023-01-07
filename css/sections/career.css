@@ -28,5 +28,10 @@
   margin  : 0 auto 0 auto;
 }
 
+#career li video
+{
+  width : 100%;
+}
+
 
 /* Generated with Clay, http://fvisser.nl/clay */

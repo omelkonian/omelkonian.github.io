@@ -16,7 +16,7 @@
     if (json.soundcloud != null) {
       soundcloud_link = "<a href=\"" + json.soundcloud + "\" target='_blank'>\n  <i class='fab fa-soundcloud'></i>\n</a>";
     }
-    return "<li class='item' class='slide'>\n  <div class='col-xs-6 image'>\n    <img src='images/projects/" + json.image + "'>\n  </div>\n  <div class='col-xs-6 info'>\n    " + (github_link != null ? github_link : "") + "\n    " + (bitbucket_link != null ? bitbucket_link : "") + "\n    " + (doc_link != null ? doc_link : "") + "\n    " + (soundcloud_link != null ? soundcloud_link : "") + "\n    <h4>" + json.name + "</h4>\n    <h5>" + json.domain + "</h5>\n    <p>" + json.description + "</p>\n    <h6>" + (json.keywords.join(' ')) + "</h6>\n    " + (json.wip != null ? "<h7>IN PROGRESS</h7>" : "") + "\n  </div>\n</li>";
+    return "<li class='item' class='slide'>\n  <div class='col-xs-6 image'>\n    <img src='images/projects/" + json.image + "'>\n    " + (json.wip != null ? "<div id=wip>IN PROGRESS</div>" : "") + "\n  </div>\n  <div class='col-xs-6 info'>\n    " + (github_link != null ? github_link : "") + "\n    " + (bitbucket_link != null ? bitbucket_link : "") + "\n    " + (doc_link != null ? doc_link : "") + "\n    " + (soundcloud_link != null ? soundcloud_link : "") + "\n    <h4>" + json.name + "</h4>\n    <h5>" + json.domain + "</h5>\n    <p>" + json.description + "</p>\n    <h6>" + (json.keywords.join(' ')) + "</h6>\n  </div>\n</li>";
   };
 
   d3.json("data/projects.json", function(projects) {

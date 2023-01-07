@@ -19,11 +19,13 @@
 
   append = function(element, string) {
     var link, newString, ref;
+    console.log("Extracting " + string);
     ref = extractLink(string), newString = ref[0], link = ref[1];
+    console.log("Link: " + link);
     element.append('span').text(newString);
     if (link != null) {
       return element.append('sup').append('a').attr('href', link).attr('target', '_blank').append('i').attr({
-        "class": 'fa fas-external-link'
+        "class": 'fas fa-external-link-alt'
       }).style('color', '#779900');
     }
   };
@@ -108,6 +110,9 @@
               });
               info.append('br');
               mkString(info, obj['$venue']);
+              results1.push(info.append('br'));
+            } else if (key === '$video') {
+              info.append('video').text('Your browser does not support the <video> tag.').attr('src', obj['$video']).attr('controls', "");
               results1.push(info.append('br'));
             } else if (key !== '$title' && key !== '$inverted') {
               info.append('span').attr({
