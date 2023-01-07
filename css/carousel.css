@@ -73,7 +73,10 @@
   color: #1f8e0a;
   word-spacing: 10px;
 }
-#projects .info h7 {
+
+#projects .image #wip {
+  position: absolute;
+  transform: translate(0%, -100%);
   font-family: 'Rock Salt';
 	font-size: 24px;
 	font-style: normal;

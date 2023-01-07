@@ -19,3 +19,4 @@ main = putCss $
        ".table" ?
          do display table
             margin nil auto nil auto
+       "li video" ? width (pct 100.0)

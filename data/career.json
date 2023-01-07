@@ -234,17 +234,6 @@
     },
     {
         "$title": "Talk",
-        "$time": "Sep 2022",
-        "$place": "Ljubljana, Slovenia",
-        "$venue": "Haskell @ ICFP'22 @https://icfp22.sigplan.org/home/haskellsymp-2022@",
-        "Title": [
-            "Reasonable Agda is correct Haskell:",
-            "writing verified Haskell using agda2hs @data/presentations/agda2hs.pdf@"
-        ],
-        "Video": "@data/videos/@"
-    },
-    {
-        "$title": "Talk",
         "$time": "Feb 2020",
         "$place": "Kota Kinabalu, Malaysia",
         "$venue": "WTSC @ FC'20 @http://fc20.ifca.ai/wtsc/index.html@",
@@ -253,6 +242,15 @@
             "(kindly presented by Alexander Nemish)"
         ]
     },
+    {
+        "$title": "Talk",
+        "$time": "Oct 2020",
+        "$place": "Online",
+        "$venue": "RSC @ ISoLA'20 @http://www.cs.um.edu.mt/gordon.pace/Workshops/RSC2020/@",
+        "Title": "Native Custom Tokens in the Extended UTXO Model",
+        "$video": "videos/eutxoma.mp4"
+    },
+    {"milestone": 2022},
     {
         "$inverted": true,
         "$title": "Travel Grant",
@@ -267,8 +265,8 @@
         "$venue": "Haskell @ ICFP'22 @https://icfp22.sigplan.org/home/haskellsymp-2022@",
         "Title": [
             "Reasonable Agda is correct Haskell:",
-            "writing verified Haskell using agda2hs @data/presentations/agda2hs.pdf@"
+            "writing verified Haskell using agda2hs @https://www.youtube.com/watch?v=7unXXl_v8GY@"
         ],
-        "Video": "YouTube @https://www.youtube.com/watch?v=7unXXl_v8GY@"
+        "$video": "videos/agda2hs.mp4"
     }
 ]

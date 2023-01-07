@@ -28,6 +28,7 @@ projectEntry = (json) ->
   <li class='item' class='slide'>
     <div class='col-xs-6 image'>
       <img src='images/projects/#{json.image}'>
+      #{if json.wip? then "<div id=wip>IN PROGRESS</div>" else ""}
     </div>
     <div class='col-xs-6 info'>
       #{if github_link? then github_link else ""}
@@ -38,7 +39,6 @@ projectEntry = (json) ->
       <h5>#{json.domain}</h5>
       <p>#{json.description}</p>
       <h6>#{json.keywords.join(' ')}</h6>
-      #{if json.wip? then "<h7>IN PROGRESS</h7>" else ""}
     </div>
   </li>
   """

@@ -41,8 +41,8 @@ executable interests
   main-is: css/sections/interests.hs
   other-modules: Colors, Utils
 
-executable projects
-  main-is: css/sections/projects.hs
+executable publications
+  main-is: css/sections/publications.hs
   other-modules: Colors, Utils
 
 executable skills

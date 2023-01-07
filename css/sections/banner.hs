@@ -14,20 +14,11 @@ banner :: Css
 banner = "#banner" ?
   do width (pct 100)
      ".banner" ? marginTop (px 100)
-     backgroundImage (url "../../images/backgrounds/banner.jpg")
+     background (url "../../images/backgrounds/banner-dark4.jpg")
      backgroundSize cover
      backgroundRepeat noRepeat
      position relative
      color white
-     before &
-       do Colors.dim
-          position absolute
-          width (pct 100)
-          height (pct 100)
-          top (px 0)
-          bottom (px 0)
-          content (stringContent "")
-          display block
      ".top-banner" ?
        do marginTop (px 50)
           "#menu" ? cursor pointer

@@ -53,7 +53,7 @@ main = hakyll $ do
     compile coffeeCompiler
 
   -- Just copy the rest
-  copyAll ["images/**", "js/**.js", "data/**", "keybase.txt"]
+  copyAll ["images/**", "videos/**", "js/**.js", "data/**", "keybase.txt"]
 
 --------------------------------------------------------------------------------
  where

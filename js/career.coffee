@@ -7,7 +7,9 @@ mkString = (element, obj) ->
       append element, obj
 
 append = (element, string) ->
+  console.log "Extracting " + string
   [newString, link] = extractLink string
+  console.log "Link: " + link
   element.append 'span'
          .text newString
   if link?
@@ -16,7 +18,7 @@ append = (element, string) ->
            .attr 'href', link
            .attr 'target', '_blank'
               .append 'i'
-              .attr class: 'fa fas-external-link'
+              .attr class: 'fas fa-external-link-alt'
               .style 'color', '#779900'
 
 extractLink = (string) ->
@@ -83,6 +85,12 @@ d3.json "data/career.json", (data) ->
               .attr class: 'glyphicon glyphicon-home'
           info.append 'br'
           mkString info, obj['$venue']
+          info.append 'br'
+        else if key == '$video'
+          info.append 'video'
+              .text  'Your browser does not support the <video> tag.'
+              .attr 'src', obj['$video']
+              .attr 'controls', ""
           info.append 'br'
         else if key not in ['$title', '$inverted']
           info.append 'span'
