@@ -6,19 +6,19 @@
   padding-bottom  : 70px;
 }
 
-#contact:before
+#contact::before
 {
-  background : rgba(1,0,2,0.7031);
+  background : rgba(1,0,2,180.0);
 }
 
 #contact .section-title
 {
-  color : rgb(255,255,255);
+  color : #ffffff;
 }
 
 #contact .address
 {
-  color   : rgb(255,255,255);
+  color   : #ffffff;
   margin  : 0 0 0 0;
   padding : 0 0 0 0;
 }
@@ -41,7 +41,7 @@
 #contact .address .social-icon li a
 {
   display : inline-block;
-  color   : rgb(255,255,255);
+  color   : #ffffff;
   margin  : 0 5px 0 5px;
 }
 
@@ -52,7 +52,7 @@
   height             : 48px;
   border-width       : 1px;
   border-style       : solid;
-  border-color       : rgb(255,255,255);
+  border-color       : #ffffff;
   text-align         : center;
   line-height        : 48px;
   vertical-align     : middle;
@@ -66,64 +66,64 @@
 
 #contact .address .social-icon li a .fa-linkedin:hover
 {
-  background   : rgb(40,123,188);
+  background   : #287bbc;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(40,123,188);
+  border-color : #287bbc;
 }
 
 
 #contact .address .social-icon li a .fa-google:hover
 {
-  background   : rgb(221,75,57);
+  background   : #dd4b39;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(221,75,57);
+  border-color : #dd4b39;
 }
 
 
 #contact .address .social-icon li a .fa-soundcloud:hover
 {
-  background   : rgb(187,85,34);
+  background   : #bb5522;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(187,85,34);
+  border-color : #bb5522;
 }
 
 
 #contact .address .social-icon li a .fa-twitter:hover
 {
-  background   : rgb(0,172,237);
+  background   : #00aced;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(0,172,237);
+  border-color : #00aced;
 }
 
 
 #contact .address .social-icon li a .fa-lastfm:hover
 {
-  background   : rgb(255,0,0);
+  background   : #ff0000;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(255,0,0);
+  border-color : #ff0000;
 }
 
 
 #contact .address .social-icon li a .fa-gamepad:hover
 {
-  background   : rgb(255,255,0);
+  background   : #ffff00;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(255,255,0);
+  border-color : #ffff00;
 }
 
 
 #contact .address .social-icon li a .fa-keybase:hover
 {
-  background   : rgb(54,99,234);
+  background   : #3663ea;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(54,99,234);
+  border-color : #3663ea;
 }
 
 #contact .address .contact-info

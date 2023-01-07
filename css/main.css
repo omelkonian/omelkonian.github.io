@@ -11,7 +11,7 @@
 @import url(sections/contact.css);
 body
 {
-  background         : rgb(255,255,255);
+  background         : #ffffff;
   font-family        : "Lato", sans-serif;
   font-size          : 16px;
   font-weight        : 300;
@@ -64,7 +64,7 @@ img
   text-align     : left;
   font-size      : 42px;
   font-weight    : 400;
-  color          : rgb(69,69,69);
+  color          : #454545;
   margin         : 0 10px 50px 0;
   padding        : 0 0 0 0;
   text-transform : uppercase;
@@ -80,7 +80,7 @@ img
 .far,
 .fas
 {
-  color : rgb(255,255,255);
+  color : #ffffff;
 }
 
 .lg
@@ -91,59 +91,59 @@ img
 .btn-border,
 .btn-common
 {
-  color         : rgb(255,255,255);
+  color         : #ffffff;
   width         : 90%;
   font-size     : 22px;
   font-weight   : 400;
   border-width  : 1px;
   border-style  : solid;
-  border-color  : rgb(255,255,255);
+  border-color  : #ffffff;
   border-radius : 4px 4px 4px 4px;
   position      : relative;
   z-index       : 10;
 }
 
-.btn-border:after,
-.btn-common:after
+.btn-border::after,
+.btn-common::after
 {
   width      : 100%;
   height     : 0px;
   bottom     : 0px;
   left       : 0px;
-  background : rgb(255,255,255);
+  background : #ffffff;
 }
 
 .btn-border:hover,
 .btn-common:hover
 {
-  color : rgb(0,128,0);
+  color : #008000;
 }
 
 .btn-info
 {
-  color         : rgb(255,255,255);
+  color         : #ffffff;
   font-size     : 22px;
   font-weight   : 400;
   border-width  : 1px;
   border-style  : solid;
-  border-color  : rgb(255,255,255);
+  border-color  : #ffffff;
   border-radius : 4px 4px 4px 4px;
   position      : relative;
   z-index       : 10;
 }
 
-.btn-info:after
+.btn-info::after
 {
   width      : 100%;
   height     : 0px;
   bottom     : 0px;
   left       : 0px;
-  background : rgb(255,255,255);
+  background : #ffffff;
 }
 
 .btn-info:hover
 {
-  color : rgb(0,128,0);
+  color : #008000;
 }
 
 .btn-border:hover:after,
@@ -155,19 +155,19 @@ img
 .btn-common,
 .btn-info
 {
-  background   : rgb(0,128,0);
+  background   : #008000;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(0,128,0);
+  border-color : #008000;
 }
 
 .btn-common:hover,
 .btn-info:hover
 {
-  background   : rgb(0,128,0);
+  background   : #008000;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(0,128,0);
+  border-color : #008000;
 }
 
 .btn:after
@@ -184,8 +184,8 @@ img
 
 .highlighted
 {
-  background         : rgb(255,255,255);
-  color              : rgb(31,142,10);
+  background         : #ffffff;
+  color              : #1f8e0a;
   text-align         : center;
   text-decoration    : none;
   -webkit-transition : all 0.3s ease 0.0s;
@@ -197,8 +197,8 @@ img
 
 .highlighted:hover
 {
-  background : rgb(31,142,10);
-  color      : rgb(255,255,255);
+  background : #1f8e0a;
+  color      : #ffffff;
 }
 
 .btn-collapse

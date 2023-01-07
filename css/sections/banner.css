@@ -6,7 +6,7 @@
   background-size   : cover;
   background-repeat : no-repeat;
   position          : relative;
-  color             : rgb(255,255,255);
+  color             : #ffffff;
 }
 
 #banner .banner
@@ -14,9 +14,9 @@
   margin-top : 100px;
 }
 
-#banner:before
+#banner::before
 {
-  background : rgba(1,0,2,0.7031);
+  background : rgba(1,0,2,180.0);
   position   : absolute;
   width      : 100%;
   height     : 100%;
@@ -42,7 +42,7 @@
 #banner .far:hover,
 #banner .fas:hover
 {
-  color : rgb(31,142,10);
+  color : #1f8e0a;
 }
 
 #banner .logo
@@ -50,7 +50,7 @@
   margin  : 0 auto auto auto;
   padding : 10px 10px 10px 10px;
   width   : 200px;
-  color   : rgb(255,255,255);
+  color   : #ffffff;
   z-index : 99999;
 }
 
@@ -61,7 +61,7 @@
 
 #banner .banner h1
 {
-  color          : rgb(31,142,10);
+  color          : #1f8e0a;
   font-size      : 42px;
   font-weight    : 400;
   text-transform : uppercase;
@@ -69,7 +69,7 @@
 
 #banner .banner h2
 {
-  color     : rgb(255,255,255);
+  color     : #ffffff;
   font-size : 45px;
   margin    : 32px 0 50px auto;
 }
@@ -81,7 +81,7 @@
 #banner .btn-collapse .far:hover,
 #banner .btn-collapse .fas:hover
 {
-  color : rgb(255,255,255);
+  color : #ffffff;
 }
 
 
@@ -94,11 +94,11 @@
 
 #navigation
 {
-  background   : rgb(31,142,10);
+  background   : #1f8e0a;
   border-width : 1px;
   border-style : solid;
-  border-color : rgb(31,142,10);
-  color        : rgb(255,255,255);
+  border-color : #1f8e0a;
+  color        : #ffffff;
   padding-top  : 50px;
   text-align   : center;
   width        : 400px;
@@ -118,7 +118,7 @@
 {
   border-width       : 1px;
   border-style       : solid;
-  border-color       : rgba(0,0,0,0.0000);
+  border-color       : rgba(0,0,0,0.0);
   margin             : 10px 40px 10px 40px;
   -webkit-transition : border-color 0.3s ease-in-out 0.0s;
   -moz-transition    : border-color 0.3s ease-in-out 0.0s;
@@ -129,8 +129,8 @@
 
 #navigation .nav li a
 {
-  background     : rgba(0,0,0,0.0000);
-  color          : rgb(255,255,255);
+  background     : rgba(0,0,0,0.0);
+  color          : #ffffff;
   font-size      : 16px;
   font-weight    : 300;
   letter-spacing : 2px;
@@ -139,12 +139,12 @@
 
 #navigation .nav li:hover
 {
-  border-color : rgb(255,255,255);
+  border-color : #ffffff;
 }
 
 #navigation .nav li.active
 {
-  border-color : rgb(255,255,255);
+  border-color : #ffffff;
 }
 
 

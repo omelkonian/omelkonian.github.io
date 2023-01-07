@@ -7,23 +7,23 @@
 #grades
 {
   background-size : cover;
-  color           : rgb(255,255,255);
+  color           : #ffffff;
   text-align      : center;
 }
 
-#grades:before
+#grades::before
 {
-  background : rgba(1,0,2,0.7031);
+  background : rgba(1,0,2,180.0);
 }
 
 #grades .section-title
 {
-  color : rgb(255,255,255);
+  color : #ffffff;
 }
 
 #grades h2
 {
-  color     : rgb(255,255,255);
+  color     : #ffffff;
   font-size : 30px;
   margin    : 20px 0 20px auto;
 }

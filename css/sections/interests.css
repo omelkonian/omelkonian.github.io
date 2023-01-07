@@ -3,35 +3,35 @@
 {
   background      : url("../../images/backgrounds/trees.jpg");
   background-size : cover;
-  color           : rgb(0,0,0);
+  color           : #000000;
   text-align      : center;
 }
 
-#interests:before
+#interests::before
 {
-  background : rgba(1,0,2,0.7031);
+  background : rgba(1,0,2,180.0);
 }
 
 #interests .section-title
 {
-  color : rgb(255,255,255);
+  color : #ffffff;
 }
 
 #interests .black
 {
-  color : rgb(0,0,0);
+  color : #000000;
 }
 
 #interests .white
 {
-  color : rgb(255,255,255);
+  color : #ffffff;
 }
 
 #interests h2
 {
   font-size : 30px;
   margin    : 22px 0 30px auto;
-  color     : rgb(255,255,255);
+  color     : #ffffff;
 }
 
 #interests circle
@@ -49,8 +49,8 @@
 
 #interests .leaf text
 {
-  background     : rgba(0,0,0,0.0000);
-  color          : rgb(255,255,255);
+  background     : rgba(0,0,0,0.0);
+  color          : #ffffff;
   font-size      : 11px;
   letter-spacing : 1px;
   text-transform : uppercase;

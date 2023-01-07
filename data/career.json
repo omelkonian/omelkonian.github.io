@@ -226,10 +226,49 @@
     {
         "$inverted": true,
         "$title": "PhD in Computer Science",
-        "$time": "Sept 2019 - Sep 2022",
+        "$time": "Sept 2019 - Sep 2023",
         "$place": "Edinburgh, Scotland",
         "$venue": "University of Edinburgh @https://www.ed.ac.uk/@",
         "Topic": "Blockchain Semantics in Agda",
         "Supervisor": "Philip Wadler @http://homepages.inf.ed.ac.uk/wadler/@"
+    },
+    {
+        "$title": "Talk",
+        "$time": "Sep 2022",
+        "$place": "Ljubljana, Slovenia",
+        "$venue": "Haskell @ ICFP'22 @https://icfp22.sigplan.org/home/haskellsymp-2022@",
+        "Title": [
+            "Reasonable Agda is correct Haskell:",
+            "writing verified Haskell using agda2hs @data/presentations/agda2hs.pdf@"
+        ],
+        "Video": "@data/videos/@"
+    },
+    {
+        "$title": "Talk",
+        "$time": "Feb 2020",
+        "$place": "Kota Kinabalu, Malaysia",
+        "$venue": "WTSC @ FC'20 @http://fc20.ifca.ai/wtsc/index.html@",
+        "Title": [
+            "The Extended UTxO Model @data/presentations/eutxo.pdf@",
+            "(kindly presented by Alexander Nemish)"
+        ]
+    },
+    {
+        "$inverted": true,
+        "$title": "Travel Grant",
+        "$time": "Jun 2022",
+        "$place": "San Diego, US",
+        "$venue": "PLDI'22 @https://pldi22.sigplan.org/@"
+    },
+    {
+        "$title": "Talk",
+        "$time": "Sep 2022",
+        "$place": "Ljubljana, Slovenia",
+        "$venue": "Haskell @ ICFP'22 @https://icfp22.sigplan.org/home/haskellsymp-2022@",
+        "Title": [
+            "Reasonable Agda is correct Haskell:",
+            "writing verified Haskell using agda2hs @data/presentations/agda2hs.pdf@"
+        ],
+        "Video": "YouTube @https://www.youtube.com/watch?v=7unXXl_v8GY@"
     }
 ]

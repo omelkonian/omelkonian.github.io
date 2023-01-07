@@ -1,8 +1,8 @@
 
 #publications
 {
-  background : rgb(255,255,255);
-  color      : rgb(0,0,0);
+  background : #ffffff;
+  color      : #000000;
   text-align : left;
   padding    : 20px 20px 20px 20px;
 }
@@ -38,7 +38,7 @@
 #publications .far,
 #publications .fas
 {
-  color : rgb(0,0,0);
+  color : #000000;
 }
 
 #publications a
