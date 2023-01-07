@@ -265,8 +265,8 @@
         "$venue": "Haskell @ ICFP'22 @https://icfp22.sigplan.org/home/haskellsymp-2022@",
         "Title": [
             "Reasonable Agda is correct Haskell:",
-            "writing verified Haskell using agda2hs @https://www.youtube.com/watch?v=7unXXl_v8GY@"
+            "writing verified Haskell using agda2hs"
         ],
-        "$video": "videos/agda2hs.mp4"
+        "$youtube": "https://www.youtube-nocookie.com/embed/7unXXl_v8GY"
     }
 ]

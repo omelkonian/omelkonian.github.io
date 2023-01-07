@@ -19,4 +19,6 @@ main = putCss $
        ".table" ?
          do display table
             margin nil auto nil auto
-       "li video" ? width (pct 100.0)
+       ("li video" <> "li iframe") ?
+         do width (pct 100.0)
+            height (cm 6)
