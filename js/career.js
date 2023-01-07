@@ -96,34 +96,30 @@
               });
               info.append('br');
               info.append('span').text(obj['$time']);
-              results1.push(info.append('br'));
             } else if (key === '$place') {
               info.append('i').attr({
                 "class": 'glyphicon glyphicon-map-marker'
               });
               info.append('br');
               mkString(info, obj['$place']);
-              results1.push(info.append('br'));
             } else if (key === '$venue') {
               info.append('i').attr({
                 "class": 'glyphicon glyphicon-home'
               });
               info.append('br');
               mkString(info, obj['$venue']);
-              results1.push(info.append('br'));
             } else if (key === '$video') {
               info.append('video').text('Your browser does not support the <video> tag.').attr('src', obj['$video']).attr('controls', "");
-              results1.push(info.append('br'));
+            } else if (key === '$youtube') {
+              info.append('iframe').attr('src', obj['$youtube']).attr('allowfullscreen', "").attr('frameborder', "0").attr('allow', "autoplay; encrypted-media; picture-in-picture; web-share");
             } else if (key !== '$title' && key !== '$inverted') {
               info.append('span').attr({
                 "class": 'emph'
               }).text(key);
               info.append('br');
               mkString(info, obj[key]);
-              results1.push(info.append('br'));
-            } else {
-              results1.push(void 0);
             }
+            results1.push(info.append('br'));
           }
           return results1;
         })());

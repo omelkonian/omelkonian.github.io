@@ -28,9 +28,11 @@
   margin  : 0 auto 0 auto;
 }
 
-#career li video
+#career li video,
+#career li iframe
 {
-  width : 100%;
+  width  : 100%;
+  height : 6cm;
 }
 
 
