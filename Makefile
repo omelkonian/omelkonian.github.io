@@ -1,11 +1,11 @@
 default: run
 
 run: build
-	stack exec site watch
+	cabal run site watch
 
 build:
-	stack build
-	stack exec site rebuild
+	cabal build
+	cabal run site rebuild
 
 clean:
-	stack exec site clean
+	cabal run site clean

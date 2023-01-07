@@ -4,6 +4,7 @@ import Hakyll
 
 import Data.Monoid ((<>))
 import Control.Monad (forM_)
+import System.FilePath (takeBaseName)
 
 import Debug.Trace
 --------------------------------------------------------------------------------
@@ -64,5 +65,7 @@ main = hakyll $ do
     withItemBody (unixFilter "coffee" ["-s", "-c"])
 
   clayCompiler :: Compiler (Item String)
-  clayCompiler = getResourceString >>=
-    withItemBody (unixFilter "stack" ["exec", "runghc"])
+  clayCompiler = do
+    s <- takeBaseName . toFilePath <$> getUnderlying
+    s <- unixFilter "cabal" ["-v0", "run" , s] s
+    makeItem s

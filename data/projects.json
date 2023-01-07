@@ -1,5 +1,110 @@
 [
   {
+    "name": "Nominal Agda",
+    "domain": "Formal Verification",
+    "description": "Nominal techniques as an Agda library",
+    "keywords": [
+      "Agda",
+      "Nominal"
+    ],
+    "image": "nom.png",
+    "github": "https://omelkonian.github.io/nominal-agda/",
+    "wip": true
+  },
+  {
+    "name": "SepLog4UTxO",
+    "domain": "Formal Verification",
+    "description": "Mechanized program logics for UTxO-based blockchain ledgers",
+    "keywords": [
+      "Agda",
+      "Separation Logic",
+      "UTxO"
+    ],
+    "image": "sep.png",
+    "github": "https://omelkonian.github.io/hoare-ledgers/",
+    "wip": true
+  },
+  {
+    "name": "agda2hs",
+    "domain": "Formal Verification",
+    "description": "Writing verified Haskell programs within Agda",
+    "keywords": [
+      "Agda",
+      "Haskell"
+    ],
+    "image": "agda2hs.png",
+    "github": "https://github.com/agda/agda2hs"
+  },
+  {
+    "name": "Certified BitML Compiler",
+    "domain": "Formal Verification",
+    "description": "Proving computional soundness of a compiler from BitML calculus down to Bitcoin transactions",
+    "keywords": [
+      "Agda",
+      "BitML",
+      "Bitcoin"
+    ],
+    "image": "bitml-to-bitcoin.png",
+    "github": "https://omelkonian.github.io/formal-bitml-to-bitcoin/",
+    "wip": true
+  },
+  {
+    "name": "Formal BitML",
+    "domain": "Formal Verification",
+    "description": "Mechanized metatheory of the BitML process calculus",
+    "keywords": [
+      "Agda",
+      "BitML"
+    ],
+    "image": "bitml.png",
+    "github": "https://omelkonian.github.io/formal-bitml/"
+  },
+  {
+    "name": "Formal Bitcoin",
+    "domain": "Formal Verification",
+    "description": "Mechanized model of Bitcoin transactions",
+    "keywords": [
+      "Agda",
+      "Bitcoin"
+    ],
+    "image": "bitcoin.png",
+    "github": "https://omelkonian.github.io/formal-bitcoin/"
+  },
+  {
+    "name": "Formal UTxO",
+    "domain": "Formal Verification",
+    "description": "Mechanized meta-theory for UTxO-based blockchain ledgers.
+    "keywords": [
+      "Agda",
+      "UTxO"
+    ],
+    "image": "eutxo.png",
+    "github": "https://omelkonian.github.io/formal-utxo/"
+  },
+  {
+    "name": "setup-agda",
+    "domain": "Continuous Integration",
+    "description": "Github CI for Agda",
+    "keywords": [
+      "Agda",
+      "CI",
+      "Typescript"
+    ],
+    "image": "setup-agda.png",
+    "github": "https://github.com/omelkonian/setup-agda"
+  },
+  {
+    "name": "Formal Prelude",
+    "domain": "Formal Verification",
+    "description": "Yet another Agda prelude",
+    "keywords": [
+      "Agda",
+      "Prelude"
+    ],
+    "image": "formal-prelude.png",
+    "github": "https://omelkonian.github.io/formal-prelude/"
+  },
+  {
     "name": "Impredicative GHC",
     "domain": "Compiler Implementation",
     "description": "Adding impredicative types to the Glasgow Haskell Compiler (GHC)",

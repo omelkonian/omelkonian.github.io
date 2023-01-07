@@ -20,17 +20,14 @@ jobs:
       - name: Setup Haskell
         uses: actions/setup-haskell@v1
         id: setup-haskell
-        with:
-          enable-stack: true
-          stack-setup-ghc: true
 
-      - name: Cache ~/.stack and ./.stack-work
+      - name: Cache ~/.cabal/ and ./dist-newstyle/
         uses: actions/cache@v2
         with:
-          key: stack-cache
+          key: cabal-cache
           path: |
-            ~/.stack
-            **/.stack-work
+            ~/.cabal
+            **/.dist-newstyle
 
       - name: Build website
         run: make build

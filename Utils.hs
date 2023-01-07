@@ -7,7 +7,7 @@ import Data.Monoid ((<>))
 import Data.Text
 import Colors
 
-border :: Size Abs -> Stroke -> Color -> Css
+border :: Size LengthUnit -> Stroke -> Color -> Css
 border width style color = do
   borderWidth width
   borderStyle style
