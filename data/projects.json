@@ -122,7 +122,7 @@
   {
     "name": "hs-pattrans",
     "domain": "Algorithmic Music",
-    "description": "A music pattern language, based on the MIREX Discovery of Repeated Themes & Sections task",
+    "description": "A music pattern language, along with MIREX benchmarks",
     "keywords": [
       "Haskell",
       "Pattern Analysis",
