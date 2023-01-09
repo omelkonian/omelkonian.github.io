@@ -226,7 +226,7 @@
     {
         "$inverted": true,
         "$title": "PhD in Computer Science",
-        "$time": "Sept 2019 - Sep 2023",
+        "$time": "Sept 2019 - now",
         "$place": "Edinburgh, Scotland",
         "$venue": "University of Edinburgh @https://www.ed.ac.uk/@",
         "Topic": "Blockchain Semantics in Agda",
@@ -251,6 +251,15 @@
         "$video": "videos/eutxoma.mp4"
     },
     {"milestone": 2022},
+    {
+        "$inverted": true,
+        "$title": "Haskell Reviewer (part-time)",
+        "$time": "Feb 2021 - now",
+        "$place": "Singapore",
+        "$venue": "MigaMake @https://www.migamake.com/@",
+        "Tasks": "Reviewing Haskell/Elm code, technical reports, and scientific articles",
+        "Supervisor": "Michal Gajda"
+    },
     {
         "$inverted": true,
         "$title": "Travel Grant",
