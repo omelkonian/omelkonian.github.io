@@ -7,13 +7,6 @@
     "venueAbr": "Haskell '22"
   },
   {
-    "id": "scfix",
-    "title": "Reconciling Event Structures with Modern Multiprocessors",
-    "authors": "Evgenii Moiseenko, Anton Podkopaev, Ori Lahav, Orestis Melkonian, Viktor Vafeiadis",
-    "venue": "34th European Conference on Object-Oriented Programming, 2020",
-    "venueAbr": "ECOOP '20"
-  },
-  {
     "id": "eutxoma",
     "title": "Native Custom Tokens in the Extended UTXO Model",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler",
@@ -26,6 +19,13 @@
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler, Joachim Zahnentferner",
     "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation, 2020",
     "venueAbr": "ISoLA '20"
+  },
+  {
+    "id": "scfix",
+    "title": "Reconciling Event Structures with Modern Multiprocessors",
+    "authors": "Evgenii Moiseenko, Anton Podkopaev, Ori Lahav, Orestis Melkonian, Viktor Vafeiadis",
+    "venue": "34th European Conference on Object-Oriented Programming, 2020",
+    "venueAbr": "ECOOP '20"
   },
   {
     "id": "eutxo",
