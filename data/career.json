@@ -277,5 +277,11 @@
             "writing verified Haskell using agda2hs"
         ],
         "$youtube": "https://www.youtube-nocookie.com/embed/7unXXl_v8GY"
+    },
+    {
+        "$title": "Conference Organiser",
+        "$time": "10-16 Nov 2022",
+        "$place": "Edinburgh, Scotland",
+        "$venue": "31st Agda Implementors' Meeting (AIM XXXI) @https://wiki.portal.chalmers.se/agda/Main/AIMXXXI@"
     }
 ]
