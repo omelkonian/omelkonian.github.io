@@ -7,6 +7,27 @@
     "venueAbr": "Haskell '22"
   },
   {
+    "id": "formal-cardano-ledger",
+    "title": "Human and machine-readable models of state machines for the Cardano ledger (Extended Abstract)",
+    "authors": "Andre Knispel, James Chapman, Orestis Melkonian, Polina Vinogradova",
+    "venue": "4th International Workshop on Formal Methods for Blockchains, 2022",
+    "venueAbr": "FMBC '22"
+  },
+  {
+    "id": "ledger-determinism",
+    "title": "Determinism of ledger updates (Extended Abstract)",
+    "authors": "Polina Vinogradova, James Chapman, Andre Knispel, Orestis Melkonian",
+    "venue": "4th International Workshop on Formal Methods for Blockchains, 2022",
+    "venueAbr": "FMBC '22"
+  },
+  {
+    "id": "eutxo-account-sim",
+    "title": "Designing EUTxO smart contracts as communicating state machines: the case of simulating accounts (Extended Abstract)",
+    "authors": "Polina Vinogradova, Manuel Chakravarty, James Chapman, Tudor Ferariu, Michael Peyton Jones, Jacco Krijnen, Orestis Melkonian",
+    "venue": "4th International Workshop on Formal Methods for Blockchains, 2022",
+    "venueAbr": "FMBC '22"
+  },
+  {
     "id": "eutxoma",
     "title": "Native Custom Tokens in the Extended UTXO Model",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler",
@@ -36,14 +57,14 @@
   },
   {
     "id": "formal-bitml",
-    "title": "Formalizing BitML Calculus in Agda",
+    "title": "Formalizing BitML Calculus in Agda (Extended Abstract)",
     "authors": "Orestis Melkonian",
     "venue": "Student Research Competition, Poster Session, 2019",
     "venueAbr": "SRC @ ICFP '19"
   },
   {
     "id": "formal-utxo",
-    "title": "Formal Investigation of the Extended UTxO Model",
+    "title": "Formal Investigation of the Extended UTxO Model (Extended Abstract)",
     "authors": "Orestis Melkonian, Wouter Swierstra, Manuel M.T. Chakravarty",
     "venue": "Proceedings of the 4rd ACM SIGPLAN International Workshop on Type-Driven Development. ACM, 2019",
     "venueAbr": "TyDe @ ICFP '19"
