@@ -1,0 +1,116 @@
+
+#projects
+{
+  background      : url("../../images/backgrounds/smoke-white-on-black2.jpg");
+  background-size : cover;
+  color           : #ffffff;
+  text-align      : center;
+  padding-bottom  : 150px;
+}
+
+#projects .container,
+#projects .section-title
+{
+  color : #ffffff;
+}
+
+#projects .fab-bitbucket,
+#projects .fab-github
+{
+  float : left;
+}
+
+#projects .fa-book,
+#projects .fab-soundcloud
+{
+  float : right;
+}
+
+
+#projects .info p
+{
+  font-size      : 16px;
+  color          : #ffffff;
+  font-weight    : 400;
+  font-style     : italic;
+  padding-top    : 22px;
+  padding-bottom : 22px;
+}
+
+#projects .info h4
+{
+  margin-top  : 50px;
+  font-size   : 22px;
+  font-weight : 700;
+  text-align  : center;
+}
+
+#projects .info h5
+{
+  font-size      : 16px;
+  font-weight    : 700;
+  text-transform : uppercase;
+}
+
+#projects .info h6
+{
+  font-size    : 16px;
+  font-weight  : 700;
+  color        : #1f8e0a;
+  word-spacing : 10px;
+}
+
+#projects #carousel
+{
+  height : 400px;
+}
+
+#projects #carousel .item
+{
+  background : #000000;
+  color      : #ffffff;
+  width      : 600px;
+  height     : 300px;
+}
+
+
+#projects #carousel .image img
+{
+  background : #ffffff;
+  width      : 300px;
+  height     : 300px;
+}
+
+#projects #carousel .image #wip
+{
+  position          : absolute;
+  -webkit-transform : rotate(310deg) translate(65%,-25%);
+  -moz-transform    : rotate(310deg) translate(65%,-25%);
+  -ms-transform     : rotate(310deg) translate(65%,-25%);
+  -o-transform      : rotate(310deg) translate(65%,-25%);
+  transform         : rotate(310deg) translate(65%,-25%);
+  font-family       : "Rock Salt";
+  font-size         : 24px;
+  color             : #ff0000;
+}
+
+
+#projects #carousel .info a
+{
+  word-spacing : 20px;
+}
+
+
+#projects #carousel .info i:hover
+{
+  color : #008000;
+}
+
+#projects #carousel .info i
+{
+  font-size   : 30px;
+  line-height : 50px;
+}
+
+
+/* Generated with Clay, http://fvisser.nl/clay */

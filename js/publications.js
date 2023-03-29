@@ -3,7 +3,13 @@
   var publicationEntry;
 
   publicationEntry = function(json) {
-    return "<dt> " + json.venueAbr + " </dt>\n<dd>\n  <span class=\"paperTitle\"> " + json.title + " </span>\n  <a href=\"data/publications/" + json.id + ".pdf\" target='_blank'> <i class='fa fa-book'></i> </a>\n  <br> <span class=\"paperAuthors\"> " + json.authors + " </span>\n  <br> <span class=\"paperVenue\"> " + json.venue + " </span>\n</dd>";
+    if (json.venueAbr == null) {
+      json.venueAbr = "DRAFT";
+    }
+    if (json.venue == null) {
+      json.venue = "";
+    }
+    return " <dt> " + json.venueAbr + "\n      " + (json.$draft != null ? "<br><div class=wip>UNDER<br>SUBMISSION</div>" : "") + "\n </dt>\n <dd>\n   <span class=\"paperTitle\"> " + json.title + "</span>\n   <a href=\"data/publications/" + json.id + ".pdf\" target='_blank'> <i class='fa fa-book'></i> </a>\n   <br> <span class=\"paperAuthors\"> " + json.authors + "</span>\n   <br> <span class=\"paperVenue\"> " + json.venue + "\n</span>\n </dd>";
   };
 
   d3.json("data/publications.json", function(pubs) {

@@ -18,6 +18,12 @@
   font-weight : 500;
 }
 
+#publications dt .wip
+{
+  font-family : "Rock Salt";
+  color       : #ff0000;
+}
+
 #publications .paperTitle
 {
   font-weight : bold;

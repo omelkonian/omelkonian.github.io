@@ -19,9 +19,7 @@
 
   append = function(element, string) {
     var link, newString, ref;
-    console.log("Extracting " + string);
     ref = extractLink(string), newString = ref[0], link = ref[1];
-    console.log("Link: " + link);
     element.append('span').text(newString);
     if (link != null) {
       return element.append('sup').append('a').attr('href', link).attr('target', '_blank').append('i').attr({
