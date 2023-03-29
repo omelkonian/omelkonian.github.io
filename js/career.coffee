@@ -7,9 +7,9 @@ mkString = (element, obj) ->
       append element, obj
 
 append = (element, string) ->
-  console.log "Extracting " + string
+  # console.log "Extracting " + string
   [newString, link] = extractLink string
-  console.log "Link: " + link
+  # console.log "Link: " + link
   element.append 'span'
          .text newString
   if link?

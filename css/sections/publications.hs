@@ -15,7 +15,11 @@ publications = "#publications" ?
      textAlign (alignSide sideLeft)
      padding (px 20) (px 20) (px 20) (px 20)
      ("dt" <> "dd") ? marginBottom (px 20)
-     "dt" ? fontWeight (weight 500)
+     "dt" ? do
+      fontWeight (weight 500)
+      ".wip" ? do
+        fontFamily ["Rock Salt"] []
+        color red
      ".paperTitle" ? fontWeight bold
      ".paperAuthors" ? fontWeight normal
      ".paperVenue" ? fontWeight lighter

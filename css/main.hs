@@ -19,7 +19,7 @@ imports = do
   importUrl "https://fonts.googleapis.com/css?family=Lato:400,900,300,900italic"
   importUrl "responsive.css"
   importUrl "timeline.css"
-  let sections = ["banner", "publications", "interests", "skills", "career", "grades", "contact"]
+  let sections = ["banner", "projects", "publications", "interests", "skills", "career", "grades", "contact"]
   forM_ sections (\s -> importUrl (concat ["sections/", s, ".css"]))
 
 general :: Css
