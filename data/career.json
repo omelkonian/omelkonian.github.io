@@ -254,7 +254,7 @@
     {
         "$inverted": true,
         "$title": "Haskell Reviewer (part-time)",
-        "$time": "Feb 2021 - now",
+        "$time": "Feb 2021 - Mar 2023",
         "$place": "Singapore",
         "$venue": "MigaMake @https://www.migamake.com/@",
         "Tasks": "Reviewing Haskell/Elm code, technical reports, and scientific articles",
