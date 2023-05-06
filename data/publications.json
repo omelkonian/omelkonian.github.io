@@ -1,27 +1,25 @@
 [
   {
+    "id": "hoare-ledgers",
+    "title": "Program logics for ledgers",
+    "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
+    "venue": "",
+    "venueAbr": "",
+    "$draft": true
+  },
+  {
     "id": "hoare-ledgers-short",
     "title": "Program logics for ledgers (Extended Abstract)",
     "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
     "venue": "29th International Conference on Types for Proofs and Programs",
-    "venueAbr": "TYPES '23",
-    "$draft": true
+    "venueAbr": "TYPES '23"
   },
   {
     "id": "nominal-agda-short",
     "title": "Nominal techniques as an Agda library (Extended Abstract)",
     "authors": "Murdoch J. Gabbay, Orestis Melkonian",
     "venue": "29th International Conference on Types for Proofs and Programs",
-    "venueAbr": "TYPES '23",
-    "$draft": true
-  },
-  {
-    "id": "hoare-ledgers",
-    "title": "Program logics for ledgers",
-    "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
-    "venue": "International Conference on Formal Structures for Computation and Deduction",
-    "venueAbr": "FSCD '23",
-    "$draft": true
+    "venueAbr": "TYPES '23"
   },
   {
     "id": "agda2hs",
