@@ -31,8 +31,7 @@ extractLink = (string) ->
 
 timeline = d3.select('#career ul.timeline')
 d3.json "data/career.json", (data) ->
-  careerData = data.reverse()
-  for obj in careerData
+  for obj in data
     if obj.milestone?
       # Milestone
       timeline.append 'li'
@@ -54,10 +53,10 @@ d3.json "data/career.json", (data) ->
       panel.attr 'data-wow-delay', '2s'
 
       # Title
-      panel.append 'div'
-           .attr class: 'tl-heading'
-              .append 'h4'
-              .text obj['$title']
+      head = panel.append 'div'
+      head.attr class: 'tl-heading'
+      h = head.append 'h4'
+      mkString h , obj['$title']
 
       # Info list
       list = panel.append 'ul'
@@ -94,7 +93,7 @@ d3.json "data/career.json", (data) ->
               .attr 'allowfullscreen', ""
               .attr 'frameborder', "0"
               .attr 'allow', "autoplay; encrypted-media; picture-in-picture; web-share"
-        else if key not in ['$title', '$inverted']
+        else
           info.append 'span'
               .attr class: 'emph'
               .text key

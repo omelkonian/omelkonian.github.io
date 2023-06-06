@@ -9,6 +9,8 @@ library
                   , clay     == 0.14.*
                   , text     == 2.*
                   , filepath == 1.4.*
+                  , http-client-tls == 0.3.6.1
+                  , xml-conduit == 1.9.1.1
   default-language: Haskell2010
 
 executable site
