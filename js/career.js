@@ -42,11 +42,10 @@
   timeline = d3.select('#career ul.timeline');
 
   d3.json("data/career.json", function(data) {
-    var careerData, i, info, key, len, li, list, obj, panel, results, value;
-    careerData = data.reverse();
+    var h, head, i, info, key, len, li, list, obj, panel, results, value;
     results = [];
-    for (i = 0, len = careerData.length; i < len; i++) {
-      obj = careerData[i];
+    for (i = 0, len = data.length; i < len; i++) {
+      obj = data[i];
       if (obj.milestone != null) {
         results.push(timeline.append('li').attr({
           "class": 'tldate'
@@ -72,9 +71,12 @@
           });
         }
         panel.attr('data-wow-delay', '2s');
-        panel.append('div').attr({
+        head = panel.append('div');
+        head.attr({
           "class": 'tl-heading'
-        }).append('h4').text(obj['$title']);
+        });
+        h = head.append('h4');
+        mkString(h, obj['$title']);
         list = panel.append('ul');
         list.attr({
           "class": 'tl-body'
@@ -110,7 +112,7 @@
               info.append('video').text('Your browser does not support the <video> tag.').attr('src', obj['$video']).attr('controls', "");
             } else if (key === '$youtube') {
               info.append('iframe').attr('src', obj['$youtube']).attr('allowfullscreen', "").attr('frameborder', "0").attr('allow', "autoplay; encrypted-media; picture-in-picture; web-share");
-            } else if (key !== '$title' && key !== '$inverted') {
+            } else {
               info.append('span').attr({
                 "class": 'emph'
               }).text(key);

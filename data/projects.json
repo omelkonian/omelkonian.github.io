@@ -1,5 +1,17 @@
 [
-
+  {
+    "name": "agda2train",
+    "domain": "Formal Verification",
+    "description": "Neural Premise Selection for Agda",
+    "keywords": [
+      "Agda",
+      "Machine Learning",
+      "Premise Selection"
+    ],
+    "image": "agda2train.png",
+    "github": "https://github.com/omelkonian/agda2train/",
+    "wip": true
+  },
   {
     "name": "Nominal Agda",
     "domain": "Formal Verification",
