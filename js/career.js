@@ -42,7 +42,7 @@
   timeline = d3.select('#career ul.timeline');
 
   d3.json("data/career.json", function(data) {
-    var h, head, i, info, key, len, li, list, obj, panel, results, value;
+    var aref, h, head, i, info, key, len, li, list, obj, panel, results, value;
     results = [];
     for (i = 0, len = data.length; i < len; i++) {
       obj = data[i];
@@ -86,7 +86,7 @@
           results1 = [];
           for (key in obj) {
             value = obj[key];
-            if (key === '$title' || key === '$inverted') {
+            if (key === '$title' || key === '$inverted' || key === '$slides') {
               continue;
             }
             info = list.append('li');
@@ -118,6 +118,18 @@
               }).text(key);
               info.append('br');
               mkString(info, obj[key]);
+              if ((obj['$slides'] != null) && key === 'Title') {
+                aref = info.append('a');
+                aref.attr({
+                  href: "" + obj.$slides
+                });
+                aref.attr({
+                  target: '_blank'
+                });
+                aref.append('i').attr({
+                  "class": 'fa fa-book'
+                });
+              }
             }
             results1.push(info.append('br'));
           }

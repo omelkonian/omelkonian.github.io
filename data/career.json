@@ -12,14 +12,18 @@
         "$time": "June 2023",
         "$place": "Valencia, Spain",
         "$venue": "TYPES @https://types2023.webs.upv.es/Index.html@",
-        "Title": "Program logics for ledgers"
+        "Title": "Program logics for ledgers",
+        "$slides": "data/presentations/types-seplog.pdf",
+        "$video": "videos/types-seplog.mp4"
     },
     {
         "$title": "Talk",
         "$time": "June 2023",
         "$place": "Valencia, Spain",
         "$venue": "TYPES @https://types2023.webs.upv.es/Index.html@",
-        "Title": "Nominal techniques as an Agda library"
+        "Title": "Nominal techniques as an Agda library",
+        "$slides": "data/presentations/types-nomagda.pdf",
+        "$video": "videos/types-nomagda.mp4"
     },
     {
         "$inverted": true,
@@ -44,6 +48,7 @@
             "Reasonable Agda is correct Haskell:",
             "writing verified Haskell using agda2hs"
         ],
+        "$slides": "data/presentations/agda2hs.pdf",
         "$youtube": "https://www.youtube-nocookie.com/embed/7unXXl_v8GY"
     },
     {
@@ -68,6 +73,7 @@
         "$place": "Online",
         "$venue": "RSC @ ISoLA'20 @http://www.cs.um.edu.mt/gordon.pace/Workshops/RSC2020/@",
         "Title": "Native Custom Tokens in the Extended UTXO Model",
+        "$slides": "data/presentations/eutxoma.pdf",
         "$video": "videos/eutxoma.mp4"
     },
     {
@@ -76,9 +82,10 @@
         "$place": "Kota Kinabalu, Malaysia",
         "$venue": "WTSC @ FC'20 @http://fc20.ifca.ai/wtsc/index.html@",
         "Title": [
-            "The Extended UTxO Model @data/presentations/eutxo.pdf@",
+            "The Extended UTxO Model",
             "(kindly presented by Alexander Nemish)"
-        ]
+        ],
+        "$slides": "data/presentations/eutxo.pdf"
     },
     {
         "$inverted": true,
@@ -96,15 +103,17 @@
         "$venue": "FARM @ ICFP'19 @https://icfp19.sigplan.org/home/farm-2019@",
         "Title": [
             "Music as Language: Putting Probabilistic",
-            "Temporal Graph Grammars to Good Use @data/presentations/music-grammars.pdf@"
-        ]
+            "Temporal Graph Grammars to Good Use"
+        ],
+        "$slides": "data/presentations/music-grammars.pdf"
     },
     {
         "$title": "Talk",
         "$time": "Aug 2019",
         "$place": "Berlin, Germany",
         "$venue": "TyDe @ ICFP'19 @https://icfp19.sigplan.org/home/tyde-2019@",
-        "Title": "Formal Investigation of the Extended UTxO Model @data/presentations/formal-utxo.pdf@"
+        "Title": "Formal Investigation of the Extended UTxO Model",
+        "$slides": "data/presentations/formal-utxo.pdf"
     },
 
     {
@@ -141,8 +150,9 @@
         "$venue": "REBLS @ SPLASH'18 @https://2018.splashcon.org/track/rebls-2018-papers@",
         "Title": [
             "RHEA: A Reactive, Heterogeneous, Extensible",
-            "and Abstract Framework for Dataflow Programming @data/presentations/rhea.pdf@"
-        ]
+            "and Abstract Framework for Dataflow Programming"
+        ],
+        "$slides": "data/presentations/rhea.pdf"
     },
     { "$inverted": true,
         "$title": "Talk",
@@ -152,7 +162,8 @@
             "European Summer School on",
             "Logic, Language & Information (ESSLLI) @http://esslli2018.folli.info/@"
         ],
-        "Title": "D3 as a 2-MCFL @data/presentations/d3.pdf@"
+        "Title": "D3 as a 2-MCFL",
+        "$slides": "data/presentations/d3.pdf"
     },
     {
         "$title": "Registration Grant",
@@ -192,7 +203,10 @@
         "$place": "Utrecht, The Netherlands",
         "$venue": "Utrecht University @http://www.uu.nl@",
         "Specialization": "Programming Technology @https://students.uu.nl/en/science/computing-science/academics/study-programme/curriculum@",
-        "Supervisors": "Wouter Swierstra (UU) @http://www.staff.science.uu.nl/~swier004/@, Manuel Chakravarty (IOHK) @http://justtesting.org@"
+        "Supervisors": [
+            "Wouter Swierstra (UU) @http://www.staff.science.uu.nl/~swier004/@",
+            "Manuel Chakravarty (IOHK) @http://justtesting.org@"
+        ]
     },
     {
         "$inverted": true,
@@ -251,7 +265,8 @@
         "$time": "Dec 2015",
         "$place": "Athens, Greece",
         "$venue": "13th Programming Language Seminar, IEEE",
-        "Title": "A Dataflow Approach to Robot Programming"
+        "Title": "A Dataflow Approach to Robot Programming",
+        "$slides": "data/presentations/rhea-ntua.pdf"
     },
     {
         "$inverted": true,
@@ -259,9 +274,9 @@
         "$time": "Dec 2015",
         "$place": "Athens, Greece",
         "$venue": "NCSR 'Demokritos'",
-        "Title": "A Streamful of Robots"
+        "Title": "A Streamful of Robots",
+        "$slides": "data/presentations/rhea-ncsr.pdf"
     },
-
     {
         "$title": "Research Internship",
         "$time": "Oct 2015 - Apr 2016",
