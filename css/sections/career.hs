@@ -16,6 +16,8 @@ main = putCss $
        ".container" ? paddingBottom (px 40)
        before & Colors.dim
        ".section-title" ? color black
+       ".fa" ? color black
+       ".fa-book" ? paddingLeft (px 5)
        ".table" ?
          do display table
             margin nil auto nil auto

@@ -63,7 +63,7 @@ d3.json "data/career.json", (data) ->
       list.attr class: 'tl-body'
       # Body
       for key, value of obj
-        if key in ['$title', '$inverted']
+        if key in ['$title', '$inverted', '$slides']
           continue
         info = list.append 'li'
         if key == '$time'
@@ -99,4 +99,10 @@ d3.json "data/career.json", (data) ->
               .text key
           info.append 'br'
           mkString info, obj[key]
+          if obj['$slides']? and key == 'Title'
+            aref = info.append 'a'
+            aref.attr href: "#{obj.$slides}"
+            aref.attr target: '_blank'
+            aref.append 'i'
+                .attr class: 'fa fa-book'
         info.append 'br'
