@@ -1,11 +1,22 @@
 [
     {
+        "$title": "Formal Methods Intern",
+        "$time": "Sep 2023 - Jan 2024",
+        "$venue": "Input Output (IOG) @https://iohk.io/@",
+        "Tasks": "Working on the Agda formalisation of the Cardano ledger",
+        "Supervisor": "James Chapman"
+    },
+    {
         "$inverted": true,
         "$title": "EuroProofNet Short-term Scientific Mission @https://europroofnet.github.io/accepted_stsms/@",
         "$time": "Jun 2023",
         "$place": "Gothenburg, Sweden",
+        "$venue": "Chalmers University of Technology",
         "Host": "Jean-Philippe Bernardy",
-        "$venue": "Chalmers University of Technology"
+        "Topic": [
+            "Machine-learned premise selection for Agda:",
+            "the prover’s infrastructure @https://europroofnet.github.io/_pages/stsm/melkonian-app.pdf@"
+        ]
     },
     {
         "$title": "Talk",
@@ -90,10 +101,13 @@
     {
         "$inverted": true,
         "$title": "PhD in Computer Science",
-        "$time": "Sept 2019 - now",
+        "$time": "Sept 2019 - Sept 2023",
         "$place": "Edinburgh, Scotland",
         "$venue": "University of Edinburgh @https://www.ed.ac.uk/@",
-        "Topic": "Blockchain Semantics in Agda",
+        "Thesis": [
+            "Verified compilation from BitML to Bitcoin:",
+            "An Agda Odyssey"
+        ],
         "Supervisor": "Philip Wadler @http://homepages.inf.ed.ac.uk/wadler/@"
     },
     {
