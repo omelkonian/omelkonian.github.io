@@ -1,5 +1,21 @@
 [
   {
+    "id": "eutxo-struc",
+    "title": "Message-passing in the Extended UTxO Ledger Model",
+    "authors": "Polina Vinogradova, Orestis Melkonian, Manuel Chakravarty, Philip Wadler",
+    "venue": "",
+    "venueAbr": "",
+    "$draft": true
+  },
+  {
+    "id": "cardano-ledger",
+    "title": "Formal specification of the Cardano blockchain ledger, mechaniszd in Agda",
+    "authors": "Andre Knispel, Orestis Melkonian, James Chapman, Alasdair Hill, Joosep Jääger, William DeMeo, Ulf Norell",
+    "venue": "",
+    "venueAbr": "",
+    "$draft": true
+  },
+  {
     "id": "hoare-ledgers",
     "title": "Program logics for ledgers",
     "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
