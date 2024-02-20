@@ -1,5 +1,13 @@
 [
   {
+    "id": "neural-agda",
+    "title": "Learning Structure-Aware Representations of Dependent Types",
+    "authors": "Konstantinos Kogkalidis, Orestis Melkonian, Jean-Philippe Bernardy",
+    "venue": "",
+    "venueAbr": "",
+    "$draft": true
+  },
+  {
     "id": "eutxo-struc",
     "title": "Message-passing in the Extended UTxO Ledger Model",
     "authors": "Polina Vinogradova, Orestis Melkonian, Manuel Chakravarty, Philip Wadler",
