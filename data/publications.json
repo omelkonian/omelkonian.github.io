@@ -1,5 +1,21 @@
 [
   {
+    "id": "eutxo-struc",
+    "title": "Structured Contracts in the EUTxO Ledger Model",
+    "authors": "Polina Vinogradova, Orestis Melkonian, Philip Wadler, Manuel Chakravarty, Jacco Krijnen, Michael Peyton Jones, James Chapman, Tudor Ferariu",
+    "venue": "",
+    "venueAbr": "",
+    "$draft": true
+  },
+  {
+    "id": "cardano-ledger",
+    "title": "Formal specification of the Cardano blockchain ledger, mechanized in Agda",
+    "authors": "Andre Knispel, Orestis Melkonian, James Chapman, Alasdair Hill, Joosep Jääger, William DeMeo, Ulf Norell",
+    "venue": "",
+    "venueAbr": "",
+    "$draft": true
+  },
+  {
     "id": "neural-agda",
     "title": "Learning Structure-Aware Representations of Dependent Types",
     "authors": "Konstantinos Kogkalidis, Orestis Melkonian, Jean-Philippe Bernardy",
@@ -8,20 +24,11 @@
     "$draft": true
   },
   {
-    "id": "eutxo-struc",
-    "title": "Message-passing in the Extended UTxO Ledger Model",
-    "authors": "Polina Vinogradova, Orestis Melkonian, Manuel Chakravarty, Philip Wadler",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
-  },
-  {
-    "id": "cardano-ledger",
-    "title": "Formal specification of the Cardano blockchain ledger, mechaniszd in Agda",
-    "authors": "Andre Knispel, Orestis Melkonian, James Chapman, Alasdair Hill, Joosep Jääger, William DeMeo, Ulf Norell",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
+    "id": "eutxo-messages",
+    "title": "Message-passing in the Extended UTxO Model",
+    "authors": "Polina Vinogradova, Orestis Melkonian",
+    "venue": "Proceedings of the 8th Workshop on Trusted Smart Contracts, 2024",
+    "venueAbr": "WTSC @ FC '24"
   },
   {
     "id": "hoare-ledgers",
@@ -82,7 +89,7 @@
   },
   {
     "id": "utxoma",
-    "title": "UTXOma: UTXO with Multi-Asset Support",
+    "title": "UTXO<sub>ma</sub>: UTXO with Multi-Asset Support",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler, Joachim Zahnentferner",
     "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation, 2020",
     "venueAbr": "ISoLA '20"
