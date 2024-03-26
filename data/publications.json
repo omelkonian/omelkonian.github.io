@@ -3,17 +3,15 @@
     "id": "eutxo-struc",
     "title": "Structured Contracts in the EUTxO Ledger Model",
     "authors": "Polina Vinogradova, Orestis Melkonian, Philip Wadler, Manuel Chakravarty, Jacco Krijnen, Michael Peyton Jones, James Chapman, Tudor Ferariu",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
+    "venue": "5th International Workshop on Formal Methods for Blockchains",
+    "venueAbr": "FMBC '24"
   },
   {
     "id": "cardano-ledger",
     "title": "Formal specification of the Cardano blockchain ledger, mechanized in Agda",
     "authors": "Andre Knispel, Orestis Melkonian, James Chapman, Alasdair Hill, Joosep Jääger, William DeMeo, Ulf Norell",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
+    "venue": "5th International Workshop on Formal Methods for Blockchains",
+    "venueAbr": "FMBC '24"
   },
   {
     "id": "neural-agda",
@@ -27,7 +25,7 @@
     "id": "eutxo-messages",
     "title": "Message-passing in the Extended UTxO Model",
     "authors": "Polina Vinogradova, Orestis Melkonian",
-    "venue": "Proceedings of the 8th Workshop on Trusted Smart Contracts, 2024",
+    "venue": "Proceedings of the 8th Workshop on Trusted Smart Contracts",
     "venueAbr": "WTSC @ FC '24"
   },
   {
@@ -56,105 +54,105 @@
     "id": "agda2hs",
     "title": "Reasonable Agda is correct Haskell: writing verified Haskell using agda2hs",
     "authors": "Jesper Cockx, Orestis Melkonian, Lucas Escot, James Chapman, Ulf Norell",
-    "venue": "15th International Haskell Symposium, 2022",
+    "venue": "15th International Haskell Symposium",
     "venueAbr": "Haskell '22"
   },
   {
     "id": "formal-cardano-ledger",
     "title": "Human and machine-readable models of state machines for the Cardano ledger (Extended Abstract)",
     "authors": "Andre Knispel, James Chapman, Orestis Melkonian, Polina Vinogradova",
-    "venue": "4th International Workshop on Formal Methods for Blockchains, 2022",
+    "venue": "4th International Workshop on Formal Methods for Blockchains",
     "venueAbr": "FMBC '22"
   },
   {
     "id": "ledger-determinism",
     "title": "Determinism of ledger updates (Extended Abstract)",
     "authors": "Polina Vinogradova, James Chapman, Andre Knispel, Orestis Melkonian",
-    "venue": "4th International Workshop on Formal Methods for Blockchains, 2022",
+    "venue": "4th International Workshop on Formal Methods for Blockchains",
     "venueAbr": "FMBC '22"
   },
   {
     "id": "eutxo-account-sim",
     "title": "Designing EUTxO smart contracts as communicating state machines: the case of simulating accounts (Extended Abstract)",
     "authors": "Polina Vinogradova, Manuel Chakravarty, James Chapman, Tudor Ferariu, Michael Peyton Jones, Jacco Krijnen, Orestis Melkonian",
-    "venue": "4th International Workshop on Formal Methods for Blockchains, 2022",
+    "venue": "4th International Workshop on Formal Methods for Blockchains",
     "venueAbr": "FMBC '22"
   },
   {
     "id": "eutxoma",
     "title": "Native Custom Tokens in the Extended UTXO Model",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler",
-    "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation, 2020",
+    "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation",
     "venueAbr": "ISoLA '20"
   },
   {
     "id": "utxoma",
     "title": "UTXO<sub>ma</sub>: UTXO with Multi-Asset Support",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Jann Müller, Michael Peyton Jones, Polina Vinogradova, Philip Wadler, Joachim Zahnentferner",
-    "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation, 2020",
+    "venue": "9th International Symposium On Leveraging Applications of Formal Methods, Verification and Validation",
     "venueAbr": "ISoLA '20"
   },
   {
     "id": "scfix",
     "title": "Reconciling Event Structures with Modern Multiprocessors",
     "authors": "Evgenii Moiseenko, Anton Podkopaev, Ori Lahav, Orestis Melkonian, Viktor Vafeiadis",
-    "venue": "34th European Conference on Object-Oriented Programming, 2020",
+    "venue": "34th European Conference on Object-Oriented Programming",
     "venueAbr": "ECOOP '20"
   },
   {
     "id": "eutxo",
     "title": "The Extended UTXO Model",
     "authors": "Manuel M.T. Chakravarty, James Chapman, Kenneth MacKenzie, Orestis Melkonian, Michael Peyton Jones, Philip Wadler",
-    "venue": "Proceedings of the 4th Workshop on Trusted Smart Contracts, 2019",
+    "venue": "Proceedings of the 4th Workshop on Trusted Smart Contracts",
     "venueAbr": "WTSC @ FC '20"
   },
   {
     "id": "formal-bitml",
     "title": "Formalizing BitML Calculus in Agda (Extended Abstract)",
     "authors": "Orestis Melkonian",
-    "venue": "Student Research Competition, Poster Session, 2019",
+    "venue": "Student Research Competition, Poster Session",
     "venueAbr": "SRC @ ICFP '19"
   },
   {
     "id": "formal-utxo",
     "title": "Formal Investigation of the Extended UTxO Model (Extended Abstract)",
     "authors": "Orestis Melkonian, Wouter Swierstra, Manuel M.T. Chakravarty",
-    "venue": "Proceedings of the 4rd ACM SIGPLAN International Workshop on Type-Driven Development. ACM, 2019",
+    "venue": "Proceedings of the 4rd ACM SIGPLAN International Workshop on Type-Driven Development. ACM",
     "venueAbr": "TyDe @ ICFP '19"
   },
   {
     "id": "music-grammars",
     "title": "Music as Language: Putting Probabilistic Temporal Graph Grammars to Good Use",
     "authors": "Orestis Melkonian",
-    "venue": "Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design. ACM, 2019",
+    "venue": "Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design. ACM",
     "venueAbr": "FARM @ ICFP '19"
   },
   {
     "id": "pattrans",
     "title": "What Constitutes a Musical Pattern?",
     "authors": "Orestis Melkonian, Iris Yuping Ren, Wouter Swierstra, Anja Volk",
-    "venue": "Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design. ACM, 2019",
+    "venue": "Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design. ACM",
     "venueAbr": "FARM @ ICFP '19"
   },
   {
     "id": "formalz",
     "title": "Having Fun in Learning Formal Specifications",
     "authors": "Wishnu Prasetya, Craig Leek, Orestis Melkonian et al.",
-    "venue": "Proceedings of the 41th International Conference on Software Engineering: Software Engineering Education and Training. ACM, 2019",
-    "venueAbr": "ICSE '18"
+    "venue": "Proceedings of the 41th International Conference on Software Engineering: Software Engineering Education and Training. ACM",
+    "venueAbr": "ICSE '19"
   },
   {
     "id": "rhea",
     "title": "RHEA: A Reactive, Heterogeneous, Extensible and Abstract Framework for Dataflow Programming",
     "authors": "Orestis Melkonian, Angelos Charalambidis",
-    "venue": "Proceedings of the 5th ACM SIGPLAN International Workshop on Reactive and Event-Based Languages and Systems. ACM, 2018",
+    "venue": "Proceedings of the 5th ACM SIGPLAN International Workshop on Reactive and Event-Based Languages and Systems. ACM",
     "venueAbr": "REBLS @ SPLASH '18"
   },
   {
     "id": "d3",
     "title": "D<sup>3</sup> as a 2-MCFL",
     "authors": "Konstantinos Kogkalidis, Orestis Melkonian",
-    "venue": "Student Session Proceedings of the 30th European Summer School in Logic, Language and Information. Springer, 2018",
+    "venue": "Student Session Proceedings of the 30th European Summer School in Logic, Language and Information. Springer",
     "venueAbr": "ESSLLI '18"
   }
 ]
