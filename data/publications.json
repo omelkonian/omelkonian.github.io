@@ -1,15 +1,23 @@
 [
   {
-    "id": "eutxo-struc",
-    "title": "Structured Contracts in the EUTxO Ledger Model",
-    "authors": "Polina Vinogradova, Orestis Melkonian, Philip Wadler, Manuel Chakravarty, Jacco Krijnen, Michael Peyton Jones, James Chapman, Tudor Ferariu",
-    "venue": "5th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '24"
+    "id": "fastbft-short",
+    "title": "Mechanizing BFT consensus protocol in Agda",
+    "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman, Jon Rossie",
+    "venue": "",
+    "venueAbr": "",
+    "$draft": true
   },
   {
     "id": "cardano-ledger",
     "title": "Formal specification of the Cardano blockchain ledger, mechanized in Agda",
     "authors": "Andre Knispel, Orestis Melkonian, James Chapman, Alasdair Hill, Joosep Jääger, William DeMeo, Ulf Norell",
+    "venue": "5th International Workshop on Formal Methods for Blockchains",
+    "venueAbr": "FMBC '24"
+  },
+  {
+    "id": "eutxo-struc",
+    "title": "Structured Contracts in the EUTxO Ledger Model",
+    "authors": "Polina Vinogradova, Orestis Melkonian, Philip Wadler, Manuel Chakravarty, Jacco Krijnen, Michael Peyton Jones, James Chapman, Tudor Ferariu",
     "venue": "5th International Workshop on Formal Methods for Blockchains",
     "venueAbr": "FMBC '24"
   },
