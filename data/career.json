@@ -1,9 +1,28 @@
 [
     {
+        "$title": "Formal Methods Engineer",
+        "$time": "Jan 2024 - now",
+        "$venue": "Input Output (IOG) @https://iohk.io/@",
+        "Tasks": [
+            "Formalising BFT-style blockchain consensus in Agda",
+            "Developing a Agda-to-Rust compiler backend @https://github.com/omelkonian/agda2rust@"
+        ],
+        "Line Manager": "James Chapman"
+    },
+    {
+        "$inverted": true,
+        "$title": "PhD viva passed! @data/phd-thesis.pdf@",
+        "$time": "Dec 2023",
+        "$place": "Edinburgh, Scotland",
+        "$venue": "University of Edinburgh",
+        "External Examiner": "Andreas Abel",
+        "Internal Examiner": "Liam O'Connor"
+    },
+    {
         "$title": "Formal Methods Intern",
         "$time": "Sep 2023 - Jan 2024",
         "$venue": "Input Output (IOG) @https://iohk.io/@",
-        "Tasks": "Working on the Agda formalisation of the Cardano ledger",
+        "Tasks": "Working on the Agda formalisation of the Cardano ledger @https://github.com/input-output-hk/formal-ledger-specifications/@",
         "Supervisor": "James Chapman"
     },
     {
@@ -108,7 +127,8 @@
             "Verified compilation from BitML to Bitcoin:",
             "An Agda Odyssey"
         ],
-        "Supervisor": "Philip Wadler @http://homepages.inf.ed.ac.uk/wadler/@"
+        "Supervisor": "Philip Wadler @http://homepages.inf.ed.ac.uk/wadler/@",
+        "Co-supervisors": "Brian Campbell, Aggelos Kiayias"
     },
     {
         "$title": "Talk",
