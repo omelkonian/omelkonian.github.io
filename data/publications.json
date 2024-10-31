@@ -1,11 +1,17 @@
 [
   {
+    "id": "neural-agda",
+    "title": "Learning Structure-Aware Representations of Dependent Types",
+    "authors": "Konstantinos Kogkalidis, Orestis Melkonian, Jean-Philippe Bernardy",
+    "venue": "38th Annual Conference on Neural Information Processing Systems",
+    "venueAbr": "NeurIPS '24",
+  },
+  {
     "id": "fastbft-short",
     "title": "Mechanizing BFT consensus protocol in Agda",
     "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman, Jon Rossie",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
+    "venue": "30th International Conference on Types for Proofs and Programs",
+    "venueAbr": "TYPES '24",
   },
   {
     "id": "cardano-ledger",
@@ -20,14 +26,6 @@
     "authors": "Polina Vinogradova, Orestis Melkonian, Philip Wadler, Manuel Chakravarty, Jacco Krijnen, Michael Peyton Jones, James Chapman, Tudor Ferariu",
     "venue": "5th International Workshop on Formal Methods for Blockchains",
     "venueAbr": "FMBC '24"
-  },
-  {
-    "id": "neural-agda",
-    "title": "Learning Structure-Aware Representations of Dependent Types",
-    "authors": "Konstantinos Kogkalidis, Orestis Melkonian, Jean-Philippe Bernardy",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
   },
   {
     "id": "eutxo-messages",
