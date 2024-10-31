@@ -1,8 +1,22 @@
 [
   {
+    "id": "neural-agda",
+    "title": "Learning Structure-Aware Representations of Dependent Types",
+    "authors": "Konstantinos Kogkalidis, Orestis Melkonian, Jean-Philippe Bernardy",
+    "venue": "38th Annual Conference on Neural Information Processing Systems",
+    "venueAbr": "NeurIPS '24"
+  },
+  {
     "id": "fastbft-short",
     "title": "Mechanizing BFT consensus protocol in Agda",
     "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman, Jon Rossie",
+    "venue": "30th International Conference on Types for Proofs and Programs",
+    "venueAbr": "TYPES '24"
+  },
+  {
+    "id": "hoare-ledgers",
+    "title": "Program logics for ledgers",
+    "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
     "venue": "",
     "venueAbr": "",
     "$draft": true
@@ -22,27 +36,11 @@
     "venueAbr": "FMBC '24"
   },
   {
-    "id": "neural-agda",
-    "title": "Learning Structure-Aware Representations of Dependent Types",
-    "authors": "Konstantinos Kogkalidis, Orestis Melkonian, Jean-Philippe Bernardy",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
-  },
-  {
     "id": "eutxo-messages",
     "title": "Message-passing in the Extended UTxO Model",
     "authors": "Polina Vinogradova, Orestis Melkonian",
     "venue": "Proceedings of the 8th Workshop on Trusted Smart Contracts",
     "venueAbr": "WTSC @ FC '24"
-  },
-  {
-    "id": "hoare-ledgers",
-    "title": "Program logics for ledgers",
-    "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
   },
   {
     "id": "hoare-ledgers-short",

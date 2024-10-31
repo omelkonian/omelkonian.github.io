@@ -22,8 +22,7 @@
       "Premise Selection"
     ],
     "image": "agda2train.png",
-    "github": "https://github.com/omelkonian/agda2train/",
-    "wip": true
+    "github": "https://github.com/omelkonian/agda2train/"
   },
   {
     "name": "Nominal Agda",
@@ -34,8 +33,7 @@
       "Nominal"
     ],
     "image": "nom.png",
-    "github": "https://omelkonian.github.io/nominal-agda/",
-    "wip": true
+    "github": "https://omelkonian.github.io/nominal-agda/"
   },
   {
     "name": "SepLog4UTxO",
@@ -47,8 +45,7 @@
       "UTxO"
     ],
     "image": "sep.png",
-    "github": "https://omelkonian.github.io/hoare-ledgers/",
-    "wip": true
+    "github": "https://omelkonian.github.io/hoare-ledgers/"
   },
   {
     "name": "agda2hs",
@@ -61,8 +58,7 @@
     ],
     "image": "agda2hs.png",
     "github": "https://github.com/agda/agda2hs",
-    "documentation": "data/publications/agda2hs.pdf",
-    "wip": true
+    "documentation": "data/publications/agda2hs.pdf"
   },
   {
     "name": "Certified BitML Compiler",
@@ -74,8 +70,7 @@
       "Bitcoin"
     ],
     "image": "bitml-to-bitcoin.png",
-    "github": "https://omelkonian.github.io/formal-bitml-to-bitcoin/",
-    "wip": true
+    "github": "https://omelkonian.github.io/formal-bitml-to-bitcoin/"
   },
   {
     "name": "Formal BitML",
@@ -120,8 +115,7 @@
       "Typescript"
     ],
     "image": "setup-agda.png",
-    "github": "https://github.com/omelkonian/setup-agda",
-    "wip": true
+    "github": "https://github.com/omelkonian/setup-agda"
   },
   {
     "name": "Formal Prelude",
