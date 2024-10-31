@@ -7,7 +7,7 @@
             "Formalising BFT-style blockchain consensus in Agda",
             "Developing a Agda-to-Rust compiler backend @https://github.com/omelkonian/agda2rust@"
         ],
-        "Line Manager": "James Chapman"
+        "Supervisor": "James Chapman"
     },
     {
         "$inverted": true,
@@ -22,7 +22,7 @@
         "$title": "Formal Methods Intern",
         "$time": "Sep 2023 - Jan 2024",
         "$venue": "Input Output (IOG) @https://iohk.io/@",
-        "Tasks": "Working on the Agda formalisation of the Cardano ledger @https://github.com/input-output-hk/formal-ledger-specifications/@",
+        "Tasks": "Working on the Agda formalisation of the Cardano ledger @https://github.com/IntersectMBO/formal-ledger-specifications/@",
         "Supervisor": "James Chapman"
     },
     {

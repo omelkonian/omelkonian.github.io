@@ -38,7 +38,7 @@ banner = "#banner" ?
                textTransform uppercase
           h2 ?
             do color white
-               fontSize (px 45)
+               fontSize (px 35)
                margin (px 32) nil (px 50) auto
      ".btn-collapse" ?
        do (".fa" <> ".fab" <> ".far" <> ".fas") ? (hover & color white)
