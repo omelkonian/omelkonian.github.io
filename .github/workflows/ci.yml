@@ -18,7 +18,7 @@ jobs:
         run: npm install -g coffee-script@1.9.3
 
       - name: Setup Haskell
-        uses: haskell/actions/setup@v2
+        uses: haskell-actions/setup@v2.7.10
         with:
           ghc-version: 9.0.1
           cabal-version: 3.8.1.0

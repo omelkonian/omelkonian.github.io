@@ -2,3 +2,6 @@ _cache/
 _site/
 .stack-work/
 node-modules/
+
+cabal.project.freeze
+cabal.project.freeze.disabled
