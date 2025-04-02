@@ -1,5 +1,26 @@
 [
   {
+    "id": "formal-streamlet",
+    "title": "A readable and computable formalization of the Streamlet consensus protocol",
+    "authors": "Mauro Jaskelioff, Orestis Melkonian, James Chapman",
+    "venue": "6th International Workshop on Formal Methods for Blockchains",
+    "venueAbr": "FMBC '25"
+  },
+  {
+    "id": "hoare-ledgers",
+    "title": "Program logics for ledgers",
+    "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
+    "venue": "6th International Workshop on Formal Methods for Blockchains",
+    "venueAbr": "FMBC '25"
+  },
+  {
+    "id": "agda2plinth",
+    "title": "Validity, Liquidity, and Fidelity: Formal Verification for Smart Contracts in Cardano",
+    "authors": "Tudor Ferariu, Philip Wadler, Orestis Melkonian",
+    "venue": "6th International Workshop on Formal Methods for Blockchains",
+    "venueAbr": "FMBC '25"
+  },
+  {
     "id": "neural-agda",
     "title": "Learning Structure-Aware Representations of Dependent Types",
     "authors": "Konstantinos Kogkalidis, Orestis Melkonian, Jean-Philippe Bernardy",
@@ -8,18 +29,10 @@
   },
   {
     "id": "fastbft-short",
-    "title": "Mechanizing BFT consensus protocol in Agda",
+    "title": "Mechanizing BFT consensus protocol in Agda (Extended Abstract)",
     "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman, Jon Rossie",
     "venue": "30th International Conference on Types for Proofs and Programs",
     "venueAbr": "TYPES '24"
-  },
-  {
-    "id": "hoare-ledgers",
-    "title": "Program logics for ledgers",
-    "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
-    "venue": "",
-    "venueAbr": "",
-    "$draft": true
   },
   {
     "id": "cardano-ledger",
