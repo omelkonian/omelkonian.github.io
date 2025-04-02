@@ -1,7 +1,33 @@
 [
   {
-    "name": "agda2rust",
+    "name": "agda2lambox",
+    "domain": "Compiler",
+    "description": "Compiling Agda's syntax to λ-box terms.",
+    "keywords": [
+      "Agda",
+      "λ-box",
+      "Compiler"
+    ],
+    "image": "agda2lambox.png",
+    "github": "https://github.com/agda/agda2lambox/",
+    "wip": true
+  },
+  {
+    "name": "formal-streamlet",
     "domain": "Formal Verification",
+    "description": "An Agda mechanization of the Streamlet consensus protocol",
+    "keywords": [
+      "Agda",
+      "BFT",
+      "Consensus"
+    ],
+    "image": "formal-streamlet.png",
+    "github": "https://github.com/input-output-hk/formal-streamlet/",
+    "documentation": "data/publications/formal-streamlet.pdf"
+  },
+  {
+    "name": "agda2rust",
+    "domain": "Compiler",
     "description": "Compiling Agda to Rust",
     "keywords": [
       "Agda",
@@ -10,6 +36,7 @@
     ],
     "image": "agda2rust.png",
     "github": "https://github.com/omelkonian/agda2rust/",
+    "documentation": "https://omelkonian.github.io/agda2rust/",
     "wip": true
   },
   {
@@ -22,7 +49,30 @@
       "Premise Selection"
     ],
     "image": "agda2train.png",
-    "github": "https://github.com/omelkonian/agda2train/"
+    "github": "https://github.com/omelkonian/agda2train/",
+    "documentation": "data/publications/neural-agda.pdf"
+  },
+  {
+    "name": "agda-stdlib-meta",
+    "domain": "Formal Verification",
+    "description": "A meta-programming layer on top of Agda's standard library",
+    "keywords": [
+      "Agda",
+      "Meta-programming"
+    ],
+    "image": "agda-stdlib-meta.png",
+    "github": "https://github.com/agda/agda-stdlib-meta/"
+  },
+  {
+    "name": "agda-stdlib-classes",
+    "domain": "Formal Verification",
+    "description": "A typeclass-oriented layer on top of Agda's standard library",
+    "keywords": [
+      "Agda",
+      "Typeclasses"
+    ],
+    "image": "agda-stdlib-classes.png",
+    "github": "https://github.com/agda/agda-stdlib-classes/"
   },
   {
     "name": "Nominal Agda",
@@ -33,7 +83,8 @@
       "Nominal"
     ],
     "image": "nom.png",
-    "github": "https://omelkonian.github.io/nominal-agda/"
+    "github": "https://omelkonian.github.io/nominal-agda/",
+    "documentation": "data/publications/nominal-agda-short.pdf"
   },
   {
     "name": "SepLog4UTxO",
@@ -45,11 +96,12 @@
       "UTxO"
     ],
     "image": "sep.png",
-    "github": "https://omelkonian.github.io/hoare-ledgers/"
+    "github": "https://omelkonian.github.io/hoare-ledgers/",
+    "documentation": "data/publications/hoare-ledgers.pdf"
   },
   {
     "name": "agda2hs",
-    "domain": "Formal Verification",
+    "domain": "Compiler",
     "description": "Writing verified Haskell programs within Agda",
     "keywords": [
       "Agda",
@@ -70,7 +122,8 @@
       "Bitcoin"
     ],
     "image": "bitml-to-bitcoin.png",
-    "github": "https://omelkonian.github.io/formal-bitml-to-bitcoin/"
+    "github": "https://omelkonian.github.io/formal-bitml-to-bitcoin/",
+    "documentation": "data/phd-thesis.pdf"
   },
   {
     "name": "Formal BitML",
@@ -81,7 +134,8 @@
       "BitML"
     ],
     "image": "bitml.png",
-    "github": "https://omelkonian.github.io/formal-bitml/"
+    "github": "https://omelkonian.github.io/formal-bitml/",
+    "documentation": "data/phd-thesis.pdf"
   },
   {
     "name": "Formal Bitcoin",
@@ -92,7 +146,8 @@
       "Bitcoin"
     ],
     "image": "bitcoin.png",
-    "github": "https://omelkonian.github.io/formal-bitcoin/"
+    "github": "https://omelkonian.github.io/formal-bitcoin/",
+    "documentation": "data/phd-thesis.pdf"
   },
   {
     "name": "Formal UTxO",
@@ -103,7 +158,8 @@
       "UTxO"
     ],
     "image": "eutxo.png",
-    "github": "https://omelkonian.github.io/formal-utxo/"
+    "github": "https://omelkonian.github.io/formal-utxo/",
+    "documentation": "data/publications/eutxo.pdf"
   },
   {
     "name": "setup-agda",
