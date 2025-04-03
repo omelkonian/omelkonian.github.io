@@ -4,21 +4,21 @@
     "title": "A readable and computable formalization of the Streamlet consensus protocol",
     "authors": "Mauro Jaskelioff, Orestis Melkonian, James Chapman",
     "venue": "6th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '25"
+    "venueAbr": "FMBC @ ETAPS '25"
   },
   {
     "id": "hoare-ledgers",
     "title": "Program logics for ledgers",
     "authors": "Orestis Melkonian, Wouter Swierstra, James Chapman",
     "venue": "6th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '25"
+    "venueAbr": "FMBC @ ETAPS '25"
   },
   {
     "id": "agda2plinth",
     "title": "Validity, Liquidity, and Fidelity: Formal Verification for Smart Contracts in Cardano",
     "authors": "Tudor Ferariu, Philip Wadler, Orestis Melkonian",
     "venue": "6th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '25"
+    "venueAbr": "FMBC @ ETAPS '25"
   },
   {
     "id": "neural-agda",
@@ -39,14 +39,14 @@
     "title": "Formal specification of the Cardano blockchain ledger, mechanized in Agda",
     "authors": "Andre Knispel, Orestis Melkonian, James Chapman, Alasdair Hill, Joosep Jääger, William DeMeo, Ulf Norell",
     "venue": "5th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '24"
+    "venueAbr": "FMBC @ ETAPS '24"
   },
   {
     "id": "eutxo-struc",
     "title": "Structured Contracts in the EUTxO Ledger Model",
     "authors": "Polina Vinogradova, Orestis Melkonian, Philip Wadler, Manuel Chakravarty, Jacco Krijnen, Michael Peyton Jones, James Chapman, Tudor Ferariu",
     "venue": "5th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '24"
+    "venueAbr": "FMBC @ ETAPS '24"
   },
   {
     "id": "eutxo-messages",
@@ -74,28 +74,28 @@
     "title": "Reasonable Agda is correct Haskell: writing verified Haskell using agda2hs",
     "authors": "Jesper Cockx, Orestis Melkonian, Lucas Escot, James Chapman, Ulf Norell",
     "venue": "15th International Haskell Symposium",
-    "venueAbr": "Haskell '22"
+    "venueAbr": "Haskell @ ICFP '22"
   },
   {
     "id": "formal-cardano-ledger",
     "title": "Human and machine-readable models of state machines for the Cardano ledger (Extended Abstract)",
     "authors": "Andre Knispel, James Chapman, Orestis Melkonian, Polina Vinogradova",
     "venue": "4th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '22"
+    "venueAbr": "FMBC @ CAV '22"
   },
   {
     "id": "ledger-determinism",
     "title": "Determinism of ledger updates (Extended Abstract)",
     "authors": "Polina Vinogradova, James Chapman, Andre Knispel, Orestis Melkonian",
     "venue": "4th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '22"
+    "venueAbr": "FMBC @ CAV '22"
   },
   {
     "id": "eutxo-account-sim",
     "title": "Designing EUTxO smart contracts as communicating state machines: the case of simulating accounts (Extended Abstract)",
     "authors": "Polina Vinogradova, Manuel Chakravarty, James Chapman, Tudor Ferariu, Michael Peyton Jones, Jacco Krijnen, Orestis Melkonian",
     "venue": "4th International Workshop on Formal Methods for Blockchains",
-    "venueAbr": "FMBC '22"
+    "venueAbr": "FMBC @ CAV '22"
   },
   {
     "id": "eutxoma",
