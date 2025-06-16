@@ -1,5 +1,12 @@
 [
   {
+    "id": "formal-jolteon-short",
+    "title": "Mechanized safety of Jolteon consensus in Agda",
+    "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman",
+    "venue": "31st International Conference on Types for Proofs and Programs",
+    "venueAbr": "TYPES '25"
+  },
+  {
     "id": "formal-streamlet",
     "title": "A readable and computable formalization of the Streamlet consensus protocol",
     "authors": "Mauro Jaskelioff, Orestis Melkonian, James Chapman",
