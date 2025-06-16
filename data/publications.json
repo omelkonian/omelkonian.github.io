@@ -1,7 +1,7 @@
 [
   {
     "id": "formal-jolteon-short",
-    "title": "Mechanized safety of Jolteon consensus in Agda",
+    "title": "Mechanized safety of Jolteon consensus in Agda (Extended Abstract)",
     "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman",
     "venue": "31st International Conference on Types for Proofs and Programs",
     "venueAbr": "TYPES '25"
@@ -36,7 +36,7 @@
   },
   {
     "id": "fastbft-short",
-    "title": "Mechanizing BFT consensus protocol in Agda (Extended Abstract)",
+    "title": "Mechanizing BFT consensus protocols in Agda (Extended Abstract)",
     "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman, Jon Rossie",
     "venue": "30th International Conference on Types for Proofs and Programs",
     "venueAbr": "TYPES '24"
