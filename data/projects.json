@@ -13,6 +13,20 @@
     "wip": true
   },
   {
+    "name": "formal-jolteon",
+    "domain": "Formal Verification",
+    "description": "An Agda mechanization of the Jolteon consensus protocol",
+    "keywords": [
+      "Agda",
+      "BFT",
+      "Consensus"
+    ],
+    "image": "formal-jolteon.png",
+    "github": "https://github.com/input-output-hk/formal-jolteon/",
+    "documentation": "data/publications/formal-jolteon-short.pdf",
+    "wip": true
+  },
+  {
     "name": "formal-streamlet",
     "domain": "Formal Verification",
     "description": "An Agda mechanization of the Streamlet consensus protocol",

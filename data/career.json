@@ -1,11 +1,21 @@
 [
     {
+        "$inverted": true,
+        "$title": "Talk",
+        "$time": "June 2025",
+        "$place": "Glasgow, Scotland",
+        "$venue": "TYPES @https://msp.cis.strath.ac.uk/types2025/programme.html@",
+        "Title": "Mechanized safety of Jolteon consensus in Agda",
+        "$slides": "data/presentations/formal-jolteon-short.pdf",
+        "$youtube": "https://www.youtube-nocookie.com/embed/q0JjT7wrTfc"
+    },
+    {
         "$title": "Formal Methods Engineer",
         "$time": "Jan 2024 - now",
         "$venue": "Input Output (IOG) @https://iohk.io/@",
         "Tasks": [
-            "Formalising BFT-style blockchain consensus in Agda",
-            "Developing a Agda-to-Rust compiler backend @https://github.com/omelkonian/agda2rust@"
+            "Formalising BFT-style blockchain consensus in Agda @https://github.com/input-output-hk/formal-jolteon@",
+            "Developing an Agda-to-Rust compiler backend @https://github.com/omelkonian/agda2rust@"
         ],
         "Supervisor": "James Chapman"
     },
