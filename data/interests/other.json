@@ -1,10 +1,10 @@
 {
   "name": "flare",
   "children": [
+    {"name": "Blockchain & Smart Contracts", "size":7},
     {"name": "Dataflow Paradigm", "size":6},
-    {"name": "Models for Concurrency", "size":5},
-    {"name": "SMT Solvers", "size":2},
-    {"name": "Algorithmic Music", "size":5},
+    {"name": "Algorithmic Music", "size":4},
+    {"name": "Concurrency Models", "size":3},
     {"name": "Artificial Creativity", "size":3}
   ]
 }
