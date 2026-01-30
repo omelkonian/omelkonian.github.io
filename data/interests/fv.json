@@ -1,9 +1,11 @@
 {
   "name": "flare",
   "children": [
-    {"name": "Theorem Proving", "size":6},
+    {"name": "Dependently-typed programming", "size":8},
+    {"name": "Verified Compilers", "size":5},
+    {"name": "Consensus Protocols", "size":5},
+    {"name": "Theorem Proving", "size":4},
     {"name": "Program Logics", "size":3},
-    {"name": "Memory Models", "size":4},
-    {"name": "Verified Compilers", "size":5}
+    {"name": "Memory Models", "size":2}
   ]
 }
