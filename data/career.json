@@ -11,7 +11,7 @@
     },
     {
         "$title": "Formal Methods Engineer",
-        "$time": "Jan 2024 - now",
+        "$time": "Jan 2024 - Mar 2026",
         "$venue": "Input Output (IOG) @https://iohk.io/@",
         "Tasks": [
             "Formalising BFT-style blockchain consensus in Agda @https://github.com/input-output-hk/formal-jolteon@",
