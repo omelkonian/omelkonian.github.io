@@ -1,5 +1,12 @@
 [
   {
+    "id": "peregrine-short",
+    "title": "Peregrine: a middle-end for code generation from proof assistants (extended abstract)",
+    "authors": "Eske Hoy Nielsen, Simon Dima, Lucas Escot, Orestis Melkonian, Hugo Segoufin-Cholet, James Chapman, Yannick Forster, Matthieu Sozeau, Bas Spitters",
+    "venue": "32nd International Conference on Types for Proofs and Programs",
+    "venueAbr": "TYPES '26"
+  },
+  {
     "id": "formal-jolteon-short",
     "title": "Mechanized safety of Jolteon consensus in Agda (Extended Abstract)",
     "authors": "Orestis Melkonian, Mauro Jaskelioff, James Chapman",

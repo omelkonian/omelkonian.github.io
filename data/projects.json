@@ -1,5 +1,19 @@
 [
   {
+    "name": "iliagda",
+    "domain": "Formal Prosody",
+    "description": "Formally verified prosodic analysis of Homer's Iliad.",
+    "keywords": [
+      "Agda",
+      "Prosody",
+      "Homer",
+      "Poetry"
+    ],
+    "image": "iliagda.png",
+    "github": "https://github.com/omelkonian/iliagda",
+    "wip": true
+  },
+  {
     "name": "agda2lambox",
     "domain": "Compiler",
     "description": "Compiling Agda's syntax to λ-box terms.",
@@ -23,8 +37,30 @@
     ],
     "image": "formal-jolteon.png",
     "github": "https://github.com/input-output-hk/formal-jolteon/",
-    "documentation": "data/publications/formal-jolteon-short.pdf",
-    "wip": true
+    "documentation": "data/publications/formal-jolteon-short.pdf"
+  },
+  {
+    "name": "agda-irrelevance",
+    "domain": "Formal Verification",
+    "description": "Agda utilities for compile-time proof irrelevance.",
+    "keywords": [
+      "Agda",
+      "Proof Irrelevance"
+    ],
+    "image": "agda-irrelevance.png",
+    "github": "https://github.com/omelkonian/agda-irrelevance"
+  },
+  {
+    "name": "agda-relations",
+    "domain": "Formal Verification",
+    "description": "Relational utilities for Agda.",
+    "keywords": [
+      "Agda",
+      "Inference Rules",
+      "Relation Closures"
+    ],
+    "image": "agda-relations.png",
+    "github": "https://github.com/omelkonian/agda-relations"
   },
   {
     "name": "formal-streamlet",
@@ -50,8 +86,7 @@
     ],
     "image": "agda2rust.png",
     "github": "https://github.com/omelkonian/agda2rust/",
-    "documentation": "https://omelkonian.github.io/agda2rust/",
-    "wip": true
+    "documentation": "https://omelkonian.github.io/agda2rust/"
   },
   {
     "name": "agda2train",
