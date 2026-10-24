@@ -1,5 +1,15 @@
 [
     {
+        "$title": "Formal Methods Scientist",
+        "$time": "May 2026 - now",
+        "$venue": "Kodamai @https://www.kodamai.com/@",
+        "Tasks": "Typed Agentic AI via containers / polynomial functors",
+        "Supervisors": [
+            "Neil Ghani @https://www.kodamai.com/team/neil@",
+            "Toby Smithe @https://www.kodamai.com/team/toby@"
+        ]
+    },
+    {
         "$inverted": true,
         "$title": "Talk",
         "$time": "June 2025",
@@ -11,7 +21,7 @@
     },
     {
         "$title": "Formal Methods Engineer",
-        "$time": "Jan 2024 - Mar 2026",
+        "$time": "Jan 2024 - Apr 2026",
         "$venue": "Input Output (IOG) @https://iohk.io/@",
         "Tasks": [
             "Formalising BFT-style blockchain consensus in Agda @https://github.com/input-output-hk/formal-jolteon@",
